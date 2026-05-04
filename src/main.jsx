@@ -1,6 +1,6 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom"
 import { useEffect } from "react"
 import Lenis from "lenis"
 import "lenis/dist/lenis.css"
@@ -19,6 +19,9 @@ import KnowledgeHub from "./pages/KnowledgeHub.jsx"
 import TreatmentGuides from "./pages/TreatmentGuides.jsx"
 import Gout from "./pages/Gout.jsx"
 import Osteoarthritis from "./pages/Osteoarthritis.jsx"
+import OsteoarthritisGuide from "./pages/OsteoarthritisGuide.jsx"
+import OsteoarthritisAdvanced from "./pages/OsteoarthritisAdvanced.jsx"
+import OsteoarthritisLiving from "./pages/OsteoarthritisLiving.jsx"
 import Doctors from "./pages/Doctors.jsx"
 import Locations from "./pages/Locations.jsx"
 
@@ -55,12 +58,16 @@ createRoot(document.getElementById('root')).render(
         <Route path="/article/:id" element={<BlogDetail />} />
         <Route path="/specialist/:id" element={<DoctorProfile />} />
         <Route path="/health-guide" element={<HealthGuide />} />
-        <Route path="/health-guide/Rheumatoid-Arthritis" element={<ArthritisGuide />} />
+        <Route path="/Rheumatoid-Arthritis" element={<ArthritisGuide />} />
+        <Route path="/health-guide/Rheumatoid-Arthritis" element={<Navigate to="/Rheumatoid-Arthritis" replace />} />
         <Route path="/arthritis" element={<Arthritis />} />
         <Route path="/knowledge-hub" element={<KnowledgeHub />} />
         <Route path="/treatment-guides" element={<TreatmentGuides />} />
         <Route path="/gout" element={<Gout />} />
         <Route path="/osteoarthritis" element={<Osteoarthritis />} />
+        <Route path="/Osteoarthritis-Guide" element={<OsteoarthritisGuide />} />
+        <Route path="/Osteoarthritis-Advanced" element={<OsteoarthritisAdvanced />} />
+        <Route path="/Osteoarthritis-Living" element={<OsteoarthritisLiving />} />
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/locations" element={<Locations />} />
       </Routes>

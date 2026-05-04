@@ -227,7 +227,7 @@ function HealthGuide() {
               {conditions.map((c) => (
                 <Link
                   key={c.name}
-                  to={c.slug === "arthritis" ? "/health-guide/Rheumatoid-Arthritis" : "#"}
+                  to={c.slug === "arthritis" ? "/Rheumatoid-Arthritis" : "#"}
                   className="bg-white rounded-[24px] py-7 px-5 md:px-6 flex flex-col items-center text-center gap-3 border border-[#e8ecf2] hover:border-primary transition-colors cursor-pointer min-h-[290px] md:min-h-[305px]"
                 >
                   <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">

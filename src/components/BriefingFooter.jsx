@@ -42,7 +42,7 @@ function BriefingFooter() {
             <h4 className="bg-blue-100 text-blue-900 text-[10px] font-bold uppercase tracking-wider py-1.5 px-3 rounded-full inline-block" style={{ marginBottom: "28px", fontFamily: "usual, Arial, Helvetica, sans-serif", fontWeight: 700, fontSize: "10px", lineHeight: "15px" }}>What We Treat</h4>
             <ul className="space-y-4 text-sm font-semibold text-[#1A355D]">
               <li><Link to="/arthritis" className="hover:text-[#515a6a]">Arthritis</Link></li>
-              <li><Link to="/health-guide/Rheumatoid-Arthritis" className="hover:text-[#515a6a]">Rheumatoid Arthritis</Link></li>
+              <li><Link to="/Rheumatoid-Arthritis" className="hover:text-[#515a6a]">Rheumatoid Arthritis</Link></li>
               <li><Link to="/osteoarthritis" className="hover:text-[#515a6a]">Osteoarthritis</Link></li>
               <li><a href="#" className="hover:text-[#515a6a]">Psoriatic Arthritis</a></li>
               <li><a href="#" className="hover:text-[#515a6a]">Lupus (SLE)</a></li>

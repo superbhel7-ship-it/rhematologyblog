@@ -197,7 +197,7 @@ function Arthritis() {
             {/* 4 square cards -carousel on mobile */}
             <div ref={typesRef} onScroll={handleTypesScroll} className="flex gap-4 overflow-x-auto pb-3 snap-x snap-mandatory scrollbar-hide sm:grid sm:grid-cols-2 md:grid-cols-4 sm:gap-5 sm:overflow-visible sm:pb-0">
               {[
-                { img: "/condition/Rheumatoid Arthritis (RA).png", label: "Rheumatoid Arthritis", abbr: "RA", link: "/health-guide/Rheumatoid-Arthritis" },
+                { img: "/condition/Rheumatoid Arthritis (RA).png", label: "Rheumatoid Arthritis", abbr: "RA", link: "/Rheumatoid-Arthritis" },
                 { img: "/condition/Osteoarthritis.png", label: "Osteoarthritis", abbr: "OA", link: "/health-guide" },
                 { img: "/condition/Psoriatic Arthritis.png", label: "Psoriatic Arthritis", abbr: "PSA", link: "/health-guide" },
                 { img: "/condition/Ankylosing Spondylitis (AS).png", label: "Ankylosing Spondylitis", abbr: "AS", link: "/health-guide" },
@@ -732,7 +732,7 @@ function Arthritis() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* RA Guide Card */}
               <Link
-                to="/health-guide/Rheumatoid-Arthritis"
+                to="/Rheumatoid-Arthritis"
                 className="group relative overflow-hidden bg-navy-deep p-10 md:p-12 flex flex-col justify-end min-h-[300px] hover:shadow-[0_12px_40px_rgba(15,97,110,0.25)] transition-all duration-300"
                 style={{ borderRadius: 0 }}
               >

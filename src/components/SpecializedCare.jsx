@@ -6,7 +6,7 @@ const diseasesData = [
     id: 0,
     title: "Rheumatoid Arthritis (RA)",
     description: "Rheumatoid arthritis (RA) is a chronic autoimmune disease where the body's immune system attacks healthy joints, leading to inflammation, pain, and eventual joint damage. It primarily affects the small joints of the hands, wrists, and feet.",
-    url: "/health-guide/Rheumatoid-Arthritis",
+    url: "/Rheumatoid-Arthritis",
     image: "https://rheumacare.com/wp-content/uploads/2025/02/Rheumatoid-arthritis-6.png",
     videoThumb: "/images/article1.png",
     videoTitle: "Videos on Rheumatoid Arthritis (RA)",

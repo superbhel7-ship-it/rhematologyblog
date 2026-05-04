@@ -383,7 +383,7 @@ function Header() {
                 >
                   <div className="grid grid-cols-4 gap-x-12 gap-y-8">
                     {conditions.map((item) => {
-                      const conditionRoutes = { "Rheumatoid Arthritis": "/health-guide/Rheumatoid-Arthritis", "Gout": "/gout", "Osteoarthritis": "/osteoarthritis" }
+                      const conditionRoutes = { "Rheumatoid Arthritis": "/Rheumatoid-Arthritis", "Gout": "/gout", "Osteoarthritis": "/osteoarthritis" }
                       const to = conditionRoutes[item]
                       return (
                         <div key={item}>
@@ -513,7 +513,7 @@ function Header() {
             </p>
             <div className="space-y-1 mb-8">
               {conditions.map((item, index) => {
-                const condRoutes = { "Rheumatoid Arthritis": "/health-guide/Rheumatoid-Arthritis", "Gout": "/gout", "Osteoarthritis": "/osteoarthritis" }
+                const condRoutes = { "Rheumatoid Arthritis": "/Rheumatoid-Arthritis", "Gout": "/gout", "Osteoarthritis": "/osteoarthritis" }
                 const condTo = condRoutes[item]
                 const condStyle = {
                   opacity: whatWeCoverVisible ? 1 : 0,
