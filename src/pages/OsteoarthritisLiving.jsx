@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import Header from "../components/Header"
-import Newsletter from "../components/Newsletter"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
 
@@ -85,74 +84,31 @@ function OsteoarthritisLiving() {
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
       <main>
-
-        {/* ═══════════ HERO ═══════════ */}
-        <header>
-          <div style={{ backgroundColor: "#0f616e" }} className="text-white">
-            <div className="max-w-7xl mx-auto px-6 pt-16 pb-10 md:pt-20 md:pb-12 flex flex-col items-start">
-              <span
-                style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4", marginBottom: "24px", display: "inline-block" }}
-              >
-                Complete Patient Guide
-              </span>
-
-              <h1
-                className="mb-4"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontSize: "clamp(32px, 4.5vw, 56px)",
-                  fontWeight: 400,
-                  letterSpacing: "-0.5px",
-                  lineHeight: 1.1,
-                }}
-              >
-                Living With Osteoarthritis:<br className="hidden sm:block" /> Daily Habits That Make<br className="hidden sm:block" /> a Real Difference
-              </h1>
-
-              <div className="flex -space-x-2" style={{ marginBottom: "14px" }}>
-                <img src="/raghav.png" alt="" className="w-10 h-10 rounded-full object-cover object-top border-2 bg-[#e0f3f5]" style={{ borderColor: "rgba(255,255,255,.15)" }} />
-                <img src="/d1.png" alt="" className="w-10 h-10 rounded-full object-cover object-top border-2 bg-[#e0f3f5]" style={{ borderColor: "rgba(255,255,255,.15)" }} />
-              </div>
-
-              <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
-                <span style={{ fontSize: "13px", lineHeight: "20px", fontWeight: 400, color: "#ffffff" }}>
-                  Written by <strong className="font-bold underline underline-offset-2 decoration-1">Merlin and Team</strong>
-                </span>
-                <span style={{ fontSize: "13px", lineHeight: "20px", fontWeight: 400, color: "rgba(255,255,255,.5)" }}>
-                  Medically reviewed by <strong className="font-bold underline underline-offset-2 decoration-1" style={{ color: "#ffffff" }}>Dr. Raghavendra H</strong>
-                </span>
-                <span style={{ fontSize: "13px", lineHeight: "20px", fontWeight: 400, color: "rgba(255,255,255,.45)" }}>
-                  Published: May 2026
-                </span>
-              </div>
-            </div>
+        <section className="custom-approach-section relative" style={{ backgroundColor: "#F5F5F5", overflow: "hidden" }}>
+          <div className="max-w-7xl mx-auto px-6" style={{ paddingTop: "clamp(48px, 6vw, 76px)", paddingBottom: "clamp(36px, 5vw, 64px)" }}>
+            <h1
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(2.25rem, 5vw, 4rem)",
+                fontWeight: 700,
+                lineHeight: 1.12,
+                color: "#0f616e",
+                maxWidth: "980px",
+              }}
+            >
+              Living With Osteoarthritis: Daily Habits That Make a Real Difference
+            </h1>
           </div>
-
-          <div style={{ backgroundColor: "#0a4f5a" }} className="border-t border-white/20">
-            <div className="max-w-7xl mx-auto px-6 py-6 flex justify-start gap-5 overflow-x-auto">
-              {[
-                { label: "Pain &\nDiet", id: "pain-flares" },
-                { label: "Exercise &\nMental Health", id: "exercise" },
-                { label: "Daily Life &\nCosts", id: "daily-life" },
-              ].map((tab, i) => (
-                <button
-                  key={tab.id}
-                  onClick={() => scrollToSection(tab.id)}
-                  className={`inline-block rounded-full px-5 py-2.5 text-[13px] font-medium leading-tight text-left whitespace-nowrap transition-colors cursor-pointer ${
-                    i === 0 ? "bg-white text-navy-deep" : "bg-white/[0.12] text-white hover:bg-white/20"
-                  }`}
-                  style={{ whiteSpace: "pre-line" }}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
+          <div style={{ lineHeight: 0, backgroundColor: "#F5F5F5" }}>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style={{ display: "block", width: "100%", height: "56px" }}>
+              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="#ffffff"></path>
+            </svg>
           </div>
-        </header>
+        </section>
 
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-6 pb-10 pt-8 md:pb-14 md:pt-10">
             <div className="lg:flex lg:gap-14">
 
               {/* ── Left: Article ── */}
@@ -532,55 +488,6 @@ function OsteoarthritisLiving() {
             </div>
           </div>
         </section>
-
-        {/* ═══════════ CTA WITH WAVE ═══════════ */}
-        <section className="w-full flex flex-col bg-ghost overflow-visible">
-          <div style={{ height: "60px", backgroundColor: "#F5F5F5" }} />
-          <svg className="w-full h-[24px] sm:h-[90px] md:h-[120px] block" style={{ color: "#0f616e" }} preserveAspectRatio="none" viewBox="0 0 1440 120" fill="none">
-            <path d="M902.287 110.844C616.272 102.591 308.233 0.726051 45.0151 80.1802C29.7923 84.7785 14.8114 90.0303 0 95.8629V120H1440V0C1273.37 78.0746 1092.39 116.337 902.287 110.844Z" fill="currentColor" />
-          </svg>
-          <div style={{ backgroundColor: "#0f616e" }} className="w-full overflow-visible">
-            <div className="max-w-7xl mx-auto px-6 pb-24 md:pb-32 pt-6 sm:pt-10">
-              <div className="flex flex-col-reverse md:flex-row items-stretch gap-10 md:gap-16">
-                <div className="flex-[1.1] flex flex-col items-center md:items-start justify-center py-4">
-                  <h2
-                    className="leading-[1.1] font-normal mb-12 md:mb-16 text-center md:text-left"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(36px, 5.5vw, 68px)", letterSpacing: "-0.5px", color: "#ffffff" }}
-                  >
-                    Ready to get started?
-                  </h2>
-                  <div className="flex flex-col sm:flex-row items-center gap-7 md:gap-6">
-                    <a
-                      href="#"
-                      className="inline-block rounded-full font-semibold text-[15px] transition-all hover:opacity-90 text-center"
-                      style={{ backgroundColor: "#1AA3B5", color: "#ffffff", padding: "16px 32px" }}
-                    >
-                      Schedule An Appointment
-                    </a>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[15px] text-gray-100 opacity-90">or</span>
-                      <a href="#" className="text-[15px] font-semibold underline underline-offset-[6px] hover:opacity-80 transition-opacity" style={{ color: "#ffffff", textDecorationThickness: "2px" }}>
-                        let&apos;s get in touch
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex-1 relative min-h-[200px] md:min-h-[250px]">
-                  <img
-                    src="/images/hero-consult.jpg"
-                    alt="Doctor consulting with patient"
-                    className="w-full block rounded-[4px] absolute bottom-0"
-                    style={{ height: "clamp(300px, 50vw, 520px)", objectFit: "cover", objectPosition: "center 20%" }}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div className="pt-6 md:pt-10" style={{ backgroundColor: "#fdfdfe" }}>
-          <Newsletter />
-        </div>
 
       </main>
       <BriefingFooter />

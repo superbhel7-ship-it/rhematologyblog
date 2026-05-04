@@ -49,6 +49,12 @@ function Header() {
     "Pain Management",
   ]
 
+  const osteoarthritisPages = [
+    { label: "Osteoarthritis Guide", to: "/Osteoarthritis-Guide" },
+    { label: "Advanced Treatment", to: "/Osteoarthritis-Advanced" },
+    { label: "Living With Osteoarthritis", to: "/Osteoarthritis-Living" },
+  ]
+
   // Track scroll for header shadow
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10)
@@ -385,6 +391,7 @@ function Header() {
                     {conditions.map((item) => {
                       const conditionRoutes = { "Rheumatoid Arthritis": "/Rheumatoid-Arthritis", "Gout": "/gout", "Osteoarthritis": "/osteoarthritis" }
                       const to = conditionRoutes[item]
+                      const hasSubLinks = item === "Osteoarthritis"
                       return (
                         <div key={item}>
                           {to ? (
@@ -404,6 +411,20 @@ function Header() {
                               {item}
                               <ArrowUpRight size={14} />
                             </a>
+                          )}
+                          {hasSubLinks && (
+                            <div className="mt-3 flex flex-col gap-2 border-l border-[#0f616e]/25 pl-3">
+                              {osteoarthritisPages.map((page) => (
+                                <Link
+                                  key={page.to}
+                                  to={page.to}
+                                  className="text-[13px] leading-snug text-[#515a6a] hover:text-[#0f616e] hover:underline"
+                                  onClick={closeWhatWeCover}
+                                >
+                                  {page.label}
+                                </Link>
+                              ))}
+                            </div>
                           )}
                         </div>
                       )
@@ -515,6 +536,7 @@ function Header() {
               {conditions.map((item, index) => {
                 const condRoutes = { "Rheumatoid Arthritis": "/Rheumatoid-Arthritis", "Gout": "/gout", "Osteoarthritis": "/osteoarthritis" }
                 const condTo = condRoutes[item]
+                const hasSubLinks = item === "Osteoarthritis"
                 const condStyle = {
                   opacity: whatWeCoverVisible ? 1 : 0,
                   transform: whatWeCoverVisible ? "translateY(0)" : "translateY(12px)",
@@ -533,25 +555,39 @@ function Header() {
                     </span>
                   </>
                 )
-                return condTo ? (
-                  <Link
-                    key={item}
-                    to={condTo}
-                    className="flex items-center justify-between py-4 border-b border-gray-100"
-                    onClick={closeWhatWeCover}
-                    style={condStyle}
-                  >
-                    {condInner}
-                  </Link>
-                ) : (
-                  <a
-                    key={item}
-                    className="flex items-center justify-between py-4 border-b border-gray-100 cursor-pointer"
-                    onClick={closeWhatWeCover}
-                    style={condStyle}
-                  >
-                    {condInner}
-                  </a>
+                return (
+                  <div key={item} className="border-b border-gray-100" style={condStyle}>
+                    {condTo ? (
+                      <Link
+                        to={condTo}
+                        className="flex items-center justify-between py-4"
+                        onClick={closeWhatWeCover}
+                      >
+                        {condInner}
+                      </Link>
+                    ) : (
+                      <a
+                        className="flex items-center justify-between py-4 cursor-pointer"
+                        onClick={closeWhatWeCover}
+                      >
+                        {condInner}
+                      </a>
+                    )}
+                    {hasSubLinks && (
+                      <div className="pb-4 pl-12 flex flex-col gap-3">
+                        {osteoarthritisPages.map((page) => (
+                          <Link
+                            key={page.to}
+                            to={page.to}
+                            className="text-[14px] font-medium text-navy-muted hover:text-[#0f616e]"
+                            onClick={closeWhatWeCover}
+                          >
+                            {page.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 )
               })}
             </div>

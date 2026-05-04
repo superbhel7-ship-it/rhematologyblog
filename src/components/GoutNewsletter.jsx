@@ -98,7 +98,7 @@ function GoutNewsletter() {
         <button
           type="submit"
           style={{
-            backgroundColor: "#767676",
+            backgroundColor: "#e86531",
             color: "#ffffff",
             border: "none",
             borderRadius: "24px",
