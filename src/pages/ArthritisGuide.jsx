@@ -136,10 +136,10 @@ function ArthritisGuide() {
 
         {/* ═══════════ HERO ═══════════ */}
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="max-w-7xl mx-auto px-6 pt-10 pb-0 md:pt-14">
+          <div className="max-w-7xl mx-auto px-6 pt-6 pb-0 md:pt-8">
 
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-[12px] mb-8" style={{ color: "rgba(255,255,255,0.6)" }}>
+            <div className="flex items-center gap-2 text-[14px] font-medium mb-8" style={{ color: "rgba(255,255,255,0.6)" }}>
               <span>Home</span>
               <span>›</span>
               <span>Diseases &amp; Conditions</span>
@@ -151,7 +151,7 @@ function ArthritisGuide() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
 
               {/* Left: Title + meta */}
-              <div className="flex-1 pb-10 md:pb-14">
+              <div className="flex-1 pb-0">
                 <p style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#a0e2e4", marginBottom: "12px" }}>A Patient Guide for India</p>
                 <h1
                   style={{
@@ -167,7 +167,7 @@ function ArthritisGuide() {
                   Rheumatoid Arthritis
                 </h1>
 
-                <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "2.5rem", maxWidth: "520px" }}>
+                <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "0", maxWidth: "520px" }}>
                   Rheumatoid arthritis is a long-term condition where the body's immune system attacks its own joints. This guide covers what RA is, its symptoms, causes, how doctors diagnose it, and the treatment options available in India.
                 </p>
 
@@ -187,24 +187,27 @@ function ArthritisGuide() {
 
           {/* Nav Tabs */}
           <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
-            <div className="max-w-7xl mx-auto px-6 py-6 flex gap-3 overflow-x-auto">
+            <div className="max-w-7xl mx-auto px-6 py-4 flex gap-3 overflow-x-auto">
               {[
-                { label: "Symptoms & Causes", active: true },
-                { label: "Diagnosis & Treatment", active: false },
-                { label: "Doctors & Departments", active: false },
-              ].map((tab) => (
-                <a
-                  key={tab.label}
-                  href="#"
-                  className="shrink-0 inline-block rounded-full px-6 py-3.5 text-[14px] font-medium transition-colors"
-                  style={{
-                    backgroundColor: tab.active ? "#ffffff" : "rgba(255,255,255,0.12)",
-                    color: tab.active ? "#0f616e" : "#ffffff",
-                  }}
-                >
-                  {tab.label}
-                </a>
-              ))}
+                { label: "Symptoms", id: "symptoms", ids: ["symptoms", "what-is-ra"] },
+                { label: "Treatment", id: "treatment", ids: ["treatment", "stages", "causes", "diagnosis"] },
+                { label: "Doctors & Departments", id: "when-to-see", ids: ["when-to-see", "managing-ra", "faq"] },
+              ].map((tab) => {
+                const isActive = tab.ids.includes(activeSection)
+                return (
+                  <button
+                    key={tab.label}
+                    onClick={() => scrollToSection(tab.id)}
+                    className="shrink-0 inline-block rounded-full px-6 py-3.5 text-[14px] font-medium transition-colors"
+                    style={{
+                      backgroundColor: isActive ? "#ffffff" : "rgba(255,255,255,0.12)",
+                      color: isActive ? "#0f616e" : "#ffffff",
+                    }}
+                  >
+                    {tab.label}
+                  </button>
+                )
+              })}
             </div>
           </div>
         </header>
