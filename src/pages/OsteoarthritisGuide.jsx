@@ -205,7 +205,7 @@ function OsteoarthritisGuide() {
                 {/* ── WHAT IS OA ── */}
                 <div id="what-is-oa" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     What Is Osteoarthritis?
                   </h2>
@@ -272,7 +272,7 @@ function OsteoarthritisGuide() {
                 {/* ── CAUSES ── */}
                 <div id="causes" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     What Causes Osteoarthritis?
                   </h2>
@@ -316,7 +316,7 @@ function OsteoarthritisGuide() {
                 {/* ── SYMPTOMS ── */}
                 <div id="symptoms" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     Signs and Symptoms You Should Look For
                   </h2>
@@ -353,7 +353,7 @@ function OsteoarthritisGuide() {
                 <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginTop: "1rem" }} />
                 <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     Key Factors to Consider for Osteoarthritis
                   </h2>
@@ -381,7 +381,7 @@ function OsteoarthritisGuide() {
                 {/* ── DIAGNOSIS ── */}
                 <div id="diagnosis" data-toc-section style={{ marginBottom: "2.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     How Is Osteoarthritis Diagnosed?
                   </h2>
@@ -418,7 +418,7 @@ function OsteoarthritisGuide() {
                 {/* ── TREATMENT ── */}
                 <div id="treatment" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     How Can Osteoarthritis Be Treated?
                   </h2>
@@ -467,7 +467,7 @@ function OsteoarthritisGuide() {
                 {/* ── LIVING WELL ── */}
                 <div id="living-well" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     Adapting to the New Normal
                   </h2>
@@ -492,7 +492,7 @@ function OsteoarthritisGuide() {
                 {/* ── WHEN TO CONSULT ── */}
                 <div style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     When to Consult a Rheumatologist
                   </h2>

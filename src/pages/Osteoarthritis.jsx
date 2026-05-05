@@ -243,7 +243,7 @@ function Osteoarthritis() {
             <div className="lg:flex lg:gap-14">
 
               {/* ── Left: Article Content ── */}
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#5e5e5e" }}>
 
                 {/* Author line */}
                 <div className="flex items-center gap-3 mb-10">
@@ -352,7 +352,7 @@ function Osteoarthritis() {
                   </h3>
                   <ul className="space-y-5 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {irreversibleFactors.map((f, i) => (
-                      <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">
+                      <li key={i} className="te/osteoarthritis xt-[17px] leading-[1.75] text-navy-deep pl-1">
                         <strong className="font-bold">{f.title}:</strong> {f.desc}
                       </li>
                     ))}
