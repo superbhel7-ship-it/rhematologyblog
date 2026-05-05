@@ -82,7 +82,7 @@ function OsteoarthritisGuide() {
 
   return (
     <div className="landing-page bg-white text-navy-deep antialiased">
-      {/* <Header /> */}
+      <Header />
 
       <header>
           <div style={{ backgroundColor: "#0f616e" }} className="text-white">
