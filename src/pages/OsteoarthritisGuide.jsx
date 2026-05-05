@@ -82,9 +82,61 @@ function OsteoarthritisGuide() {
 
   return (
     <div className="landing-page bg-white text-navy-deep antialiased">
-      <Header />
+      {/* <Header /> */}
+
+      <header>
+          <div style={{ backgroundColor: "#0f616e" }} className="text-white">
+            <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
+              <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
+                <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
+                <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4" }}>Diseases &amp; Conditions</span>
+              </div>
+
+              <h1
+                className="mb-4"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(48px, 6vw, 64px)",
+                  fontWeight: 400,
+                  letterSpacing: "-0.5px",
+                  color: "#ffffff",
+                  maxWidth: "1120px",
+                }}
+              >
+               Osteoarthritis - An Overview
+              </h1>
+
+              {/* Author meta hidden by request */}
+            </div>
+          </div>
+
+          <div style={{ backgroundColor: "#0a4f5a" }} className="border-t border-white/20">
+            <div className="max-w-7xl mx-auto px-6 md:pl-[2%] md:pr-[8%] py-6 flex justify-start gap-5 overflow-x-auto">
+              {[
+                { label: "Symptoms &\nCauses", id: "symptoms" },
+                { label: "Diagnosis &\nTreatment", id: "diagnosis" },
+                { label: "Doctors &\nDepartments", id: "doctors" },
+              ].map((tab, i) => (
+                <button
+                  key={tab.id}
+                  onClick={() => scrollToSection(tab.id)}
+                  className={`inline-block rounded-full px-5 py-2.5 text-[13px] font-medium leading-tight text-left whitespace-nowrap transition-colors cursor-pointer ${
+                    i === 0
+                      ? "bg-white text-navy-deep"
+                      : "bg-white/[0.12] text-white hover:bg-white/20"
+                  }`}
+                  style={{ whiteSpace: "pre-line" }}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </header>
+
+
       <main>
-        <section style={{ backgroundColor: "#0f616e" }} className="text-white">
+        {/* <section style={{ backgroundColor: "#0f616e" }} className="text-white">
           <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
             <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
               <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
@@ -107,8 +159,8 @@ function OsteoarthritisGuide() {
               <span className="material-symbols-outlined text-[20px]">calendar_month</span>
               Request an Appointment
             </a> */}
-          </div>
-        </section>
+          {/* </div> */}
+        {/* </section> */} 
 
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">

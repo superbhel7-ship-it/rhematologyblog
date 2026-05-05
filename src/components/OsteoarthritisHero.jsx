@@ -42,8 +42,7 @@ function OsteoarthritisHero() {
         </div>
       </div>
 
-      {/* Navigation Tabs hidden by request */}
-      {/* <div style={{ backgroundColor: "#0a4f5a" }} className="border-t border-white/20">
+      <div style={{ backgroundColor: "#0a4f5a" }} className="border-t border-white/20">
         <div className="max-w-7xl mx-auto px-6 md:pl-[2%] md:pr-[8%] py-6 flex justify-start gap-5 overflow-x-auto">
           {navTabs.map((tab) => (
             <a
@@ -60,7 +59,7 @@ function OsteoarthritisHero() {
             </a>
           ))}
         </div>
-      </div> */}
+      </div>
     </header>
   )
 }

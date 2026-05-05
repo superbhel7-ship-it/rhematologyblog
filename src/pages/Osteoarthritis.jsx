@@ -209,7 +209,33 @@ function Osteoarthritis() {
       <main>
 
         {/* ═══════════ HERO ═══════════ */}
-        <OsteoarthritisHero />
+        {/* <OsteoarthritisHero /> */}
+
+           <section style={{ backgroundColor: "#0f616e" }} className="text-white">
+          <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
+            <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
+              <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
+              <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4" }}>Diseases &amp; Conditions</span>
+            </div>
+            <h1
+              className="mb-4"
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(48px, 6vw, 64px)",
+                fontWeight: 400,
+                letterSpacing: "-0.5px",
+                color: "#ffffff",
+                maxWidth: "1120px",
+              }}
+            >
+              Osteoarthritis Symptoms and Causes
+            </h1>
+           {/* <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
+              <span className="material-symbols-outlined text-[20px]">calendar_month</span>
+              Request an Appointment
+            </a> */}
+          </div>
+        </section> 
 
         {/* ═══════════ ARTICLE BODY + CTA SIDEBAR ═══════════ */}
         <section className="bg-white">
