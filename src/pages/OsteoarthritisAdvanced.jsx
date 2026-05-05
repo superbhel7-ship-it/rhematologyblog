@@ -92,25 +92,29 @@ function OsteoarthritisAdvanced() {
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
       <main>
-        <section className="custom-approach-section relative" style={{ backgroundColor: "#F5F5F5", overflow: "hidden" }}>
-          <div className="max-w-7xl mx-auto px-6" style={{ paddingTop: "clamp(48px, 6vw, 76px)", paddingBottom: "clamp(36px, 5vw, 64px)" }}>
+        <section style={{ backgroundColor: "#0f616e" }} className="text-white">
+          <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
+            <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
+              <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
+              <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4" }}>Diseases &amp; Conditions</span>
+            </div>
             <h1
+              className="mb-4"
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(2.25rem, 5vw, 4rem)",
-                fontWeight: 700,
-                lineHeight: 1.12,
-                color: "#0f616e",
-                maxWidth: "1040px",
+                fontSize: "clamp(48px, 6vw, 64px)",
+                fontWeight: 400,
+                letterSpacing: "-0.5px",
+                color: "#ffffff",
+                maxWidth: "1180px",
               }}
             >
-              Osteoarthritis: Specialised Treatment Procedures, Injections, Surgery and What to Expect
+              Osteoarthritis - Treatment, Various Treatment Plans
             </h1>
-          </div>
-          <div style={{ lineHeight: 0, backgroundColor: "#F5F5F5" }}>
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style={{ display: "block", width: "100%", height: "56px" }}>
-              <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" fill="#ffffff"></path>
-            </svg>
+            <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
+              <span className="material-symbols-outlined text-[20px]">calendar_month</span>
+              Request an Appointment
+            </a>
           </div>
         </section>
 
