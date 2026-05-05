@@ -103,10 +103,10 @@ function OsteoarthritisLiving() {
             >
               Osteoarthritis - Living With Osteoarthritis
             </h1>
-            <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
+            {/* <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
               <span className="material-symbols-outlined text-[20px]">calendar_month</span>
               Request an Appointment
-            </a>
+            </a> */}
           </div>
         </section>
 
@@ -147,7 +147,7 @@ function OsteoarthritisLiving() {
                 {/* ── OA OVER TIME ── */}
                 <div id="oa-over-time" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Understanding Osteoarthritis Over Time
                   </h2>
@@ -169,7 +169,7 @@ function OsteoarthritisLiving() {
                 {/* ── PAIN & FLARES ── */}
                 <div id="pain-flares" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Managing Pain and Flares at Home
                   </h2>
@@ -177,21 +177,21 @@ function OsteoarthritisLiving() {
                     One of the most useful skills when living with osteoarthritis is learning how to respond to changes in your pain.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Is a Flare?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     A flare is a temporary spike in your pain, swelling, and stiffness. It can be triggered when you overuse the joint, sit still for too long, when the weather turns cold, or even due to stress.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Helps During a Flare?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     During a flare, it is better to take ample rest. A cold pack for 15–20 minutes can reduce swelling, while a warm pack works better for easing stiffness. Taking medicines as prescribed and putting less pressure on the joint - using support if needed - makes the phase more manageable. Whenever necessary, do not forget to use your walking stick or a brace.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem", marginTop: "1.75rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem", marginTop: "1.75rem" }}>
                     How to Prevent Flares
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
@@ -202,7 +202,7 @@ function OsteoarthritisLiving() {
                 {/* ── EATING ── */}
                 <div id="eating" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Eating for Joint Health
                   </h2>
@@ -210,7 +210,7 @@ function OsteoarthritisLiving() {
                     There isn't a strict "Osteoarthritis diet," but your daily food choices can either help calm the swelling or make it worse.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Foods for Your Joints
                   </h3>
                   <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
@@ -221,7 +221,7 @@ function OsteoarthritisLiving() {
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Using healthier oils like mustard oil or cold-pressed coconut oil instead of refined oils can also be beneficial.</li>
                   </ul>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Foods to Avoid
                   </h3>
                   <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
@@ -230,14 +230,14 @@ function OsteoarthritisLiving() {
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Packaged and preserved snacks contain high levels of salt and unhealthy fats that negatively impact joint health.</li>
                   </ul>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Simple Indian Additions That Help
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     Your everyday kitchen already offers powerful support. Turmeric and ginger help reduce pain and swelling, while amla - rich in vitamin C - supports cartilage health. Using these regularly in your dishes makes you feel light and keeps your bones strong.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What About Supplements?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
@@ -248,7 +248,7 @@ function OsteoarthritisLiving() {
                 {/* ── EXERCISE ── */}
                 <div id="exercise" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Staying Active Without Overdoing It
                   </h2>
@@ -256,7 +256,7 @@ function OsteoarthritisLiving() {
                     Movement is one of the most effective ways to manage osteoarthritis. The key is to choose the right kind of activity that suits your condition.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Types of Exercise Help?
                   </h3>
                   <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
@@ -267,14 +267,14 @@ function OsteoarthritisLiving() {
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Balancing exercises lower the risk of falling.</li>
                   </ul>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     During a Flare
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     During a flare, switch to gentler or seated exercises - reduce the intensity rather than stopping completely. As symptoms improve, you can gradually return to your usual routine.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Is Yoga Really Helpful?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
@@ -285,7 +285,7 @@ function OsteoarthritisLiving() {
                 {/* ── MENTAL HEALTH ── */}
                 <div id="mental-health" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Taking Care of Your Mental Health
                   </h2>
@@ -296,7 +296,7 @@ function OsteoarthritisLiving() {
                     Disturbed sleep, inability to follow your daily routine, and even some of the lifestyle changes like eating healthy and exercising can make you feel anxious and isolated. Studies show that when you are too depressed or anxious, your tolerance to pain may drop. Joining clubs or trusts for arthritis patients helps you build a healthier, like-minded community - making healthy habits more enjoyable.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Can Help
                   </h3>
                   <ul className="space-y-4 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
@@ -310,26 +310,26 @@ function OsteoarthritisLiving() {
                 {/* ── DAILY LIFE ── */}
                 <div id="daily-life" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Making Daily Life Easier
                   </h2>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     At Work
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     Set up your chair and desk comfortably. Keep your feet flat on the floor and take short breaks every 45–60 minutes to reduce strain. If needed, discuss modified duties with your employer to stay productive without worsening symptoms.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     While Travelling
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     Choose aisle seats to allow easier movement and take time to stretch or walk every 30–45 minutes to prevent stiffness. Carry medicines with you and avoid tightly packed schedules. Eat healthy, rest well, and wear comfortable shoes with supportive soles. Don't hesitate to customise shoes for your needs if required.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     At Home
                   </h3>
                   <ul className="space-y-4 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
@@ -343,7 +343,7 @@ function OsteoarthritisLiving() {
                 {/* ── COSTS ── */}
                 <div id="costs" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Managing the Expenses in India
                   </h2>
@@ -351,7 +351,7 @@ function OsteoarthritisLiving() {
                     Long-term care doesn't always have to be expensive. Jan Aushadhi stores offer generic medicines at affordable prices. Government hospitals provide physiotherapy sessions, and telemedicine services can reduce your travel costs significantly.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Helpful Schemes
                   </h3>
                   <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
@@ -360,7 +360,7 @@ function OsteoarthritisLiving() {
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1"><strong className="font-semibold">eSanjeevani:</strong> Offers free online doctor consultations - especially helpful for people in remote areas or those with limited mobility.</li>
                   </ul>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Regular Check-Ups Matter
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
@@ -372,7 +372,7 @@ function OsteoarthritisLiving() {
                 <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginTop: "1rem" }} />
                 <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.5px", color: "#0f616e", marginBottom: "2rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
                   >
                     Final Thought
                   </h2>
@@ -396,23 +396,6 @@ function OsteoarthritisLiving() {
                   >
                     Book Your First Visit
                   </a>
-                </div>
-
-                {/* ── FAQ ── */}
-                <div id="faq" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
-                  <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
-                  >
-                    Frequently Asked Questions
-                  </h2>
-                  <div>
-                    {faqs.map((faq, i) => (
-                      <div key={i} style={{ borderTop: "1px solid #dadfe8", paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
-                        <p className="text-[17px] font-semibold text-navy-deep mb-3">{i + 1}. {faq.q}</p>
-                        <p className="text-[16px] leading-[1.8] text-navy-muted">{faq.a}</p>
-                      </div>
-                    ))}
-                  </div>
                 </div>
 
                 {/* ── NEWSLETTER ── */}
@@ -468,27 +451,35 @@ function OsteoarthritisLiving() {
                     </nav>
                   </div>
 
-                  <div className="bg-white p-6 border border-border/50" style={{ borderRadius: 0 }}>
-                    <div style={{ width: "44px", height: "44px", borderRadius: "50%", backgroundColor: "#e0f3f5", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
-                      <span className="material-symbols-outlined" style={{ fontSize: "20px", color: "#1A355D" }}>health_and_safety</span>
-                    </div>
-                    <h4 style={{ fontFamily: "var(--font-display)", fontSize: "1.125rem", fontWeight: 400, lineHeight: 1.3, color: "#1A355D", marginBottom: "12px" }}>
-                      Get a personalised plan for your joints
-                    </h4>
-                    <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#3b5b80", marginBottom: "20px" }}>
-                      A rheumatologist can guide you through the right diet, exercise, and treatment plan for your specific stage of osteoarthritis.
-                    </p>
-                    <a
-                      href="#"
-                      style={{ display: "block", width: "100%", textAlign: "center", borderRadius: "9999px", fontWeight: 600, fontSize: "14px", padding: "12px 0", backgroundColor: "#1AA3B5", color: "#ffffff" }}
-                    >
-                      Book Your First Visit
-                    </a>
-                  </div>
-
                 </div>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* ═══════════ FAQ ═══════════ */}
+        <section id="faq" data-toc-section className="py-16 md:py-20 bg-ghost">
+          <div className="max-w-[800px] mx-auto px-6">
+            <div className="text-center mb-14">
+              <h2 className="text-[2.5rem] md:text-[3rem] leading-[1.1] tracking-[-0.8px] text-navy-deep mb-4" style={{ fontFamily: "var(--font-display)" }}>
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div className="flex flex-col gap-3">
+              {faqs.map((faq, i) => (
+                <details key={i} className="bg-white rounded-2xl border border-gray-100 overflow-hidden group">
+                  <summary className="flex items-center justify-between cursor-pointer p-5 md:p-6 list-none [&::-webkit-details-marker]:hidden">
+                    <span className="text-[15px] font-semibold text-navy-deep pr-4 leading-snug">{faq.q}</span>
+                    <span className="shrink-0 w-8 h-8 rounded-full bg-ghost flex items-center justify-center">
+                      <svg className="w-3.5 h-3.5 transition-transform group-open:rotate-45" fill="none" stroke="#1A355D" strokeWidth={2.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 md:px-6 pb-5 md:pb-6 -mt-1">
+                    <p className="text-sm text-navy-muted leading-relaxed">{faq.a}</p>
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </section>

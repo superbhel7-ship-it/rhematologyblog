@@ -111,10 +111,10 @@ function OsteoarthritisAdvanced() {
             >
               Osteoarthritis - Treatment, Various Treatment Plans
             </h1>
-            <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
+            {/* <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
               <span className="material-symbols-outlined text-[20px]">calendar_month</span>
               Request an Appointment
-            </a>
+            </a> */}
           </div>
         </section>
 
@@ -161,7 +161,7 @@ function OsteoarthritisAdvanced() {
                 {/* ── WHEN SPECIALISED ── */}
                 <div id="when-specialised" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     When Does Your Doctor Recommend a Specialised Procedure?
                   </h2>
@@ -190,7 +190,7 @@ function OsteoarthritisAdvanced() {
                 {/* ── INJECTIONS ── */}
                 <div id="injections" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Injection-Based Treatments for Osteoarthritis
                   </h2>
@@ -198,7 +198,7 @@ function OsteoarthritisAdvanced() {
                     Injections often bridge the gap between medicines and surgery. They are quick, usually done in a clinic, don't require hospital admission, and have no long recovery time. Based on your joint's damage, your doctor would recommend these options.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Steroid Injections
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
@@ -211,7 +211,7 @@ function OsteoarthritisAdvanced() {
                     Approximate cost in India: INR 500 to 2,000 per session
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Gel Injections (Hyaluronic Acid)
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
@@ -228,7 +228,7 @@ function OsteoarthritisAdvanced() {
                 {/* ── PRP ── */}
                 <div id="prp" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     PRP Injections (Platelet-Rich Plasma)
                   </h2>
@@ -248,7 +248,7 @@ function OsteoarthritisAdvanced() {
                     Costs mentioned are approximate and may differ based on hospital, city, and clinical needs. Please consult a qualified doctor for personalised advice.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What About Stem Cell Therapy?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
@@ -265,7 +265,7 @@ function OsteoarthritisAdvanced() {
                 {/* ── KNEE REPLACEMENT ── */}
                 <div id="knee-replacement" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Knee Replacement Surgery
                   </h2>
@@ -273,7 +273,7 @@ function OsteoarthritisAdvanced() {
                     When all non-surgical options stop providing relief and joint damage becomes more severe, knee replacement can be a life-changing option. It gives back your peaceful, pain-free sleep and a carefree morning walk. Currently, this is the most effective treatment for advanced osteoarthritis.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     When Does Your Specialist Recommend Surgery?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
@@ -293,7 +293,7 @@ function OsteoarthritisAdvanced() {
                     Besides age, your doctor considers pain severity, walking ability, and how badly it affects your routine before suggesting surgery.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Does Your Doctor Operate On?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
@@ -303,7 +303,7 @@ function OsteoarthritisAdvanced() {
                     Based on how much of the joint is affected, your doctor may recommend a <strong className="font-semibold">total knee replacement</strong> - when most of the joint is damaged - or a <strong className="font-semibold">partial knee replacement</strong>, where only the affected portion is replaced while preserving the healthy parts.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What to Expect in Your Recovery Phase?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
@@ -313,7 +313,7 @@ function OsteoarthritisAdvanced() {
                     Within three months, you can start walking and climbing stairs and will feel marked improvement. After this, you regain near-normal function. Full recovery depends on your age, fitness level, and consistency with physiotherapy.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.375rem", fontWeight: 700, color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Cost of Knee Replacement in India
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
@@ -336,7 +336,7 @@ function OsteoarthritisAdvanced() {
                 <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginTop: "1rem" }} />
                 <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.5px", color: "#0f616e", marginBottom: "2rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
                   >
                     Not Sure Which Option Is Right for You?
                   </h2>
@@ -352,7 +352,7 @@ function OsteoarthritisAdvanced() {
                 {/* ── COMPARISON TABLE ── */}
                 <div id="comparison" data-toc-section style={{ marginBottom: "2.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     A Quick Comparison Guide
                   </h2>
@@ -377,23 +377,6 @@ function OsteoarthritisAdvanced() {
                         ))}
                       </tbody>
                     </table>
-                  </div>
-                </div>
-
-                {/* ── FAQ ── */}
-                <div id="faq" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
-                  <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.25rem, 4vw, 1.875rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.3px", color: "#0f616e", marginBottom: "1.5rem" }}
-                  >
-                    Frequently Asked Questions
-                  </h2>
-                  <div>
-                    {faqs.map((faq, i) => (
-                      <div key={i} style={{ borderTop: "1px solid #dadfe8", paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
-                        <p className="text-[17px] font-semibold text-navy-deep mb-3">{i + 1}. {faq.q}</p>
-                        <p className="text-[16px] leading-[1.8] text-navy-muted">{faq.a}</p>
-                      </div>
-                    ))}
                   </div>
                 </div>
 
@@ -450,27 +433,35 @@ function OsteoarthritisAdvanced() {
                     </nav>
                   </div>
 
-                  <div className="bg-white p-6 border border-border/50" style={{ borderRadius: 0 }}>
-                    <div style={{ width: "44px", height: "44px", borderRadius: "50%", backgroundColor: "#e0f3f5", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "20px" }}>
-                      <span className="material-symbols-outlined" style={{ fontSize: "20px", color: "#1A355D" }}>health_and_safety</span>
-                    </div>
-                    <h4 style={{ fontFamily: "var(--font-display)", fontSize: "1.125rem", fontWeight: 400, lineHeight: 1.3, color: "#1A355D", marginBottom: "12px" }}>
-                      Not sure which treatment is right for you?
-                    </h4>
-                    <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#3b5b80", marginBottom: "20px" }}>
-                      A rheumatologist can evaluate your joint damage and recommend the right next step - from injections to surgery.
-                    </p>
-                    <a
-                      href="#"
-                      style={{ display: "block", width: "100%", textAlign: "center", borderRadius: "9999px", fontWeight: 600, fontSize: "14px", padding: "12px 0", backgroundColor: "#1AA3B5", color: "#ffffff" }}
-                    >
-                      Book Your First Visit
-                    </a>
-                  </div>
-
                 </div>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* ═══════════ FAQ ═══════════ */}
+        <section id="faq" data-toc-section className="py-16 md:py-20 bg-ghost">
+          <div className="max-w-[800px] mx-auto px-6">
+            <div className="text-center mb-14">
+              <h2 className="text-[2.5rem] md:text-[3rem] leading-[1.1] tracking-[-0.8px] text-navy-deep mb-4" style={{ fontFamily: "var(--font-display)" }}>
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div className="flex flex-col gap-3">
+              {faqs.map((faq, i) => (
+                <details key={i} className="bg-white rounded-2xl border border-gray-100 overflow-hidden group">
+                  <summary className="flex items-center justify-between cursor-pointer p-5 md:p-6 list-none [&::-webkit-details-marker]:hidden">
+                    <span className="text-[15px] font-semibold text-navy-deep pr-4 leading-snug">{faq.q}</span>
+                    <span className="shrink-0 w-8 h-8 rounded-full bg-ghost flex items-center justify-center">
+                      <svg className="w-3.5 h-3.5 transition-transform group-open:rotate-45" fill="none" stroke="#1A355D" strokeWidth={2.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 md:px-6 pb-5 md:pb-6 -mt-1">
+                    <p className="text-sm text-navy-muted leading-relaxed">{faq.a}</p>
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </section>
