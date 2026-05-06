@@ -57,7 +57,7 @@ function OsteoarthritisGuide() {
   const [activeSection, setActiveSection] = useState("overview")
 
   useEffect(() => {
-    document.title = "Osteoarthritis: What It Is, Symptoms, Causes & Treatment | RheumaInsights"
+    document.title = "Osteoarthritis: What It Is, Symptoms, Causes & Treatment Options | RheumaInsights"
     return () => { document.title = "RheumaInsights | Professional Rheumatology Resource" }
   }, [])
 
@@ -112,16 +112,28 @@ function OsteoarthritisGuide() {
               <h1
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(32px, 10vw, 64px)",
+                  fontSize: "clamp(42px, 9vw, 72px)",
                   fontWeight: 700,
-                  lineHeight: 1.1,
+                  lineHeight: 1,
                   letterSpacing: "-0.5px",
                   color: "#ffffff",
-                  marginBottom: "1.25rem",
+                  marginBottom: "0.85rem",
                 }}
               >
-                Osteoarthritis: What It Is, Symptoms, Causes & Treatment Options
+                Osteoarthritis
               </h1>
+              <p
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(20px, 2.5vw, 30px)",
+                  lineHeight: 1.25,
+                  color: "rgba(255,255,255,0.9)",
+                  marginBottom: "1.25rem",
+                  maxWidth: "720px",
+                }}
+              >
+                What It Is, Symptoms, Causes & Treatment Options
+              </p>
 
               <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
                 Learn what osteoarthritis is, why it happens, the symptoms to watch for, how doctors diagnose it, and the treatment options available in India.
@@ -170,85 +182,13 @@ function OsteoarthritisGuide() {
 
 
       <main>
-        {/* <section style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
-            <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
-              <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
-              <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4" }}>Diseases &amp; Conditions</span>
-            </div>
-            <h1
-              className="mb-4"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(48px, 6vw, 64px)",
-                fontWeight: 400,
-                letterSpacing: "-0.5px",
-                color: "#ffffff",
-                maxWidth: "1120px",
-              }}
-            >
-              Osteoarthritis - An Overview
-            </h1>
-            {/* <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
-              <span className="material-symbols-outlined text-[20px]">calendar_month</span>
-              Request an Appointment
-            </a> */}
-          {/* </div> */}
-        {/* </section> */} 
-
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
           <div className="max-w-7xl mx-auto px-6 py-1 md:py-16">
             <div className="lg:flex lg:gap-10">
 
-              {/* ── Left: TOC ── */}
-              <div className="hidden lg:block w-[320px] shrink-0">
-                <div className="sticky top-[88px]">
-                  <div style={{ backgroundColor: "#edf2fc", border: "1px solid #e8ecf0", borderRadius: "4px", overflow: "hidden" }}>
-                    <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#9aa3af", padding: "20px 20px 12px" }}>On This Page</p>
-                    <nav className="flex flex-col">
-                      {tocSections.map((s, i) => {
-                        const isActive = activeSection === s.id
-                        return (
-                          <button
-                            key={s.id}
-                            onClick={() => scrollToSection(s.id)}
-                            className="text-left flex items-center gap-3 py-2.5 pr-5 transition-colors"
-                            style={{ backgroundColor: isActive ? "#e8f4f5" : "transparent", paddingLeft: "0", borderBottom: "1px solid #f0f2f5" }}
-                          >
-                            <div style={{ width: 3, alignSelf: "stretch", backgroundColor: isActive ? "#0f616e" : "transparent", flexShrink: 0 }} />
-                            <span style={{ fontSize: "11px", fontWeight: 600, color: isActive ? "#0f616e" : "#c0c8d0", minWidth: "18px" }}>
-                              {String(i + 1).padStart(2, "0")}
-                            </span>
-                            <span style={{ fontSize: "13.5px", color: isActive ? "#0f616e" : "#4a5568", fontWeight: isActive ? 600 : 400, lineHeight: 1.3 }}>
-                              {s.label}
-                            </span>
-                          </button>
-                        )
-                      })}
-                    </nav>
-                  </div>
-                </div>
-              </div>
-
               {/* ── Left: Article ── */}
               <div className="flex-1 min-w-0 text-left" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a", textAlign: "left" }}>
-
-                {/* Author line */}
-                <div className="flex items-center gap-3 mb-10">
-                  <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-10 h-10 rounded-full object-cover object-top bg-[#f0cfc4]" />
-                  <div>
-                    <p className="text-sm font-semibold text-navy-deep leading-tight">Dr. Raghavendra H</p>
-                    <p className="text-xs text-navy-muted">Rheumatologist &middot; Reviewed May 2026</p>
-                  </div>
-                  <div className="flex items-center gap-2 ml-auto">
-                    {["link", "mail", "share"].map((icon) => (
-                      <button key={icon} className="w-8 h-8 rounded-full bg-ghost flex items-center justify-center text-navy-muted hover:text-navy-deep transition-colors">
-                        <span className="material-symbols-outlined text-[16px]">{icon}</span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
@@ -568,7 +508,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO CONSULT ── */}
-                <div style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div style={{ marginBottom: "4rem", paddingTop: "2rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
@@ -606,7 +546,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TAKE NEXT STEP ── */}
-                <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginBottom: "48px", borderRadius: 0, textAlign: "left" }}>
+                <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginBottom: "4rem", borderRadius: 0, textAlign: "left" }}>
                   <h2 style={{ fontFamily: "var(--font-display)", fontSize: "1.75rem", fontWeight: 400, lineHeight: 1.2, letterSpacing: "-0.3px", marginBottom: "16px" }}>
                     Take the Next Step
                   </h2>
@@ -622,12 +562,26 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── NEWSLETTER ── */}
-                <GoutNewsletter />
+                <div style={{ marginBottom: "4rem" }}>
+                  <GoutNewsletter />
+                </div>
+
+                {/* ── REVIEWER ── */}
+                <div style={{ backgroundColor: "#f8fafc", padding: "22px 24px", marginBottom: "2rem" }}>
+                  <div className="flex items-start gap-3">
+                    <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-11 h-11 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.14em] text-navy-muted/70" style={{ marginBottom: "6px" }}>Medically reviewed by</p>
+                      <p className="text-[15px] font-semibold text-navy-deep leading-tight">Dr. Raghavendra H</p>
+                      <p className="text-[13px] text-navy-muted" style={{ marginTop: "4px" }}>Consultant Rheumatologist &middot; Reviewed May 2026</p>
+                    </div>
+                  </div>
+                </div>
 
                 {/* ── REFERENCES ── */}
                 <div style={{ borderTop: "1px solid #dadfe8", paddingTop: "2rem", marginTop: "2rem", marginBottom: "2rem" }}>
                   <p className="text-[13px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "2rem" }}>
-                    Medically reviewed by Dr. Raghavendra H, Consultant Rheumatologist. Last updated: May 2026. This content is for informational purposes only and does not substitute professional medical advice.
+                    Last updated: May 2026. This content is for informational purposes only and does not substitute professional medical advice.
                   </p>
                   <p className="text-xs font-bold uppercase tracking-[0.15em] text-navy-muted" style={{ marginBottom: "1rem" }}>References</p>
                   <ol className="space-y-3" style={{ paddingLeft: "1.25rem" }}>
@@ -648,6 +602,36 @@ function OsteoarthritisGuide() {
 
                 <hr className="border-none border-t border-[#dcdcdc] mt-10" />
               </div>
+
+              {/* ── Right: TOC ── */}
+              <aside className="hidden lg:block w-[300px] shrink-0">
+                <div className="sticky top-[88px]">
+                  <div style={{ backgroundColor: "#edf2fc", overflow: "hidden" }}>
+                    <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
+                    <nav className="flex flex-col">
+                      {tocSections.map((s, i) => {
+                        const isActive = activeSection === s.id
+                        return (
+                          <button
+                            key={s.id}
+                            onClick={() => scrollToSection(s.id)}
+                            className="text-left flex items-center gap-3 py-2.5 pr-5 transition-colors"
+                            style={{ backgroundColor: isActive ? "#e2eef9" : "transparent", paddingLeft: "0", borderBottom: "1px solid rgba(15,97,110,0.08)" }}
+                          >
+                            <div style={{ width: 3, alignSelf: "stretch", backgroundColor: isActive ? "#0f616e" : "transparent", flexShrink: 0 }} />
+                            <span style={{ fontSize: "11px", fontWeight: 600, color: isActive ? "#0f616e" : "#9aa7b8", minWidth: "18px" }}>
+                              {String(i + 1).padStart(2, "0")}
+                            </span>
+                            <span style={{ fontSize: "13.5px", color: isActive ? "#0f616e" : "#4a5568", fontWeight: isActive ? 600 : 400, lineHeight: 1.3 }}>
+                              {s.label}
+                            </span>
+                          </button>
+                        )
+                      })}
+                    </nav>
+                  </div>
+                </div>
+              </aside>
 
             </div>
           </div>
