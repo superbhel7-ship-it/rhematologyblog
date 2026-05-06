@@ -111,10 +111,6 @@ function OsteoarthritisAdvanced() {
             >
               Osteoarthritis - Treatment, Various Treatment Plans
             </h1>
-            {/* <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
-              <span className="material-symbols-outlined text-[20px]">calendar_month</span>
-              Request an Appointment
-            </a> */}
           </div>
         </section>
 
@@ -333,7 +329,6 @@ function OsteoarthritisAdvanced() {
                 </div>
 
                 {/* ── KEY FACTORS divider ── */}
-                <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginTop: "1rem" }} />
                 <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
@@ -347,7 +342,8 @@ function OsteoarthritisAdvanced() {
                     There's no one-size-fits-all answer here. Based on your condition, your rheumatologist will recommend the best option suitable for you.
                   </p>
                 </div>
-                <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginBottom: "2.5rem" }} />
+
+                <hr style={{ border: "none", borderTop: "1px solid #dadfe8", marginBottom: "0" }} />
 
                 {/* ── COMPARISON TABLE ── */}
                 <div id="comparison" data-toc-section style={{ marginBottom: "2.5rem" }}>
@@ -434,15 +430,15 @@ function OsteoarthritisAdvanced() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#1AA3B5", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#e0f3f5", color: "#0f616e", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>
-                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
-                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2 }}>Dr. Raghavendra H</p>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "#0f616e", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#0f616e" }}>Dr. Raghavendra H</p>
                       </div>
                     </div>
-                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "#2d5a62", marginBottom: "14px" }}>
                       Consultant Rheumatologist for osteoarthritis evaluation and long-term joint care.
                     </p>
                     <a
