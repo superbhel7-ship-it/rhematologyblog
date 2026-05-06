@@ -135,15 +135,15 @@ function OsteoarthritisGuide() {
                 What It Is, Symptoms, Causes & Treatment Options
               </p>
 
-              <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
+              {/* <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
                 Learn what osteoarthritis is, why it happens, the symptoms to watch for, how doctors diagnose it, and the treatment options available in India.
-              </p>
+              </p> */}
             </div>
 
             {/* Right: Image */}
             <div className="hidden md:block" style={{ width: "420px", height: "clamp(240px, 24vw, 300px)", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end", backgroundColor: "rgba(255,255,255,0.08)" }}>
               <img
-                src="/condition/Osteoarthritis.png"
+                src="/images/hero10.png"
                 alt="Osteoarthritis"
                 style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
               />
@@ -188,7 +188,7 @@ function OsteoarthritisGuide() {
             <div className="lg:flex lg:gap-10">
 
               {/* ── Left: Article ── */}
-              <div className="flex-1 min-w-0 text-left" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a", textAlign: "left" }}>
+              <div className="flex-1 min-w-0 text-left guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a", textAlign: "left" }}>
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
@@ -354,18 +354,22 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── INLINE CTA BANNER ── */}
-                <div style={{ backgroundColor: "#0f616e", borderRadius: "14px", padding: "28px 32px", marginBottom: "4rem", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "24px", flexWrap: "wrap", textAlign: "left" }}>
-                  <div style={{ flex: 1, minWidth: "220px" }}>
-                    <p style={{ fontSize: "18px", fontWeight: 700, color: "#ffffff", marginBottom: "8px", lineHeight: 1.3 }}>Worried these symptoms sound familiar?</p>
-                    <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.78)", lineHeight: 1.65 }}>Get a personal review from Dr. Raghavendra. Most patients leave their first visit with clarity on what&apos;s happening and a plan for next steps.</p>
+                {/* <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: "8px", padding: "0", marginBottom: "4rem", display: "flex", alignItems: "stretch", overflow: "hidden", textAlign: "left", fontFamily: "var(--font-base)" }}>
+                  <div className="guide-cta-photo" style={{ width: "126px", flexShrink: 0, backgroundColor: "#0a4f5a", display: "flex", alignItems: "flex-end", justifyContent: "center", paddingTop: "18px" }}>
+                    <img src="/raghav.png" alt="Dr. Raghavendra H" style={{ width: "92px", height: "118px", objectFit: "cover", objectPosition: "center top", display: "block" }} />
                   </div>
-                  <a
-                    href="#"
-                    style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontWeight: 600, fontSize: "14px", padding: "13px 26px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}
-                  >
-                    Book a Visit →
-                  </a>
-                </div>
+                  <div className="guide-cta-copy" style={{ flex: 1, minWidth: "220px", padding: "26px 30px" }}>
+                    <p style={{ fontFamily: "var(--font-base)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.13em", color: "#a0e2e4", marginBottom: "9px" }}>Reviewed consultation</p>
+                    <p style={{ fontFamily: "var(--font-base)", fontSize: "20px", fontWeight: 800, color: "#ffffff", marginBottom: "9px", lineHeight: 1.25 }}>Worried these symptoms sound familiar?</p>
+                    <p style={{ fontFamily: "var(--font-base)", fontSize: "14px", color: "rgba(255,255,255,0.82)", lineHeight: 1.65, maxWidth: "560px", marginBottom: "18px" }}>Get a personal review from Dr. Raghavendra. Most patients leave their first visit with clarity on what&apos;s happening and a plan for next steps.</p>
+                    <a
+                      href="#"
+                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 22px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap" }}
+                    >
+                      Book a Visit →
+                    </a>
+                  </div>
+                </div> */}
 
                 {/* ── KEY FACTORS divider ── */}
                 <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginTop: "1rem" }} />
@@ -515,12 +519,12 @@ function OsteoarthritisGuide() {
                     When to see a rheumatologist
                   </h2>
 
-                  <div style={{ backgroundColor: "#fdf3ee", borderRadius: "16px", padding: "32px", textAlign: "left" }}>
+                  <div style={{ backgroundColor: "#fdf3ee", borderRadius: "8px", padding: "32px", textAlign: "left", fontFamily: "var(--font-base)" }}>
                     <div className="flex items-start gap-3" style={{ marginBottom: "1.5rem" }}>
                       <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                         <span className="material-symbols-outlined text-white text-[18px]">priority_high</span>
                       </div>
-                      <p style={{ fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>Book an evaluation if joint pain is affecting daily life</p>
+                      <p style={{ fontFamily: "var(--font-base)", fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>Book an evaluation if joint pain is affecting daily life</p>
                     </div>
 
                     <ul style={{ listStyleType: "disc", paddingLeft: "1.25rem", marginBottom: "2rem" }}>
@@ -532,13 +536,13 @@ function OsteoarthritisGuide() {
                         "Hand pain that affects grip, writing, cooking, opening jars, or buttoning clothes",
                         "Pain that starts disturbing sleep, work, prayer, travel, or daily movement",
                       ].map((item, i) => (
-                        <li key={i} className="text-[16px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>{item}</li>
+                        <li key={i} className="text-[16px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem", fontFamily: "var(--font-base)" }}>{item}</li>
                       ))}
                     </ul>
 
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontWeight: 600, fontSize: "14px", padding: "12px 24px", borderRadius: "9999px", textDecoration: "none" }}
+                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 600, fontSize: "14px", padding: "12px 24px", borderRadius: "9999px", textDecoration: "none" }}
                     >
                       Book a Specialist Visit →
                     </a>
@@ -566,24 +570,12 @@ function OsteoarthritisGuide() {
                   <GoutNewsletter />
                 </div>
 
-                {/* ── REVIEWER ── */}
-                <div style={{ backgroundColor: "#f8fafc", padding: "22px 24px", marginBottom: "2rem" }}>
-                  <div className="flex items-start gap-3">
-                    <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-11 h-11 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-[0.14em] text-navy-muted/70" style={{ marginBottom: "6px" }}>Medically reviewed by</p>
-                      <p className="text-[15px] font-semibold text-navy-deep leading-tight">Dr. Raghavendra H</p>
-                      <p className="text-[13px] text-navy-muted" style={{ marginTop: "4px" }}>Consultant Rheumatologist &middot; Reviewed May 2026</p>
-                    </div>
-                  </div>
-                </div>
-
                 {/* ── REFERENCES ── */}
                 <div style={{ borderTop: "1px solid #dadfe8", paddingTop: "2rem", marginTop: "2rem", marginBottom: "2rem" }}>
-                  <p className="text-[13px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "2rem" }}>
+                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "2rem" }}>
                     Last updated: May 2026. This content is for informational purposes only and does not substitute professional medical advice.
                   </p>
-                  <p className="text-xs font-bold uppercase tracking-[0.15em] text-navy-muted" style={{ marginBottom: "1rem" }}>References</p>
+                  <p className="text-[14px] font-bold uppercase tracking-[0.15em] text-navy-muted" style={{ marginBottom: "1rem" }}>References</p>
                   <ol className="space-y-3" style={{ paddingLeft: "1.25rem" }}>
                     {[
                       "Chopra A, et al. COPCORD India Study. Indian Journal of Rheumatology. 2012.",
@@ -595,7 +587,7 @@ function OsteoarthritisGuide() {
                       "None RT, Bandi PVS, None AR. Prevalence and Clinical Profile of OA Knee. Journal of Contemporary Clinical Practice. 2025;11(10):399-404.",
                       "Ouyang Y, Dai M. Global burden of knee osteoarthritis. J Orthop Surg Res. 2025;20(1):766. doi:10.1186/s13018-025-06140-0.",
                     ].map((ref, i) => (
-                      <li key={i} className="text-[13px] leading-[1.65] text-navy-muted" style={{ listStyleType: "decimal" }}>{ref}</li>
+                      <li key={i} className="text-[15px] leading-[1.7] text-navy-muted" style={{ listStyleType: "decimal" }}>{ref}</li>
                     ))}
                   </ol>
                 </div>
@@ -605,8 +597,8 @@ function OsteoarthritisGuide() {
 
               {/* ── Right: TOC ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
-                <div className="sticky top-[88px]">
-                  <div style={{ backgroundColor: "#edf2fc", overflow: "hidden" }}>
+                <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
+                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {
@@ -615,8 +607,8 @@ function OsteoarthritisGuide() {
                           <button
                             key={s.id}
                             onClick={() => scrollToSection(s.id)}
-                            className="text-left flex items-center gap-3 py-2.5 pr-5 transition-colors"
-                            style={{ backgroundColor: isActive ? "#e2eef9" : "transparent", paddingLeft: "16px", borderBottom: "1px solid rgba(15,97,110,0.08)" }}
+                            className="text-left flex items-center gap-3 pr-5 transition-colors"
+                            style={{ backgroundColor: isActive ? "#e2eef9" : "transparent", paddingLeft: "16px", paddingTop: "9px", paddingBottom: "9px", borderBottom: "1px solid rgba(15,97,110,0.08)" }}
                           >
                             <div style={{ width: 3, alignSelf: "stretch", backgroundColor: isActive ? "#0f616e" : "transparent", flexShrink: 0 }} />
                             <span style={{ fontSize: "11px", fontWeight: 600, color: isActive ? "#0f616e" : "#9aa7b8", minWidth: "18px" }}>
@@ -629,6 +621,24 @@ function OsteoarthritisGuide() {
                         )
                       })}
                     </nav>
+                  </div>
+                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                    <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
+                      <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
+                      <div>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2 }}>Dr. Raghavendra H</p>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
+                      Consultant Rheumatologist for osteoarthritis evaluation and long-term joint care.
+                    </p>
+                    <a
+                      href="#"
+                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                    >
+                      Book a Visit →
+                    </a>
                   </div>
                 </div>
               </aside>

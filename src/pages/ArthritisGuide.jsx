@@ -97,11 +97,14 @@ const tocItems = [
   { id: "faq", label: "FAQs" },
 ]
 
+const tealHighlight = { backgroundColor: "#d1edf0", borderRadius: "3px", padding: "1px 4px", fontWeight: 600 }
+const peachHighlight = { backgroundColor: "#fde1d5", borderRadius: "3px", padding: "1px 4px", fontWeight: 600 }
+
 function ArthritisGuide() {
   const [activeSection, setActiveSection] = useState("what-is-ra")
 
   useEffect(() => {
-    document.title = "Understanding Rheumatoid Arthritis | RheumaInsights"
+    document.title = "Rheumatoid Arthritis: What It Is, Symptoms, Causes & Treatment Options | RheumaInsights"
     return () => { document.title = "RheumaInsights | Professional Rheumatology Resource" }
   }, [])
 
@@ -171,9 +174,21 @@ function ArthritisGuide() {
                   Rheumatoid Arthritis
                 </h1>
 
-                <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-                  Rheumatoid arthritis is a long-term condition where the body's immune system attacks its own joints. This guide covers what RA is, its symptoms, causes, how doctors diagnose it, and the treatment options available in India.
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "clamp(20px, 3vw, 32px)",
+                    lineHeight: 1.2,
+                    color: "rgba(255,255,255,0.92)",
+                    marginBottom: 0,
+                  }}
+                >
+                  What It Is, Symptoms, Causes &amp; Treatment Options
                 </p>
+
+                {/* <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
+                  Rheumatoid arthritis is a long-term condition where the body's immune system attacks its own joints. This guide covers what RA is, its symptoms, causes, how doctors diagnose it, and the treatment options available in India.
+                </p> */}
 
               </div>
 
@@ -219,67 +234,39 @@ function ArthritisGuide() {
 
         {/* ═══════════ ARTICLE BODY + TOC ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-1 md:py-16">
+          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
             <div className="lg:flex lg:gap-10">
 
-              {/* ── Left: TOC ── */}
-              <div className="hidden lg:block w-[320px] shrink-0">
-                <div className="sticky top-[88px]">
-                  <div style={{ backgroundColor: "#edf2fc", border: "1px solid #e8ecf0", borderRadius: "4px", overflow: "hidden" }}>
-                    <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#9aa3af", padding: "20px 20px 12px" }}>On This Page</p>
-                    <nav className="flex flex-col">
-                      {tocItems.map((s, i) => {
-                        const isActive = activeSection === s.id
-                        return (
-                          <button
-                            key={s.id}
-                            onClick={() => scrollToSection(s.id)}
-                            className="text-left flex items-center gap-3 py-2.5 pr-5 transition-colors"
-                            style={{ backgroundColor: isActive ? "#e8f4f5" : "transparent", paddingLeft: "0", borderBottom: "1px solid #f0f2f5" }}
-                          >
-                            <div style={{ width: 3, alignSelf: "stretch", backgroundColor: isActive ? "#0f616e" : "transparent", flexShrink: 0 }} />
-                            <span style={{ fontSize: "11px", fontWeight: 600, color: isActive ? "#0f616e" : "#c0c8d0", minWidth: "18px" }}>
-                              {String(i + 1).padStart(2, "0")}
-                            </span>
-                            <span style={{ fontSize: "13.5px", color: isActive ? "#0f616e" : "#4a5568", fontWeight: isActive ? 600 : 400, lineHeight: 1.3 }}>
-                              {s.label}
-                            </span>
-                          </button>
-                        )
-                      })}
-                    </nav>
-                  </div>
-                </div>
-              </div>
-
-              {/* ── Right: Article Content ── */}
-              <div className="flex-1 min-w-0" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
+              {/* ── Left: Article Content ── */}
+              <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
 
                 {/* ── OVERVIEW ── */}
-                <div id="overview" data-toc-section className="mb-0 md:mb-8">
+                <div id="overview" data-toc-section className="mb-4 md:mb-8">
                 </div>
 
                 {/* Author line hidden by request */}
 
                 {/* Intro */}
-                <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
-                  Have you ever experienced weakness or tiredness in your joints that makes it difficult to perform daily tasks? Do you often normalise these symptoms and ignore them? If you have experienced anything similar, this article covers everything you need to know.
-                </p>
-                <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                  Rheumatoid arthritis is a long-term health condition in which the body&apos;s immune system fights against itself. As a result, you often experience pain, swelling, and, when left untreated, long-lasting damage. The exact cause is unknown.
-                </p>
-                <p className="text-[16px] leading-[1.8] text-navy-muted mb-5">
-                  Rheumatoid arthritis is becoming increasingly common in India. <span style={{ backgroundColor: "rgba(26,163,181,0.12)", borderRadius: "3px", padding: "1px 4px" }}>It especially affects women between 40 and 60 years old.</span> Many people think of it as regular joint pain and avoid a rheumatologist consultation, which can lead to serious health issues.
-                </p>
-                <p className="text-[16px] leading-[1.8] text-navy-muted mb-10">
-                  <span style={{ backgroundColor: "rgba(250,136,90,0.13)", borderRadius: "3px", padding: "1px 4px" }}>With early diagnosis and proper treatment, RA can be controlled effectively.</span> This guide will help you understand all about rheumatoid arthritis (RA), its various causes, how it presents, how doctors diagnose cases, and the available treatment options.
-                </p>
+                <div style={{  marginBottom: "1rem" , }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
+                    Have you ever experienced weakness or tiredness in your joints that makes it difficult to perform daily tasks? Do you often normalise these symptoms and ignore them? If you have experienced anything similar, this article covers everything you need to know.
+                  </p>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
+                    Rheumatoid arthritis is a long-term health condition in which the body&apos;s immune system fights against itself. As a result, you often experience pain, swelling, and, when left untreated, long-lasting damage. The exact cause is unknown.
+                  </p>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted mb-5">
+                    Rheumatoid arthritis is becoming increasingly common in India. <span style={tealHighlight}>It especially affects women between 40 and 60 years old.</span> Many people think of it as regular joint pain and avoid a rheumatologist consultation, which can lead to serious health issues.
+                  </p>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted">
+                    <span style={peachHighlight}>With early diagnosis and proper treatment, RA can be controlled effectively.</span> This guide will help you understand all about rheumatoid arthritis (RA), its various causes, how it presents, how doctors diagnose cases, and the available treatment options.
+                  </p>
+                </div>
 
                 {/* ── WHAT IS RA ── */}
-                <div id="what-is-ra" style={{ marginBottom: "3.5rem", marginTop: "2.5rem" }}>
+                <div id="what-is-ra" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     What is Rheumatoid Arthritis?
                   </h2>
@@ -287,18 +274,18 @@ function ArthritisGuide() {
                     Joints are where two bones meet, such as your knuckles, knees, or wrists. Inside each joint is a thin lining called the synovium. The synovium produces fluid that helps your joints move smoothly and stay healthy.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    In rheumatoid arthritis (RA), <span style={{ backgroundColor: "rgba(26,163,181,0.12)", borderRadius: "3px", padding: "1px 4px" }}>your body becomes confused and starts attacking its own joints rather than protecting them.</span> This is called an autoimmune condition. It often affects joints on both sides of your body, like both hands or both feet at the same time. Rheumatoid arthritis can also affect other parts of your body, like your skin, eyes, lungs, heart, and blood vessels.
+                    In rheumatoid arthritis (RA), <span style={tealHighlight}>your body becomes confused and starts attacking its own joints rather than protecting them.</span> This is called an autoimmune condition. It often affects joints on both sides of your body, like both hands or both feet at the same time. Rheumatoid arthritis can also affect other parts of your body, like your skin, eyes, lungs, heart, and blood vessels.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    <span style={{ backgroundColor: "rgba(250,136,90,0.13)", borderRadius: "3px", padding: "1px 4px" }}>Rheumatoid arthritis is different from osteoarthritis</span>, which happens due to wear and tear as people age. Osteoarthritis often affects just one side of the body and does not cause tiredness like RA does.
+                    <span style={peachHighlight}>Rheumatoid arthritis is different from osteoarthritis</span>, which happens due to wear and tear as people age. Osteoarthritis often affects just one side of the body and does not cause tiredness like RA does.
                   </p>
                 </div>
 
                 {/* ── SYMPTOMS ── */}
-                <div id="symptoms" style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="symptoms" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     What are the symptoms of Rheumatoid Arthritis?
                   </h2>
@@ -315,29 +302,33 @@ function ArthritisGuide() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-5">
                     Rheumatoid arthritis symptoms don&apos;t stay the same all the time &mdash; they can come and go. Periods when symptoms get worse are called{" "}
                     <strong className="font-bold">flares</strong>, while times when you feel better are known as{" "}
-                    <strong className="font-bold">remission</strong>. <span style={{ backgroundColor: "rgba(26,163,181,0.12)", borderRadius: "3px", padding: "1px 4px" }}>Early diagnosis plays an important role in preventing permanent joint damage.</span>
+                    <strong className="font-bold">remission</strong>. <span style={tealHighlight}>Early diagnosis plays an important role in preventing permanent joint damage.</span>
                   </p>
                 </div>
 
                 {/* ── INLINE CTA BANNER ── */}
-                <div style={{ backgroundColor: "#0f616e", borderRadius: "14px", padding: "28px 32px", marginBottom: "4rem", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "24px", flexWrap: "wrap" }}>
-                  <div style={{ flex: 1, minWidth: "220px" }}>
-                    <p style={{ fontSize: "18px", fontWeight: 700, color: "#ffffff", marginBottom: "8px", lineHeight: 1.3 }}>Worried these symptoms sound familiar?</p>
-                    <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.78)", lineHeight: 1.65 }}>Get a personal review from Dr. Raghavendra. Most patients leave their first visit with clarity on what&apos;s happening and a plan for next steps.</p>
+                {/* <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: "8px", padding: "0", marginBottom: "4rem", display: "flex", alignItems: "stretch", overflow: "hidden", fontFamily: "var(--font-base)" }}>
+                  <div className="guide-cta-photo" style={{ width: "126px", flexShrink: 0, backgroundColor: "#0a4f5a", display: "flex", alignItems: "flex-end", justifyContent: "center", paddingTop: "18px" }}>
+                    <img src="/raghav.png" alt="Dr. Raghavendra H" style={{ width: "92px", height: "118px", objectFit: "cover", objectPosition: "center top", display: "block" }} />
                   </div>
-                  <a
-                    href="#"
-                    style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontWeight: 600, fontSize: "14px", padding: "13px 26px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}
-                  >
-                    Book a Visit →
-                  </a>
-                </div>
+                  <div className="guide-cta-copy" style={{ flex: 1, minWidth: "220px", padding: "26px 30px" }}>
+                    <p style={{ fontFamily: "var(--font-base)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.13em", color: "#a0e2e4", marginBottom: "9px" }}>Reviewed consultation</p>
+                    <p style={{ fontFamily: "var(--font-base)", fontSize: "20px", fontWeight: 800, color: "#ffffff", marginBottom: "9px", lineHeight: 1.25 }}>Worried these symptoms sound familiar?</p>
+                    <p style={{ fontFamily: "var(--font-base)", fontSize: "14px", color: "rgba(255,255,255,0.82)", lineHeight: 1.65, maxWidth: "560px", marginBottom: "18px" }}>Get a personal review from Dr. Raghavendra. Most patients leave their first visit with clarity on what&apos;s happening and a plan for next steps.</p>
+                    <a
+                      href="#"
+                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 22px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap" }}
+                    >
+                      Book a Visit →
+                    </a>
+                  </div>
+                </div> */}
 
                 {/* ── STAGES ── */}
-                <div id="stages" style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="stages" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     Stages of Rheumatoid Arthritis
                   </h2>
@@ -376,18 +367,18 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── CAUSES & RISK FACTORS ── */}
-                <div id="causes" style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="causes" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     What are the causes of Rheumatoid Arthritis?
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-5">
-                    <span style={{ backgroundColor: "rgba(250,136,90,0.13)", borderRadius: "3px", padding: "1px 4px" }}>The exact cause of rheumatoid arthritis is unknown.</span> Researchers think it is caused by a combination of genetics, hormones, and environmental factors.
+                    <span style={peachHighlight}>The exact cause of rheumatoid arthritis is unknown.</span> Researchers think it is caused by a combination of genetics, hormones, and environmental factors.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-8">
-                    Your immune system normally protects your body from infections. In rheumatoid arthritis, it gets confused and starts attacking your own joints instead. <span style={{ backgroundColor: "rgba(26,163,181,0.12)", borderRadius: "3px", padding: "1px 4px" }}>Certain factors, like smoking or infections, may trigger this response.</span>
+                    Your immune system normally protects your body from infections. In rheumatoid arthritis, it gets confused and starts attacking your own joints instead. <span style={tealHighlight}>Certain factors, like smoking or infections, may trigger this response.</span>
                   </p>
 
                   <h3
@@ -406,10 +397,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── DIAGNOSIS ── */}
-                <div id="diagnosis" style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="diagnosis" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     How does a doctor diagnose Rheumatoid Arthritis?
                   </h2>
@@ -420,7 +411,7 @@ function ArthritisGuide() {
                     A detailed history about pain, swelling, the duration it will last, and any other medical history will be taken. The doctor will check your joint movement, colour changes, and for any palpable firm swellings.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2.5rem" }}>
-                    <span style={{ backgroundColor: "rgba(250,136,90,0.13)", borderRadius: "3px", padding: "1px 4px" }}>There is no single test that confirms rheumatoid arthritis.</span> Rheumatologists recommend blood and imaging tests to reach a final diagnosis.
+                    <span style={peachHighlight}>There is no single test that confirms rheumatoid arthritis.</span> Rheumatologists recommend blood and imaging tests to reach a final diagnosis.
                   </p>
 
                   {/* Blood tests + Imaging -two columns */}
@@ -457,16 +448,16 @@ function ArthritisGuide() {
                   </div>
                 </div>
 
-                <div id="treatment" style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="treatment" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     What are the treatment options available for Rheumatoid Arthritis?
                   </h2>
 
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
-                    The main aim of treatment is to reduce the symptoms. <span style={{ backgroundColor: "rgba(26,163,181,0.12)", borderRadius: "3px", padding: "1px 4px" }}>Once treatment begins, you will be evaluated every 3-6 months to monitor the disease&apos;s progression.</span> If it does not improve, your doctor will increase the medication dosage or implement other methodologies.
+                    The main aim of treatment is to reduce the symptoms. <span style={tealHighlight}>Once treatment begins, you will be evaluated every 3-6 months to monitor the disease&apos;s progression.</span> If it does not improve, your doctor will increase the medication dosage or implement other methodologies.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2.5rem" }}>
                     Rheumatologists usually begin the treatment with medications and other non-medicated options. If the disease progression is not improved, surgery would be the last option.
@@ -509,15 +500,15 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── MANAGING RA ── */}
-                <div id="managing-ra" style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="managing-ra" style={{ marginBottom: "2rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     Managing Rheumatoid Arthritis on a Day-to-Day Basis
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-10">
-                    <span style={{ backgroundColor: "rgba(250,136,90,0.13)", borderRadius: "3px", padding: "1px 4px" }}>With appropriate treatment and supportive therapy, many people are leading an active life</span> despite the disease having a lifelong predilection.
+                    <span style={peachHighlight}>With appropriate treatment and supportive therapy, many people are leading an active life</span> despite the disease having a lifelong predilection.
                   </p>
 
                   {/* Diet */}
@@ -541,7 +532,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── EARLY RESPONSE ── */}
-                <div style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div style={{ marginBottom: "2rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h3
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", marginBottom: "1rem", textTransform: "uppercase" }}
@@ -552,7 +543,7 @@ function ArthritisGuide() {
                     When symptoms like joint stiffness on either side, generalised severe fatigue, and abnormal joint pain occur, it is always better to consult a rheumatologist.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-                    <span style={{ backgroundColor: "rgba(26,163,181,0.12)", borderRadius: "3px", padding: "1px 4px" }}>The initial three-month duration is the window during which the damage is processed.</span> If we take the initiative to treat early, we can make a difference for the rest of our lives.
+                    <span style={tealHighlight}>The initial three-month duration is the window during which the damage is processed.</span> If we take the initiative to treat early, we can make a difference for the rest of our lives.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginTop: "2rem" }}>
                     If you are experiencing persistent joint pain, stiffness, or swelling, don&apos;t ignore it. Early evaluation by a rheumatologist can make a significant difference in preventing long-term damage.
@@ -560,10 +551,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO SEE A RHEUMATOLOGIST ── */}
-                <div id="when-to-see" style={{ marginBottom: "5rem", paddingTop: "2.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="when-to-see" style={{ marginBottom: "4rem", paddingTop: "2rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
                     When to see a rheumatologist
                   </h2>
@@ -598,12 +589,74 @@ function ArthritisGuide() {
                   </div>
                 </div>
 
-                <GoutNewsletter />
+                <div style={{ marginBottom: "4rem" }}>
+                  <GoutNewsletter />
+                </div>
+
+                {/* ── REVIEWER ── */}
+                <div className="guide-reviewer" style={{ backgroundColor: "#f8fafc", padding: "22px 24px", marginBottom: "2rem" }}>
+                  <div style={{ height: "3px", width: "64px", backgroundColor: "#fa885a", marginBottom: "18px" }} />
+                  <div className="flex items-start gap-4">
+                    <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-11 h-11 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-[0.14em] text-navy-muted/70" style={{ marginBottom: "6px" }}>Medically reviewed by</p>
+                      <p className="text-[15px] font-semibold text-navy-deep leading-tight">Dr. Raghavendra H</p>
+                      <p className="text-[13px] text-navy-muted" style={{ marginTop: "4px" }}>Consultant Rheumatologist &middot; Reviewed May 2026</p>
+                    </div>
+                  </div>
+                </div>
 
                 <hr className="border-none border-t border-[#dcdcdc] mt-12" />
 
               </div>
 
+              {/* ── Right: TOC ── */}
+              <aside className="hidden lg:block w-[360px] shrink-0">
+                <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
+                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                    <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
+                    <nav className="flex flex-col">
+                      {tocItems.map((s, i) => {
+                        const isActive = activeSection === s.id
+                        return (
+                          <button
+                            key={s.id}
+                            onClick={() => scrollToSection(s.id)}
+                            className="text-left flex items-center gap-3 pr-5 transition-colors"
+                            style={{ backgroundColor: isActive ? "#e2eef9" : "transparent", paddingLeft: "16px", paddingTop: "9px", paddingBottom: "9px", borderBottom: "1px solid rgba(15,97,110,0.08)", borderRadius: 0 }}
+                          >
+                            <div style={{ width: 3, alignSelf: "stretch", backgroundColor: isActive ? "#0f616e" : "transparent", flexShrink: 0 }} />
+                            <span style={{ fontSize: "11px", fontWeight: 600, color: isActive ? "#0f616e" : "#9aa7b8", minWidth: "18px" }}>
+                              {String(i + 1).padStart(2, "0")}
+                            </span>
+                            <span style={{ fontSize: "13.5px", color: isActive ? "#0f616e" : "#4a5568", fontWeight: isActive ? 600 : 400, lineHeight: 1.3 }}>
+                              {s.label}
+                            </span>
+                          </button>
+                        )
+                      })}
+                    </nav>
+                  </div>
+                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                    <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
+                      <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
+                      <div>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2 }}>Dr. Raghavendra H</p>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
+                      Consultant Rheumatologist for rheumatoid arthritis evaluation and long-term joint care.
+                    </p>
+                    <a
+                      href="#"
+                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                    >
+                      Book a Visit →
+                    </a>
+                  </div>
+                </div>
+              </aside>
 
             </div>
           </div>

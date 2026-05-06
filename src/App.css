@@ -272,3 +272,58 @@
     padding: 10px 12px;
   }
 }
+
+@media (max-width: 768px) {
+  .blog-article-content p,
+  .blog-article-content li,
+  .guide-article-content p,
+  .guide-article-content li {
+    text-align: justify !important;
+    text-align-last: left;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
+
+  .guide-article-content .guide-cta p {
+    text-align: left !important;
+    text-align-last: auto;
+    hyphens: none;
+  }
+
+  .guide-article-content .guide-cta {
+    flex-direction: column !important;
+  }
+
+  .guide-article-content .guide-cta-photo {
+    width: 100% !important;
+    height: 116px;
+    align-items: flex-end !important;
+    justify-content: flex-start !important;
+    padding: 14px 24px 0 !important;
+  }
+
+  .guide-article-content .guide-cta-photo img {
+    width: 78px !important;
+    height: 102px !important;
+  }
+
+  .guide-article-content .guide-cta-copy {
+    min-width: 0 !important;
+    padding: 22px 24px 26px !important;
+  }
+
+  .guide-article-content .guide-reviewer {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+.guide-sidebar-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.guide-sidebar-scroll::-webkit-scrollbar {
+  display: none;
+}

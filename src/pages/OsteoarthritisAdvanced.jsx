@@ -385,10 +385,10 @@ function OsteoarthritisAdvanced() {
 
                 {/* ── REFERENCES ── */}
                 <div style={{ borderTop: "1px solid #dadfe8", paddingTop: "2rem", marginTop: "2rem", marginBottom: "2rem" }}>
-                  <p className="text-[13px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "2rem" }}>
+                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "2rem" }}>
                     Medically reviewed by Dr. Raghavendra H, Consultant Rheumatologist. Last updated: May 2026. This content is for informational purposes only and does not substitute professional medical advice. Costs mentioned are approximate and may vary by hospital, city, and individual clinical circumstances.
                   </p>
-                  <p className="text-xs font-bold uppercase tracking-[0.15em] text-navy-muted" style={{ marginBottom: "1rem" }}>References</p>
+                  <p className="text-[14px] font-bold uppercase tracking-[0.15em] text-navy-muted" style={{ marginBottom: "1rem" }}>References</p>
                   <ol className="space-y-3" style={{ paddingLeft: "1.25rem" }}>
                     {[
                       "Kolasinski SL, et al. ACR/Arthritis Foundation Guideline for the Management of OA. Arthritis Care and Research. 2020.",
@@ -399,7 +399,7 @@ function OsteoarthritisAdvanced() {
                       "Lee CJ, et al. Intra-articular Hyaluronic Acid for Knee OA. JB JS Open Access. 2026;11(1):e25.00335. doi:10.2106/JBJS.OA.25.00335.",
                       "Arthritis Foundation. www.arthritis.org.",
                     ].map((ref, i) => (
-                      <li key={i} className="text-[13px] leading-[1.65] text-navy-muted" style={{ listStyleType: "decimal" }}>{ref}</li>
+                      <li key={i} className="text-[15px] leading-[1.7] text-navy-muted" style={{ listStyleType: "decimal" }}>{ref}</li>
                     ))}
                   </ol>
                 </div>
@@ -407,34 +407,53 @@ function OsteoarthritisAdvanced() {
                 <hr className="border-none border-t border-[#dcdcdc] mt-10" />
               </div>
 
-              {/* ── Right: TOC + CTA Sidebar ── */}
-              <div className="hidden lg:block w-[320px] shrink-0">
-                <div className="sticky top-[88px]">
-
-                  <div className="bg-[#edf2fc] py-5 px-6 mb-6" style={{ borderRadius: 0 }}>
-                    <h3 className="text-navy-deep mb-3" style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", fontWeight: 400, lineHeight: 1.2 }}>
-                      Table of Contents
-                    </h3>
+              {/* ── Right: TOC + Dr Card Sidebar ── */}
+              <aside className="hidden lg:block w-[360px] shrink-0">
+                <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
+                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                    <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
-                      {tocSections.map((s) => (
-                        <button
-                          key={s.id}
-                          onClick={() => scrollToSection(s.id)}
-                          className="text-left py-2 border-b border-navy-deep/8 last:border-0"
-                        >
-                          <span
-                            className={`text-[13.5px] ${activeSection === s.id ? "text-navy-deep font-semibold" : "text-navy-deep/70 hover:text-navy-deep"}`}
-                            style={{ textDecoration: "underline", textDecorationColor: "currentColor", textUnderlineOffset: "4px", textDecorationThickness: "1px" }}
+                      {tocSections.map((s, i) => {
+                        const isActive = activeSection === s.id
+                        return (
+                          <button
+                            key={s.id}
+                            onClick={() => scrollToSection(s.id)}
+                            className="text-left flex items-center gap-3 pr-5 transition-colors"
+                            style={{ backgroundColor: isActive ? "#e2eef9" : "transparent", paddingLeft: "16px", paddingTop: "9px", paddingBottom: "9px", borderBottom: "1px solid rgba(15,97,110,0.08)", borderRadius: 0 }}
                           >
-                            {s.label}
-                          </span>
-                        </button>
-                      ))}
+                            <div style={{ width: 3, alignSelf: "stretch", backgroundColor: isActive ? "#0f616e" : "transparent", flexShrink: 0 }} />
+                            <span style={{ fontSize: "11px", fontWeight: 600, color: isActive ? "#0f616e" : "#9aa7b8", minWidth: "18px" }}>
+                              {String(i + 1).padStart(2, "0")}
+                            </span>
+                            <span style={{ fontSize: "13.5px", color: isActive ? "#0f616e" : "#4a5568", fontWeight: isActive ? 600 : 400, lineHeight: 1.3 }}>
+                              {s.label}
+                            </span>
+                          </button>
+                        )
+                      })}
                     </nav>
                   </div>
-
+                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                    <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
+                      <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
+                      <div>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2 }}>Dr. Raghavendra H</p>
+                      </div>
+                    </div>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
+                      Consultant Rheumatologist for osteoarthritis evaluation and long-term joint care.
+                    </p>
+                    <a
+                      href="#"
+                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                    >
+                      Book a Visit →
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </aside>
 
             </div>
           </div>

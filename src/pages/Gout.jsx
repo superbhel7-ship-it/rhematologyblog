@@ -487,7 +487,7 @@ function Gout() {
 
               {/* ── Right: TOC + CTA Sidebar ── */}
               <div className="hidden lg:block w-[280px] shrink-0">
-                <div className="sticky top-[88px]">
+                <div className="sticky top-[88px] guide-sidebar-scroll" style={{ maxHeight: "calc(100vh - 112px)", overflowY: "auto", overflowX: "hidden" }}>
                   {/* Table of Contents */}
                   <div className="bg-[#edf2fc] py-5 px-6 mb-6 shadow-[0_4px_24px_rgba(24,36,57,0.07)]" style={{ borderRadius: 0 }}>
                     <h3

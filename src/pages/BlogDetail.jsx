@@ -206,7 +206,7 @@ function BlogDetail() {
                 <h3 className="text-2xl md:text-3xl leading-none tracking-tight mb-5" style={{ fontFamily: "var(--font-display)" }}>References</h3>
                 <ol className="space-y-3">
                   {article.references.map((ref, index) => (
-                    <li key={index} className="text-[14px] leading-7 text-navy-deep/80">
+                    <li key={index} className="text-[15px] leading-[1.7] text-navy-deep/80">
                       <span className="font-semibold mr-2">{index + 1}.</span>
                       {ref.text}
                     </li>
