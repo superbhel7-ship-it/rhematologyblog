@@ -120,11 +120,11 @@ function OsteoarthritisGuide() {
                   marginBottom: "1.25rem",
                 }}
               >
-                Osteoarthritis
+                Osteoarthritis: What It Is, Symptoms, Causes & Treatment Options
               </h1>
 
               <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-                Osteoarthritis is a condition that slowly affects the joints over time. This guide covers what OA is, its symptoms, causes, diagnosis, and treatment options available in India.
+                Learn what osteoarthritis is, why it happens, the symptoms to watch for, how doctors diagnose it, and the treatment options available in India.
               </p>
             </div>
 
