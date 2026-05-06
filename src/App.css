@@ -1,3 +1,17 @@
+/* Guide article h2 underline + spacing */
+.guide-article-content h2 {
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 12px !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Section dividers — thicker + more breathing room */
+.guide-article-content [data-toc-section]:not(:first-of-type) {
+  border-top-width: 2px !important;
+  border-top-color: #c8d0dc !important;
+  padding-top: 2.5rem !important;
+}
+
 /* Modal animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -274,14 +288,20 @@
 }
 
 @media (max-width: 768px) {
+  .guide-article-content h2 {
+    margin-bottom: 1.75rem !important;
+    line-height: 1.35 !important;
+    text-decoration: none !important;
+    padding-bottom: 18px;
+    border-bottom: 3px solid #1AA3B5;
+  }
+
   .blog-article-content p,
   .blog-article-content li,
   .guide-article-content p,
   .guide-article-content li {
-    text-align: justify !important;
-    text-align-last: left;
-    text-justify: inter-word;
-    hyphens: auto;
+    text-align: left !important;
+    hyphens: none;
   }
 
   .guide-article-content .guide-cta p {

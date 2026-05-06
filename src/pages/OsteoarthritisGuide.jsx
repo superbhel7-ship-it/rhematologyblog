@@ -46,8 +46,8 @@ const tocSections = [
   { id: "faq", label: "FAQs" },
 ]
 
-const tealHighlight = { backgroundColor: "#d1edf0", borderRadius: "3px", padding: "1px 4px", fontWeight: 600 }
-const peachHighlight = { backgroundColor: "#fde1d5", borderRadius: "3px", padding: "1px 4px", fontWeight: 600 }
+const tealHighlight = { backgroundColor: "#d1edf0", borderRadius: "3px", padding: "1px 3px" }
+const peachHighlight = { backgroundColor: "#fde1d5", borderRadius: "3px", padding: "1px 3px" }
 
 /* ─────────────────────────────────────────────
    COMPONENT
@@ -156,9 +156,9 @@ function OsteoarthritisGuide() {
         <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
           <div className="max-w-7xl mx-auto grid grid-cols-3 gap-2 px-5 py-4 sm:flex sm:gap-3 sm:overflow-x-auto sm:px-6">
             {[
-              { label: "Symptoms", id: "symptoms", ids: ["overview", "what-is-oa", "types", "causes", "symptoms"] },
-              { label: "Treatment", id: "treatment", ids: ["diagnosis", "treatment"] },
-              { label: "Doctors & Departments", shortLabel: "Doctors & Dept.", id: "living-well", ids: ["living-well", "faq"] },
+              { label: "Causes & Symptoms", shortLabel: "Causes & Symptoms", id: "symptoms", ids: ["overview", "what-is-oa", "types", "causes", "symptoms"] },
+              { label: "Diagnosis", id: "diagnosis", ids: ["diagnosis"] },
+              { label: "Treatment", id: "treatment", ids: ["treatment", "living-well", "faq"] },
             ].map((tab) => {
               const isActive = tab.ids.includes(activeSection)
               return (
@@ -191,7 +191,7 @@ function OsteoarthritisGuide() {
               <div className="flex-1 min-w-0 text-left guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a", textAlign: "left" }}>
 
                 {/* ── OVERVIEW ── */}
-                <div id="overview" data-toc-section>
+                <div id="overview" data-toc-section style={{ borderTop: "none", paddingTop: 0 }}>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." <span style={peachHighlight}>The pain you suffer is not something to ignore.</span> For many Indians, this can be a first sign of osteoarthritis.
                   </p>
@@ -372,7 +372,6 @@ function OsteoarthritisGuide() {
                 </div> */}
 
                 {/* ── KEY FACTORS divider ── */}
-                <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginTop: "1rem" }} />
                 <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -398,7 +397,6 @@ function OsteoarthritisGuide() {
                     At RheumaInsights, our rheumatologists specialise in comprehensive osteoarthritis care. <span style={peachHighlight}>With evidence-based protocols, personalised treatment plans, and a patient-first approach, we help you manage symptoms effectively and protect your joints for the long term.</span>
                   </p>
                 </div>
-                <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginBottom: "2.5rem" }} />
 
                 {/* ── DIAGNOSIS ── */}
                 <div id="diagnosis" data-toc-section style={{ marginBottom: "2.5rem" }}>
@@ -622,7 +620,7 @@ function OsteoarthritisGuide() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#1AA3B5", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>

@@ -243,7 +243,7 @@ function Osteoarthritis() {
             <div className="lg:flex lg:gap-14">
 
               {/* ── Left: Article Content ── */}
-              <div className="flex-1 min-w-0" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#5e5e5e" }}>
+              <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#5e5e5e" }}>
 
                 {/* Author line */}
                 <div className="flex items-center gap-3 mb-10">
@@ -683,7 +683,7 @@ function Osteoarthritis() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#1AA3B5", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>

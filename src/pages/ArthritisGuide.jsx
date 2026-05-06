@@ -234,14 +234,14 @@ function ArthritisGuide() {
 
         {/* ═══════════ ARTICLE BODY + TOC ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
+          <div className="max-w-7xl mx-auto px-6 pt-0 pb-1 md:pt-0 md:pb-16">
             <div className="lg:flex lg:gap-10">
 
               {/* ── Left: Article Content ── */}
               <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
 
                 {/* ── OVERVIEW ── */}
-                <div id="overview" data-toc-section className="mb-4 md:mb-8">
+                <div id="overview" data-toc-section className="mb-4 md:mb-8" style={{ borderTop: "none", paddingTop: 0 }}>
                 </div>
 
                 {/* Author line hidden by request */}
@@ -263,7 +263,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── WHAT IS RA ── */}
-                <div id="what-is-ra" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="what-is-ra" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -282,7 +282,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── SYMPTOMS ── */}
-                <div id="symptoms" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -325,7 +325,7 @@ function ArthritisGuide() {
                 </div> */}
 
                 {/* ── STAGES ── */}
-                <div id="stages" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="stages" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -367,7 +367,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── CAUSES & RISK FACTORS ── */}
-                <div id="causes" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="causes" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -397,7 +397,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── DIAGNOSIS ── */}
-                <div id="diagnosis" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="diagnosis" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -448,7 +448,7 @@ function ArthritisGuide() {
                   </div>
                 </div>
 
-                <div id="treatment" style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="treatment" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -500,7 +500,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── MANAGING RA ── */}
-                <div id="managing-ra" style={{ marginBottom: "2rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="managing-ra" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -551,7 +551,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO SEE A RHEUMATOLOGIST ── */}
-                <div id="when-to-see" style={{ marginBottom: "4rem", paddingTop: "2rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="when-to-see" data-toc-section style={{ marginBottom: "4rem", paddingTop: "2rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
@@ -637,7 +637,7 @@ function ArthritisGuide() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#1AA3B5", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>

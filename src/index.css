@@ -76,6 +76,9 @@ h6 {
   font-family: var(--font-display);
   font-weight: 400;
   font-variant-numeric: lining-nums proportional-nums;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: keep-all;
   color: inherit;
 }
 
