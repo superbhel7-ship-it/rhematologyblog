@@ -136,27 +136,31 @@ function ArthritisGuide() {
 
         {/* ═══════════ HERO ═══════════ */}
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="max-w-7xl mx-auto px-6 pt-6 pb-0 md:pt-8">
+          <div className="max-w-7xl mx-auto px-5 pt-6 pb-0 sm:px-6 md:pt-8">
 
             {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-[14px] font-medium mb-8" style={{ color: "rgba(255,255,255,0.6)" }}>
-              <span>Home</span>
-              <span>›</span>
-              <span>Diseases &amp; Conditions</span>
-              <span>›</span>
-              <span style={{ color: "#ffffff" }}>Rheumatoid Arthritis</span>
+            <div
+              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px]"
+              style={{ color: "rgba(255,255,255,0.68)", marginBottom: "clamp(1.5rem, 6vw, 2rem)" }}
+              aria-label="Breadcrumb"
+            >
+              <span className="whitespace-nowrap">Home</span>
+              <span aria-hidden="true">›</span>
+              <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
+              <span aria-hidden="true">›</span>
+              <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Rheumatoid Arthritis</span>
             </div>
 
             {/* Split layout */}
             <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
 
               {/* Left: Title + meta */}
-              <div className="flex-1 pb-0">
+              <div className="flex-1 pb-7 md:pb-0">
                 <p style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#a0e2e4", marginBottom: "12px" }}>A Patient Guide for India</p>
                 <h1
                   style={{
                     fontFamily: "var(--font-display)",
-                    fontSize: "clamp(36px, 5.5vw, 64px)",
+                    fontSize: "clamp(32px, 10vw, 64px)",
                     fontWeight: 700,
                     lineHeight: 1.1,
                     letterSpacing: "-0.5px",
@@ -167,7 +171,7 @@ function ArthritisGuide() {
                   Rheumatoid Arthritis
                 </h1>
 
-                <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "0", maxWidth: "520px" }}>
+                <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
                   Rheumatoid arthritis is a long-term condition where the body's immune system attacks its own joints. This guide covers what RA is, its symptoms, causes, how doctors diagnose it, and the treatment options available in India.
                 </p>
 
@@ -187,24 +191,25 @@ function ArthritisGuide() {
 
           {/* Nav Tabs */}
           <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
-            <div className="max-w-7xl mx-auto px-6 py-4 flex gap-3 overflow-x-auto">
+            <div className="max-w-7xl mx-auto grid grid-cols-3 gap-2 px-5 py-4 sm:flex sm:gap-3 sm:overflow-x-auto sm:px-6">
               {[
                 { label: "Symptoms", id: "symptoms", ids: ["symptoms", "what-is-ra"] },
                 { label: "Treatment", id: "treatment", ids: ["treatment", "stages", "causes", "diagnosis"] },
-                { label: "Doctors & Departments", id: "when-to-see", ids: ["when-to-see", "managing-ra", "faq"] },
+                { label: "Doctors & Departments", shortLabel: "Doctors & Dept.", id: "when-to-see", ids: ["when-to-see", "managing-ra", "faq"] },
               ].map((tab) => {
                 const isActive = tab.ids.includes(activeSection)
                 return (
                   <button
                     key={tab.label}
                     onClick={() => scrollToSection(tab.id)}
-                    className="shrink-0 inline-block rounded-full px-6 py-3.5 text-[14px] font-medium transition-colors"
+                    className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
                     style={{
                       backgroundColor: isActive ? "#ffffff" : "rgba(255,255,255,0.12)",
                       color: isActive ? "#0f616e" : "#ffffff",
                     }}
                   >
-                    {tab.label}
+                    <span className="sm:hidden">{tab.shortLabel || tab.label}</span>
+                    <span className="hidden sm:inline">{tab.label}</span>
                   </button>
                 )
               })}
@@ -214,13 +219,13 @@ function ArthritisGuide() {
 
         {/* ═══════════ ARTICLE BODY + TOC ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-6 py-1 md:py-16">
             <div className="lg:flex lg:gap-10">
 
               {/* ── Left: TOC ── */}
               <div className="hidden lg:block w-[320px] shrink-0">
                 <div className="sticky top-[88px]">
-                  <div style={{ backgroundColor: "#f5f7f9", border: "1px solid #e8ecf0", borderRadius: "4px", overflow: "hidden" }}>
+                  <div style={{ backgroundColor: "#edf2fc", border: "1px solid #e8ecf0", borderRadius: "4px", overflow: "hidden" }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#9aa3af", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocItems.map((s, i) => {
@@ -251,7 +256,7 @@ function ArthritisGuide() {
               <div className="flex-1 min-w-0" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
 
                 {/* ── OVERVIEW ── */}
-                <div id="overview" data-toc-section style={{ marginBottom: "2rem" }}>
+                <div id="overview" data-toc-section className="mb-0 md:mb-8">
                 </div>
 
                 {/* Author line hidden by request */}

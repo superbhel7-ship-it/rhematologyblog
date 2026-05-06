@@ -59,6 +59,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/specialist/:id" element={<DoctorProfile />} />
         <Route path="/health-guide" element={<HealthGuide />} />
         <Route path="/Rheumatoid-Arthritis" element={<ArthritisGuide />} />
+        <Route path="/rheumatoid-arthritis" element={<Navigate to="/Rheumatoid-Arthritis" replace />} />
         <Route path="/health-guide/Rheumatoid-Arthritis" element={<Navigate to="/Rheumatoid-Arthritis" replace />} />
         <Route path="/arthritis" element={<Arthritis />} />
         <Route path="/knowledge-hub" element={<KnowledgeHub />} />

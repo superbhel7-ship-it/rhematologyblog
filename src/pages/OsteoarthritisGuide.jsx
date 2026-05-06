@@ -46,12 +46,15 @@ const tocSections = [
   { id: "faq", label: "FAQs" },
 ]
 
+const tealHighlight = { backgroundColor: "rgba(26,163,181,0.12)", borderRadius: "3px", padding: "1px 4px" }
+const peachHighlight = { backgroundColor: "rgba(250,136,90,0.13)", borderRadius: "3px", padding: "1px 4px" }
+
 /* ─────────────────────────────────────────────
    COMPONENT
    ───────────────────────────────────────────── */
 
 function OsteoarthritisGuide() {
-  const [activeSection, setActiveSection] = useState("")
+  const [activeSection, setActiveSection] = useState("overview")
 
   useEffect(() => {
     document.title = "Osteoarthritis: What It Is, Symptoms, Causes & Treatment | RheumaInsights"
@@ -84,55 +87,86 @@ function OsteoarthritisGuide() {
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
 
-      <header>
-          <div style={{ backgroundColor: "#0f616e" }} className="text-white">
-            <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
-              <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
-                <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
-                <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4" }}>Diseases &amp; Conditions</span>
-              </div>
+      <header style={{ backgroundColor: "#0f616e" }} className="text-white">
+        <div className="max-w-7xl mx-auto px-5 pt-6 pb-0 sm:px-6 md:pt-8">
 
+          {/* Breadcrumb */}
+          <div
+            className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px]"
+            style={{ color: "rgba(255,255,255,0.68)", marginBottom: "clamp(1.5rem, 6vw, 2rem)" }}
+            aria-label="Breadcrumb"
+          >
+            <span className="whitespace-nowrap">Home</span>
+            <span aria-hidden="true">›</span>
+            <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
+            <span aria-hidden="true">›</span>
+            <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Osteoarthritis</span>
+          </div>
+
+          {/* Split layout */}
+          <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
+
+            {/* Left: Title + meta */}
+            <div className="flex-1 pb-7 text-left md:pb-0">
+              <p style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#a0e2e4", marginBottom: "12px" }}>A Patient Guide for India</p>
               <h1
-                className="mb-4"
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(48px, 6vw, 64px)",
-                  fontWeight: 400,
+                  fontSize: "clamp(32px, 10vw, 64px)",
+                  fontWeight: 700,
+                  lineHeight: 1.1,
                   letterSpacing: "-0.5px",
                   color: "#ffffff",
-                  maxWidth: "1120px",
+                  marginBottom: "1.25rem",
                 }}
               >
-               Osteoarthritis - An Overview
+                Osteoarthritis
               </h1>
 
-              {/* Author meta hidden by request */}
+              <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
+                Osteoarthritis is a condition that slowly affects the joints over time. This guide covers what OA is, its symptoms, causes, diagnosis, and treatment options available in India.
+              </p>
             </div>
-          </div>
 
-          <div style={{ backgroundColor: "#0a4f5a" }} className="border-t border-white/20">
-            <div className="max-w-7xl mx-auto px-6 md:pl-[2%] md:pr-[8%] py-6 flex justify-start gap-5 overflow-x-auto">
-              {[
-                { label: "Symptoms &\nCauses", id: "symptoms" },
-                { label: "Diagnosis &\nTreatment", id: "diagnosis" },
-                { label: "Doctors &\nDepartments", id: "doctors" },
-              ].map((tab, i) => (
-                <button
-                  key={tab.id}
-                  onClick={() => scrollToSection(tab.id)}
-                  className={`inline-block rounded-full px-5 py-2.5 text-[13px] font-medium leading-tight text-left whitespace-nowrap transition-colors cursor-pointer ${
-                    i === 0
-                      ? "bg-white text-navy-deep"
-                      : "bg-white/[0.12] text-white hover:bg-white/20"
-                  }`}
-                  style={{ whiteSpace: "pre-line" }}
-                >
-                  {tab.label}
-                </button>
-              ))}
+            {/* Right: Image */}
+            <div className="hidden md:block" style={{ width: "420px", height: "clamp(240px, 24vw, 300px)", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end", backgroundColor: "rgba(255,255,255,0.08)" }}>
+              <img
+                src="/condition/Osteoarthritis.png"
+                alt="Osteoarthritis"
+                style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
+              />
             </div>
+
           </div>
-        </header>
+        </div>
+
+        {/* Nav Tabs */}
+        <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
+          <div className="max-w-7xl mx-auto grid grid-cols-3 gap-2 px-5 py-4 sm:flex sm:gap-3 sm:overflow-x-auto sm:px-6">
+            {[
+              { label: "Symptoms", id: "symptoms", ids: ["overview", "what-is-oa", "types", "causes", "symptoms"] },
+              { label: "Treatment", id: "treatment", ids: ["diagnosis", "treatment"] },
+              { label: "Doctors & Departments", shortLabel: "Doctors & Dept.", id: "living-well", ids: ["living-well", "faq"] },
+            ].map((tab) => {
+              const isActive = tab.ids.includes(activeSection)
+              return (
+                <button
+                  key={tab.label}
+                  onClick={() => scrollToSection(tab.id)}
+                  className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
+                  style={{
+                    backgroundColor: isActive ? "#ffffff" : "rgba(255,255,255,0.12)",
+                    color: isActive ? "#0f616e" : "#ffffff",
+                  }}
+                >
+                  <span className="sm:hidden">{tab.shortLabel || tab.label}</span>
+                  <span className="hidden sm:inline">{tab.label}</span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </header>
 
 
       <main>
@@ -164,11 +198,41 @@ function OsteoarthritisGuide() {
 
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 pb-10 pt-8 md:pb-14 md:pt-10">
-            <div className="lg:flex lg:gap-14">
+          <div className="max-w-7xl mx-auto px-6 py-1 md:py-16">
+            <div className="lg:flex lg:gap-10">
+
+              {/* ── Left: TOC ── */}
+              <div className="hidden lg:block w-[320px] shrink-0">
+                <div className="sticky top-[88px]">
+                  <div style={{ backgroundColor: "#edf2fc", border: "1px solid #e8ecf0", borderRadius: "4px", overflow: "hidden" }}>
+                    <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#9aa3af", padding: "20px 20px 12px" }}>On This Page</p>
+                    <nav className="flex flex-col">
+                      {tocSections.map((s, i) => {
+                        const isActive = activeSection === s.id
+                        return (
+                          <button
+                            key={s.id}
+                            onClick={() => scrollToSection(s.id)}
+                            className="text-left flex items-center gap-3 py-2.5 pr-5 transition-colors"
+                            style={{ backgroundColor: isActive ? "#e8f4f5" : "transparent", paddingLeft: "0", borderBottom: "1px solid #f0f2f5" }}
+                          >
+                            <div style={{ width: 3, alignSelf: "stretch", backgroundColor: isActive ? "#0f616e" : "transparent", flexShrink: 0 }} />
+                            <span style={{ fontSize: "11px", fontWeight: 600, color: isActive ? "#0f616e" : "#c0c8d0", minWidth: "18px" }}>
+                              {String(i + 1).padStart(2, "0")}
+                            </span>
+                            <span style={{ fontSize: "13.5px", color: isActive ? "#0f616e" : "#4a5568", fontWeight: isActive ? 600 : 400, lineHeight: 1.3 }}>
+                              {s.label}
+                            </span>
+                          </button>
+                        )
+                      })}
+                    </nav>
+                  </div>
+                </div>
+              </div>
 
               {/* ── Left: Article ── */}
-              <div className="flex-1 min-w-0" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
+              <div className="flex-1 min-w-0 text-left" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a", textAlign: "left" }}>
 
                 {/* Author line */}
                 <div className="flex items-center gap-3 mb-10">
@@ -192,10 +256,10 @@ function OsteoarthritisGuide() {
                     While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." The pain you suffer is not something to ignore. For many Indians, this can be a first sign of osteoarthritis.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. The good news is that disease progression can be managed if treatment begins early.
+                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span>
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is no longer just a condition concerned with aging - it has quietly become a major global health concern. In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
+                    Osteoarthritis is no longer just a condition concerned with aging - <span style={tealHighlight}>it has quietly become a major global health concern.</span> In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "2.5rem" }}>
                     This is a practical guide that will help you understand what osteoarthritis is, why it happens to you, how you can find out if you suffer from the condition, and what treatment options are available in India.
@@ -213,7 +277,7 @@ function OsteoarthritisGuide() {
                     We must first know how a joint works before understanding osteoarthritis.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    A joint is where two bones meet. The ends of these bones are covered with a soft and flexible tissue called cartilage. This cushion-like tissue allows you to move easily without friction. In osteoarthritis, this cartilage gradually wears down. As the cushion becomes thin, the bones start to rub against each other. This causes pain, stiffness, swelling, and reduced movement.
+                    A joint is where two bones meet. The ends of these bones are covered with a soft and flexible tissue called cartilage. This cushion-like tissue allows you to move easily without friction. In osteoarthritis, <span style={tealHighlight}>this cartilage gradually wears down.</span> As the cushion becomes thin, the bones start to rub against each other. This causes pain, stiffness, swelling, and reduced movement.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     One can imagine it as a door hinge that has lost its oil. It still works, but every movement feels very rough and uncomfortable. Osteoarthritis usually develops slowly, but with the right care, most people can manage their symptoms and continue to lead active lives.
@@ -228,7 +292,7 @@ function OsteoarthritisGuide() {
                     Osteoarthritis has now become very common in India. Studies estimate that around 22% to 39% of adults over 40 are affected - roughly one in three to four adults.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    Knee osteoarthritis is the most common type, especially among women after menopause. Daily habits like squatting and sitting for long periods on the floor for meals or during prayers can increase stress on the knees. This makes osteoarthritis one of the leading causes of mobility issues in the country.
+                    <span style={peachHighlight}>Knee osteoarthritis is the most common type, especially among women after menopause.</span> Daily habits like squatting and sitting for long periods on the floor for meals or during prayers can increase stress on the knees. This makes osteoarthritis one of the leading causes of mobility issues in the country.
                   </p>
 
                   <h3
@@ -328,7 +392,7 @@ function OsteoarthritisGuide() {
                     The Early Signs
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    At first, you begin to feel tired. Slowly, small activities become great tasks. Your joints start becoming stiff. These symptoms often improve once you start moving. Gradually, you may start hearing grinding and creaking sounds.
+                    At first, you begin to feel tired. Slowly, small activities become great tasks. Your joints start becoming stiff. <span style={tealHighlight}>These symptoms often improve once you start moving.</span> Gradually, you may start hearing grinding and creaking sounds.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
@@ -342,11 +406,25 @@ function OsteoarthritisGuide() {
                     When Should You See a Doctor?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Early visits to specialists help you diagnose the condition as early as possible. A rheumatologist is the specialist who can properly evaluate your joint problems and guide you through the treatment.
+                    <span style={peachHighlight}>Early visits to specialists help you diagnose the condition as early as possible.</span> A rheumatologist is the specialist who can properly evaluate your joint problems and guide you through the treatment.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    When the pain starts disturbing your sleep and the stiffness hinders your daily activities, you should definitely consider seeing a doctor.
+                    <span style={tealHighlight}>When the pain starts disturbing your sleep and the stiffness hinders your daily activities,</span> you should definitely consider seeing a doctor.
                   </p>
+                </div>
+
+                {/* ── INLINE CTA BANNER ── */}
+                <div style={{ backgroundColor: "#0f616e", borderRadius: "14px", padding: "28px 32px", marginBottom: "4rem", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "24px", flexWrap: "wrap", textAlign: "left" }}>
+                  <div style={{ flex: 1, minWidth: "220px" }}>
+                    <p style={{ fontSize: "18px", fontWeight: 700, color: "#ffffff", marginBottom: "8px", lineHeight: 1.3 }}>Worried these symptoms sound familiar?</p>
+                    <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.78)", lineHeight: 1.65 }}>Get a personal review from Dr. Raghavendra. Most patients leave their first visit with clarity on what&apos;s happening and a plan for next steps.</p>
+                  </div>
+                  <a
+                    href="#"
+                    style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontWeight: 600, fontSize: "14px", padding: "13px 26px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0 }}
+                  >
+                    Book a Visit →
+                  </a>
                 </div>
 
                 {/* ── KEY FACTORS divider ── */}
@@ -373,7 +451,7 @@ function OsteoarthritisGuide() {
                     ))}
                   </ul>
                   <p className="text-[16px] leading-[1.8] text-navy-muted">
-                    At RheumaInsights, our rheumatologists specialise in comprehensive osteoarthritis care. With evidence-based protocols, personalised treatment plans, and a patient-first approach, we help you manage symptoms effectively and protect your joints for the long term.
+                    At RheumaInsights, our rheumatologists specialise in comprehensive osteoarthritis care. <span style={peachHighlight}>With evidence-based protocols, personalised treatment plans, and a patient-first approach, we help you manage symptoms effectively and protect your joints for the long term.</span>
                   </p>
                 </div>
                 <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginBottom: "2.5rem" }} />
@@ -386,7 +464,7 @@ function OsteoarthritisGuide() {
                     How Is Osteoarthritis Diagnosed?
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is diagnosed by physical examination, imaging tests, and blood tests. Your doctor asks about the duration of pain and discomfort, if you have suffered any injury to that same joint in the past, any family history of the condition, and whether the pain is relieved by rest. This conversation helps the doctor rule out conditions like rheumatoid arthritis and gout that mimic osteoarthritis.
+                    Osteoarthritis is diagnosed by physical examination, imaging tests, and blood tests. Your doctor asks about the duration of pain and discomfort, if you have suffered any injury to that same joint in the past, any family history of the condition, and whether the pain is relieved by rest. <span style={tealHighlight}>This conversation helps the doctor rule out conditions like rheumatoid arthritis and gout that mimic osteoarthritis.</span>
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -423,7 +501,7 @@ function OsteoarthritisGuide() {
                     How Can Osteoarthritis Be Treated?
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
-                    While osteoarthritis cannot be reversed completely, treatment can help reduce your pain and improve your quality of life.
+                    While osteoarthritis cannot be reversed completely, <span style={peachHighlight}>treatment can help reduce your pain and improve your quality of life.</span>
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
@@ -445,7 +523,7 @@ function OsteoarthritisGuide() {
                     Physiotherapy and Exercise
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    You will start to lose if you fail to move. Physiotherapy is one of the most effective yet underused treatments for osteoarthritis.
+                    You will start to lose if you fail to move. <span style={tealHighlight}>Physiotherapy is one of the most effective yet underused treatments for osteoarthritis.</span>
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     Exercises help strengthen muscles around the joint, reducing stress on it. Activities like walking, swimming, and yoga are especially helpful. Rest alone is not the solution - gentle, regular movement is always essential.
@@ -472,7 +550,7 @@ function OsteoarthritisGuide() {
                     Adapting to the New Normal
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
-                    Many people live active, fulfilling lives despite osteoarthritis. Small lifestyle changes can make a big difference. Some of the tiny efforts that help you take a great leap are:
+                    <span style={peachHighlight}>Many people live active, fulfilling lives despite osteoarthritis.</span> Small lifestyle changes can make a big difference. Some of the tiny efforts that help you take a great leap are:
                   </p>
                   <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {[
@@ -494,18 +572,41 @@ function OsteoarthritisGuide() {
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >
-                    When to Consult a Rheumatologist
+                    When to see a rheumatologist
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    If you've been dealing with joint pain for a while, getting a proper diagnosis is important. Early treatment can help you stay active and prevent worsening of symptoms. A rheumatologist can confirm whether you have osteoarthritis, rule out other conditions, and build a good treatment plan that suits your lifestyle and stage of the condition.
-                  </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold">
-                    Early assessment means more options and better outcomes.
-                  </p>
+
+                  <div style={{ backgroundColor: "#fdf3ee", borderRadius: "16px", padding: "32px", textAlign: "left" }}>
+                    <div className="flex items-start gap-3" style={{ marginBottom: "1.5rem" }}>
+                      <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                        <span className="material-symbols-outlined text-white text-[18px]">priority_high</span>
+                      </div>
+                      <p style={{ fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>Book an evaluation if joint pain is affecting daily life</p>
+                    </div>
+
+                    <ul style={{ listStyleType: "disc", paddingLeft: "1.25rem", marginBottom: "2rem" }}>
+                      {[
+                        "Joint pain that lasts more than 2-3 weeks or keeps coming back",
+                        "Stiffness after waking up or after sitting that improves only after movement",
+                        "Knee or hip pain while climbing stairs, squatting, walking, or getting up from a chair",
+                        "Grinding, cracking, swelling, or reduced movement in one or more joints",
+                        "Hand pain that affects grip, writing, cooking, opening jars, or buttoning clothes",
+                        "Pain that starts disturbing sleep, work, prayer, travel, or daily movement",
+                      ].map((item, i) => (
+                        <li key={i} className="text-[16px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>{item}</li>
+                      ))}
+                    </ul>
+
+                    <a
+                      href="#"
+                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontWeight: 600, fontSize: "14px", padding: "12px 24px", borderRadius: "9999px", textDecoration: "none" }}
+                    >
+                      Book a Specialist Visit →
+                    </a>
+                  </div>
                 </div>
 
                 {/* ── TAKE NEXT STEP ── */}
-                <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginBottom: "48px", borderRadius: 0 }}>
+                <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginBottom: "48px", borderRadius: 0, textAlign: "left" }}>
                   <h2 style={{ fontFamily: "var(--font-display)", fontSize: "1.75rem", fontWeight: 400, lineHeight: 1.2, letterSpacing: "-0.3px", marginBottom: "16px" }}>
                     Take the Next Step
                   </h2>
@@ -548,35 +649,6 @@ function OsteoarthritisGuide() {
                 <hr className="border-none border-t border-[#dcdcdc] mt-10" />
               </div>
 
-              {/* ── Right: TOC + CTA Sidebar ── */}
-              <div className="hidden lg:block w-[320px] shrink-0">
-                <div className="sticky top-[88px]">
-
-                  <div className="bg-[#edf2fc] py-5 px-6 mb-6" style={{ borderRadius: 0 }}>
-                    <h3 className="text-navy-deep mb-3" style={{ fontFamily: "var(--font-display)", fontSize: "1.2rem", fontWeight: 400, lineHeight: 1.2 }}>
-                      Table of Contents
-                    </h3>
-                    <nav className="flex flex-col">
-                      {tocSections.map((s) => (
-                        <button
-                          key={s.id}
-                          onClick={() => scrollToSection(s.id)}
-                          className="text-left py-2 border-b border-navy-deep/8 last:border-0"
-                        >
-                          <span
-                            className={`text-[13.5px] ${activeSection === s.id ? "text-navy-deep font-semibold" : "text-navy-deep/70 hover:text-navy-deep"}`}
-                            style={{ textDecoration: "underline", textDecorationColor: "currentColor", textUnderlineOffset: "4px", textDecorationThickness: "1px" }}
-                          >
-                            {s.label}
-                          </span>
-                        </button>
-                      ))}
-                    </nav>
-                  </div>
-
-                </div>
-              </div>
-
             </div>
           </div>
         </section>
@@ -584,7 +656,7 @@ function OsteoarthritisGuide() {
         {/* ═══════════ FAQ ═══════════ */}
         <section id="faq" data-toc-section className="py-16 md:py-20 bg-ghost">
           <div className="max-w-[800px] mx-auto px-6">
-            <div className="text-center mb-14">
+            <div className="text-left mb-14">
               <h2 className="text-[2.5rem] md:text-[3rem] leading-[1.1] tracking-[-0.8px] text-navy-deep mb-4" style={{ fontFamily: "var(--font-display)" }}>
                 Frequently Asked Questions
               </h2>

@@ -22,11 +22,7 @@ function Header() {
 
   const mobileQuickLinks = [
     { label: "What We Cover", type: "dropdown" },
-    { label: "Patient Education", to: "/health-guide" },
-    { label: "Doctors", to: "/doctors" },
-    { label: "Locations", to: "/locations" },
-    { label: "Blog", to: "/blog" },
-    { label: "Book Appointment", to: "/book-appointment" },
+    ...desktopNav,
   ]
 
   const conditions = [
@@ -333,7 +329,6 @@ function Header() {
             >
               Book Consultation
             </Link>
-            <p className="text-[12px] text-navy-muted/60 font-medium">Free initial consultation</p>
           </div>
         </div>
       )}
