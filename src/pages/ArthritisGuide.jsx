@@ -526,13 +526,13 @@ function ArthritisGuide() {
                   >
                     Early Response is the Key
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
                     When symptoms like joint stiffness on either side, generalised severe fatigue, and abnormal joint pain occur, it is always better to consult a rheumatologist.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
                     <span style={tealHighlight}>The initial three-month duration is the window during which the damage is processed.</span> If we take the initiative to treat early, we can make a difference for the rest of our lives.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginTop: "2rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginBottom: "0" }}>
                     If you are experiencing persistent joint pain, stiffness, or swelling, don&apos;t ignore it. Early evaluation by a rheumatologist can make a significant difference in preventing long-term damage.
                   </p>
                 </div>
