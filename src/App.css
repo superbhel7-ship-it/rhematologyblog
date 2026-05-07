@@ -1,14 +1,14 @@
-/* Guide article h2 underline + spacing */
+/* Guide article h2 — bold underline line below, with space */
 .guide-article-content h2 {
-  text-decoration-thickness: 3px !important;
-  text-underline-offset: 12px !important;
+  text-decoration: none !important;
+  border-bottom: 2px solid #c8d0dc !important;
+  padding-bottom: 1rem !important;
   margin-bottom: 2rem !important;
 }
 
-/* Section dividers — thicker + more breathing room */
+/* Section dividers — breathing room above each section */
 .guide-article-content [data-toc-section]:not(:first-of-type) {
-  border-top-width: 2px !important;
-  border-top-color: #c8d0dc !important;
+  border-top: none !important;
   padding-top: 2.5rem !important;
 }
 

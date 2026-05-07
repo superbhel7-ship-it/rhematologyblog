@@ -188,7 +188,7 @@ function OsteoarthritisGuide() {
               <div className="flex-1 min-w-0 text-left guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a", textAlign: "left" }}>
 
                 {/* ── OVERVIEW ── */}
-                <div id="overview" data-toc-section style={{ borderTop: "none", paddingTop: 0 }}>
+                <div id="overview" data-toc-section>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." <span style={peachHighlight}>The pain you suffer is not something to ignore.</span> For many Indians, this can be a first sign of osteoarthritis.
                   </p>
@@ -204,9 +204,9 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── WHAT IS OA ── */}
-                <div id="what-is-oa" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="what-is-oa" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What Is Osteoarthritis?
                   </h2>
@@ -246,7 +246,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TYPES ── */}
-                <div id="types" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="types" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1rem" }}
                   >
@@ -263,7 +263,7 @@ function OsteoarthritisGuide() {
                     { title: "Strained spine", desc: "When you sit for long hours, your spine and neck bear the brunt. It often shows up as stiffness in the neck or lower back. Sometimes, it may even cause radiating discomfort if nearby nerves are irritated." },
                     { title: "Feet and ankles - the collapsed support system", desc: "Your feet and ankles quietly support your entire body, so when osteoarthritis affects them, standing or walking for long periods can become very painful. You might feel stiffness, tenderness, or discomfort with every step." },
                   ].map((type, i) => (
-                    <div key={i} style={{ marginBottom: "1.25rem", paddingTop: i === 0 ? 0 : "1.25rem", borderTop: i === 0 ? "none" : "1px solid #dadfe8" }}>
+                    <div key={i} style={{ marginBottom: "1.25rem", paddingTop: i === 0 ? 0 : "1.25rem" }}>
                       <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.15rem", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.5rem" }}>{type.title}</h3>
                       <p className="text-[17px] leading-[1.8] text-navy-deep">{type.desc}</p>
                     </div>
@@ -271,9 +271,9 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── CAUSES ── */}
-                <div id="causes" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="causes" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What Causes Osteoarthritis?
                   </h2>
@@ -315,9 +315,9 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── SYMPTOMS ── */}
-                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Signs and Symptoms You Should Look For
                   </h2>
@@ -369,9 +369,9 @@ function OsteoarthritisGuide() {
                 </div> */}
 
                 {/* ── KEY FACTORS divider ── */}
-                <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
+                <div data-toc-section style={{ paddingBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Key Factors to Consider for Osteoarthritis
                   </h2>
@@ -398,7 +398,7 @@ function OsteoarthritisGuide() {
                 {/* ── DIAGNOSIS ── */}
                 <div id="diagnosis" data-toc-section style={{ marginBottom: "2.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     How Is Osteoarthritis Diagnosed?
                   </h2>
@@ -433,9 +433,9 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TREATMENT ── */}
-                <div id="treatment" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="treatment" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     How Can Osteoarthritis Be Treated?
                   </h2>
@@ -482,7 +482,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── LIVING WELL ── */}
-                <div id="living-well" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="living-well" data-toc-section style={{ marginBottom: "2rem" }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
                   >

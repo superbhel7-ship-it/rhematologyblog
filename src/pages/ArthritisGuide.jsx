@@ -612,7 +612,7 @@ function ArthritisGuide() {
 
               {/* ── Right: TOC ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
-                <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
+                <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 100px)", display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
