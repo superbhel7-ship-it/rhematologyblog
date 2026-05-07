@@ -183,7 +183,7 @@ function OsteoarthritisGuide() {
       <main>
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
+          <div className="max-w-7xl mx-auto px-4 py-1 md:pt-4 md:pb-16">
             <div className="lg:flex lg:gap-10">
 
               {/* ── Left: Article ── */}
@@ -195,10 +195,7 @@ function OsteoarthritisGuide() {
                     While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." <span style={peachHighlight}>The pain you suffer is not something to ignore.</span> For many Indians, this can be a first sign of osteoarthritis.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span>
-                  </p>
-                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is no longer just a condition concerned with aging - <span style={tealHighlight}>it has quietly become a major global health concern.</span> In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
+                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span> Osteoarthritis is no longer just a condition concerned with aging - <span style={tealHighlight}>it has quietly become a major global health concern.</span> In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.5rem" }}>
                     This is a practical guide that will help you understand what osteoarthritis is, why it happens to you, <span style={tealHighlight}>how you can find out if you suffer from the condition, and what treatment options are available in India.</span>
@@ -208,7 +205,7 @@ function OsteoarthritisGuide() {
                 {/* ── WHAT IS OA ── */}
                 <div id="what-is-oa" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What Is Osteoarthritis?
                   </h2>
@@ -223,7 +220,7 @@ function OsteoarthritisGuide() {
                   </p>
 
                   <h3
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}
+                    style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}
                   >
                     How Common Is Osteoarthritis in India?
                   </h3>
@@ -235,7 +232,7 @@ function OsteoarthritisGuide() {
                   </p>
 
                   <h3
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}
+                    style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}
                   >
                     Who Is More Likely to Get Osteoarthritis?
                   </h3>
@@ -250,7 +247,7 @@ function OsteoarthritisGuide() {
                 {/* ── TYPES ── */}
                 <div id="types" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1rem" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1rem" }}
                   >
                     Types of Osteoarthritis
                   </h2>
@@ -266,7 +263,7 @@ function OsteoarthritisGuide() {
                     { title: "Feet and ankles - the collapsed support system", desc: "Your feet and ankles quietly support your entire body, so when osteoarthritis affects them, standing or walking for long periods can become very painful. You might feel stiffness, tenderness, or discomfort with every step." },
                   ].map((type, i) => (
                     <div key={i} style={{ marginBottom: "1.25rem", paddingTop: i === 0 ? 0 : "1.25rem" }}>
-                      <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.15rem", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.5rem" }}>{type.title}</h3>
+                      <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.5rem" }}>{type.title}</h3>
                       <p className="text-[17px] leading-[1.8] text-navy-deep">{type.desc}</p>
                     </div>
                   ))}
@@ -275,7 +272,7 @@ function OsteoarthritisGuide() {
                 {/* ── CAUSES ── */}
                 <div id="causes" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What Causes Osteoarthritis?
                   </h2>
@@ -283,26 +280,26 @@ function OsteoarthritisGuide() {
                     Osteoarthritis doesn't usually have a single cause. It develops over time due to a mix of factors.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Age and Wear Over Time
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     As we grow older, cartilage becomes less flexible and loses its capacity to repair or heal on its own. <span style={tealHighlight}>However, aging alone does not contribute to the disease.</span> If you have a poor lifestyle with a lack of exercise and unhealthy diet patterns, they add up to your ageing journey.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Lifestyle and Physical Factors
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     Lifestyle and physical factors play a big role in the disease:
                   </p>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Excess body weight puts extra pressure on your joints, making them wear in due course.</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">If you are a salesperson or a teacher, the nature of the job strains joints over time. Likewise, if your workplace demands continuous standing or maintaining the same posture, you can become a victim of osteoarthritis over time.</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Your healed injuries can sometimes become your silent villain, increasing the risk even years later.</li>
                   </ul>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Risk Factors Common in India
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
@@ -319,7 +316,7 @@ function OsteoarthritisGuide() {
                 {/* ── SYMPTOMS ── */}
                 <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Signs and Symptoms You Should Look For
                   </h2>
@@ -327,21 +324,21 @@ function OsteoarthritisGuide() {
                     Osteoarthritis usually develops gradually. There are a few early signs you might notice.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     The Early Signs
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     At first, you begin to feel tired. Slowly, small activities become great tasks. Your joints start becoming stiff. <span style={tealHighlight}>These symptoms often improve once you start moving.</span> Gradually, you may start hearing grinding and creaking sounds.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     As Your Condition Progresses
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     As your condition becomes worse, <span style={peachHighlight}>your pain refuses to disappear even after you rest.</span> Your joints become swollen and red. Your knees wouldn't let you climb stairs, and your fingers would need help opening a tight jar.
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     When Should You See a Doctor?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
@@ -373,7 +370,7 @@ function OsteoarthritisGuide() {
                 {/* ── KEY FACTORS divider ── */}
                 <div data-toc-section style={{ paddingBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Key Factors to Consider for Osteoarthritis
                   </h2>
@@ -400,44 +397,37 @@ function OsteoarthritisGuide() {
                 {/* ── DIAGNOSIS ── */}
                 <div id="diagnosis" data-toc-section style={{ marginBottom: "2.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     How Is Osteoarthritis Diagnosed?
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is diagnosed by physical examination, imaging tests, and blood tests. Your doctor asks about the duration of pain and discomfort, if you have suffered any injury to that same joint in the past, any family history of the condition, and whether the pain is relieved by rest. <span style={tealHighlight}>This conversation helps the doctor rule out conditions like rheumatoid arthritis and gout that mimic osteoarthritis.</span>
+                    Osteoarthritis is diagnosed by physical examination, imaging tests and blood tests. Your doctor asks the duration of pain and discomfort, if you have suffered any injury to that same joint in the past, any of your family members suffer from this condition, and if the pain is relieved. This conversation helps the doctor to rule out some conditions like rheumatoid arthritis, gout that mimic osteoarthritis.
                   </p>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div style={{ backgroundColor: "#f5f5f5", borderRadius: "12px", padding: "1.5rem" }}>
-                      <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", marginBottom: "0.75rem", color: "#0f616e" }}>Physical Examination</h3>
-                      <p className="text-[16px] leading-[1.75] text-navy-deep">
-                        Initially, the doctor checks if you have any obvious swelling or redness at the affected site, pain while the physician touches the joint, to what extent you are able to move your joint, and how flexible your joint is.
-                      </p>
-                    </div>
-                    <div style={{ backgroundColor: "#f5f5f5", borderRadius: "12px", padding: "1.5rem" }}>
-                      <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", marginBottom: "0.75rem", color: "#0f616e" }}>Blood Tests</h3>
-                      <p className="text-[16px] leading-[1.75] text-navy-deep">
-                        There is no specific blood test for osteoarthritis. Tests are mainly done to rule out other conditions like rheumatoid arthritis.
-                      </p>
-                    </div>
-                  </div>
-
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
-                    Imaging Tests
-                  </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Once the doctor examines the affected site completely, they proceed with imaging tests, <span style={peachHighlight}>commonly used to look for cartilage loss and bone changes.</span>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.75rem" }}>Physical Examination</h3>
+                  <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                    Initially, the doctor checks if you have any obvious swelling or redness in the affected site, and pain while the physician touches the joint, to what extent you were able to move your joint and see how flexible your joint is.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    <span style={tealHighlight}>MRI is not routine for osteoarthritis</span> - it is used when the situation needs a closer, more detailed picture beyond what an X-ray can show. MRI scans are needed only in early cases where symptoms don't match the site, or prior to surgeries.
+
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.75rem" }}>Imaging Tests</h3>
+                  <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
+                    Once the doctor examines the affected site completely they proceed with the imaging tests, commonly used to look for cartilage loss and bone changes.
+                  </p>
+                  <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                    MRI is not routine for osteoarthritis, it is used when the situation needs a closer, more detailed picture beyond what an X-ray can show. MRI scans are needed only in early cases where symptoms don't match the site and prior surgeries.
+                  </p>
+
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.75rem" }}>Blood Tests</h3>
+                  <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                    There is no specific blood test for osteoarthritis. Tests are mainly done to rule out other conditions like rheumatoid arthritis.
                   </p>
                 </div>
 
                 {/* ── TREATMENT ── */}
                 <div id="treatment" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     How Can Osteoarthritis Be Treated?
                   </h2>
@@ -445,13 +435,13 @@ function OsteoarthritisGuide() {
                     While osteoarthritis cannot be reversed completely, <span style={peachHighlight}>treatment can help reduce your pain and improve your quality of life.</span>
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Medications
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     Some medicines your doctor can prescribe are:
                   </p>
-                  <ul className="space-y-3 mb-2" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Paracetamol, like Calpol, Crocin, for mild pain</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Anti-inflammatory medicines like ibuprofen or diclofenac ease your pain and swelling</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Topical gels like Diclofenac or Volini for local pain relief</li>
@@ -460,7 +450,7 @@ function OsteoarthritisGuide() {
                     Affordable generic versions are available at government Jan Aushadhi stores. <span style={peachHighlight}>But medicines must be consumed only based on the doctor's prescription.</span>
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Physiotherapy and Exercise
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
@@ -470,13 +460,13 @@ function OsteoarthritisGuide() {
                     Exercises help strengthen muscles around the joint, reducing stress on it. Activities like walking, swimming, and yoga are especially helpful. <span style={tealHighlight}>Rest alone is not the solution - gentle, regular movement is always essential.</span>
                   </p>
 
-                  <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
+                  <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Advanced Treatment Options
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     If basic treatments are not enough, your doctor can prescribe alternate treatments in the later stages:
                   </p>
-                  <ul className="space-y-3 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Steroid injections provide short-term relief from your pain</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Hyaluronic acid injections lubricate your joints to reduce friction while you move</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Knee or hip replacement surgery is considered in severe cases, when other treatment options fail to help. Knee replacement surgeries are covered under government schemes like PM-JAY for eligible patients.</li>
@@ -486,14 +476,14 @@ function OsteoarthritisGuide() {
                 {/* ── LIVING WELL ── */}
                 <div id="living-well" data-toc-section style={{ marginBottom: "2rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Adapting to the New Normal
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
                     <span style={peachHighlight}>Many people live active, fulfilling lives despite osteoarthritis.</span> Small lifestyle changes can make a big difference. Some of the tiny efforts that help you take a great leap are:
                   </p>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {[
                       "Losing even 5 kg can significantly reduce strain on your knees",
                       "Adding turmeric, ginger, amla, and fatty fish to your diet",
@@ -511,7 +501,7 @@ function OsteoarthritisGuide() {
                 {/* ── WHEN TO CONSULT ── */}
                 <div data-toc-section style={{ marginBottom: "4rem" }}>
                   <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     When to see a rheumatologist
                   </h2>
@@ -524,7 +514,7 @@ function OsteoarthritisGuide() {
                       <p style={{ fontFamily: "var(--font-base)", fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>Book an evaluation if joint pain is affecting daily life</p>
                     </div>
 
-                    <ul style={{ listStyleType: "disc", paddingLeft: "1.25rem", marginBottom: "2rem" }}>
+                    <ul style={{ listStyleType: "disc", paddingLeft: "1.25rem", marginBottom: "2rem", display: "flex", flexDirection: "column", gap: "2px" }}>
                       {[
                         "Joint pain that lasts more than 2-3 weeks or keeps coming back",
                         "Stiffness after waking up or after sitting that improves only after movement",
@@ -593,7 +583,7 @@ function OsteoarthritisGuide() {
               </div>
 
               {/* ── Right: TOC ── */}
-              <aside className="hidden lg:block w-[360px] shrink-0">
+              <aside className="hidden lg:block w-[360px] shrink-0" style={{ marginLeft: "auto" }}>
                 <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 100px)", display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
@@ -632,9 +622,9 @@ function OsteoarthritisGuide() {
                     </p>
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                      style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
                     >
-                      Book a Visit →
+                      Book Appointment →
                     </a>
                   </div>
                 </div>

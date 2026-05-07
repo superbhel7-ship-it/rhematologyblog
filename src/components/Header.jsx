@@ -12,6 +12,7 @@ function Header() {
   const [whatWeCoverVisible, setWhatWeCoverVisible] = useState(false)
 
   const [scrolled, setScrolled] = useState(false)
+  const [osteoExpanded, setOsteoExpanded] = useState(false)
 
   const desktopNav = [
     { label: "Patient Education", to: "/health-guide" },
@@ -537,22 +538,33 @@ function Header() {
                   transform: whatWeCoverVisible ? "translateY(0)" : "translateY(12px)",
                   transition: `opacity 0.35s ease ${230 + index * 40}ms, transform 0.35s ease ${230 + index * 40}ms`,
                 }
+                const rightIcon = hasSubLinks ? (
+                  <span className="w-7 h-7 rounded-full bg-[#a0e2e4] inline-flex items-center justify-center flex-shrink-0" style={{ transition: "transform 0.2s", transform: osteoExpanded ? "rotate(180deg)" : "rotate(0deg)" }}>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0f616e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                  </span>
+                ) : (
+                  <span className="w-7 h-7 rounded-full bg-[#a0e2e4] inline-flex items-center justify-center flex-shrink-0">
+                    <ArrowRight size={15} className="text-[#0f616e]" />
+                  </span>
+                )
                 const condInner = (
                   <>
                     <span className="flex items-center gap-3.5 text-navy-deep font-semibold text-[15px]">
-                      <span className="w-8 h-8 rounded-full bg-[#a0e2e4] inline-flex items-center justify-center flex-shrink-0">
-                        <span className="material-symbols-outlined text-[15px] text-[#0f616e]">rheumatology</span>
-                      </span>
                       {item}
                     </span>
-                    <span className="w-7 h-7 rounded-full bg-[#a0e2e4] inline-flex items-center justify-center flex-shrink-0">
-                      <ArrowRight size={15} className="text-[#0f616e]" />
-                    </span>
+                    {rightIcon}
                   </>
                 )
                 return (
                   <div key={item} className="border-b border-gray-100" style={condStyle}>
-                    {condTo ? (
+                    {hasSubLinks ? (
+                      <a
+                        className="flex items-center justify-between py-4 cursor-pointer"
+                        onClick={() => setOsteoExpanded(prev => !prev)}
+                      >
+                        {condInner}
+                      </a>
+                    ) : condTo ? (
                       <Link
                         to={condTo}
                         className="flex items-center justify-between py-4"
@@ -568,8 +580,8 @@ function Header() {
                         {condInner}
                       </a>
                     )}
-                    {hasSubLinks && (
-                      <div className="pb-4 pl-12 flex flex-col gap-3">
+                    {hasSubLinks && osteoExpanded && (
+                      <div className="pb-4 pl-4 flex flex-col gap-3">
                         {osteoarthritisPages.map((page) => (
                           <Link
                             key={page.to}
@@ -613,9 +625,6 @@ function Header() {
                     style={treatStyle}
                   >
                     <span className="flex items-center gap-3.5 text-navy-deep font-semibold text-[15px]">
-                      <span className="w-8 h-8 rounded-full bg-[#e86531]/15 inline-flex items-center justify-center flex-shrink-0">
-                        <span className="material-symbols-outlined text-[15px] text-[#e86531]">medical_services</span>
-                      </span>
                       {item}
                     </span>
                     <span className="w-7 h-7 rounded-full bg-[#e86531]/15 inline-flex items-center justify-center flex-shrink-0">

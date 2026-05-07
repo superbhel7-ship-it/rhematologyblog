@@ -24,7 +24,6 @@
 
 .guide-article-content p,
 .guide-article-content li,
-.guide-article-content span,
 .guide-article-content td,
 .guide-article-content th {
   font-family: var(--font-base) !important;
@@ -41,7 +40,7 @@
 /* Section dividers — breathing room above each section */
 .guide-article-content [data-toc-section]:not(:first-of-type) {
   border-top: none !important;
-  padding-top: 2.5rem !important;
+  padding-top: 1.75rem !important;
 }
 
 /* Modal animations */
