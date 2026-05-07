@@ -594,17 +594,6 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── REVIEWER ── */}
-                <div className="guide-reviewer" style={{ backgroundColor: "#f8fafc", padding: "22px 24px", marginBottom: "2rem" }}>
-                  <div style={{ height: "3px", width: "64px", backgroundColor: "#fa885a", marginBottom: "18px" }} />
-                  <div className="flex items-start gap-4">
-                    <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-11 h-11 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
-                    <div>
-                      <p className="text-xs font-bold uppercase tracking-[0.14em] text-navy-muted/70" style={{ marginBottom: "6px" }}>Medically reviewed by</p>
-                      <p className="text-[15px] font-semibold text-navy-deep leading-tight">Dr. Raghavendra H</p>
-                      <p className="text-[13px] text-navy-muted" style={{ marginTop: "4px" }}>Consultant Rheumatologist &middot; Reviewed May 2026</p>
-                    </div>
-                  </div>
-                </div>
 
                 <hr className="border-none border-t border-[#dcdcdc] mt-12" />
 
