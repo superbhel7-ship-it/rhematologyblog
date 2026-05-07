@@ -546,15 +546,13 @@ function ArthritisGuide() {
                     When to see a rheumatologist
                   </h2>
 
-                  <div style={{ backgroundColor: "#fdf3ee", borderRadius: "16px", padding: "32px" }}>
-                    <div className="flex items-center gap-3" style={{ marginBottom: "1.5rem" }}>
-                      <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "18px", color: "#ffffff", fontWeight: 700 }}>
-                        !
-                      </div>
-                      <p style={{ fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>See a rheumatologist if you have any of these</p>
+                  <div style={{ backgroundColor: "#0f616e", borderRadius: 0, padding: "28px 28px 28px", fontFamily: "var(--font-base)" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "20px" }}>
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#a0e2e4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      <p style={{ fontFamily: "var(--font-base)", fontSize: "16px", fontWeight: 700, color: "#ffffff", lineHeight: 1.3, margin: 0 }}>See a rheumatologist if you have any of these</p>
                     </div>
 
-                    <ul style={{ listStyleType: "disc", paddingLeft: "1.25rem", marginBottom: "2rem" }}>
+                    <ul style={{ listStyleType: "none", paddingLeft: 0, marginBottom: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
                       {[
                         "Joint pain and swelling lasting more than 6 weeks",
                         "Morning stiffness that takes more than 30 minutes to ease",
@@ -563,13 +561,16 @@ function ArthritisGuide() {
                         "Unexplained fatigue along with joint pain",
                         "A family history of RA combined with new joint symptoms",
                       ].map((item, i) => (
-                        <li key={i} className="text-[16px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>{item}</li>
+                        <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
+                          <svg width="16" height="16" viewBox="0 0 10 8" fill="none" style={{ flexShrink: 0, marginTop: "4px" }}><path d="M1 4l2.5 2.5L9 1" stroke="#a0e2e4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          <span style={{ fontSize: "15px", lineHeight: 1.7, color: "rgba(255,255,255,0.88)", fontFamily: "var(--font-base)" }}>{item}</span>
+                        </li>
                       ))}
                     </ul>
 
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontWeight: 600, fontSize: "14px", padding: "12px 24px", borderRadius: "9999px", textDecoration: "none" }}
+                      style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 26px", borderRadius: "9999px", textDecoration: "none" }}
                     >
                       Book a Specialist Visit →
                     </a>

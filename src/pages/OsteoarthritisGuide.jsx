@@ -350,7 +350,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── INLINE CTA BANNER ── */}
-                <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: 0, padding: "0", marginTop: "2rem", marginBottom: "0.5rem", display: "flex", alignItems: "stretch", overflow: "hidden", textAlign: "left", fontFamily: "var(--font-base)" }}>
+                <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: 0, padding: "0", marginTop: "2rem", marginBottom: "2rem", display: "flex", alignItems: "stretch", overflow: "hidden", textAlign: "left", fontFamily: "var(--font-base)" }}>
                   <div style={{ flex: 1, padding: "26px 30px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                     <p style={{ fontFamily: "var(--font-base)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.13em", color: "#a0e2e4", marginBottom: "9px" }}>Reviewed consultation</p>
                     <p style={{ fontFamily: "var(--font-base)", fontSize: "20px", fontWeight: 800, color: "#ffffff", marginBottom: "9px", lineHeight: 1.25 }}>Worried these symptoms sound familiar?</p>
@@ -425,7 +425,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TREATMENT ── */}
-                <div id="treatment" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
+                <div id="treatment" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "3rem" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -506,15 +506,13 @@ function OsteoarthritisGuide() {
                     When to see a rheumatologist
                   </h2>
 
-                  <div style={{ backgroundColor: "#fdf3ee", borderRadius: "16px", padding: "32px", textAlign: "left", fontFamily: "var(--font-base)" }}>
-                    <div className="flex items-center gap-3" style={{ marginBottom: "1.25rem" }}>
-                      <div style={{ width: 38, height: 38, borderRadius: "50%", backgroundColor: "#E86531", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "20px", color: "#ffffff", fontWeight: 700 }}>
-                        !
-                      </div>
-                      <p style={{ fontFamily: "var(--font-base)", fontSize: "17px", fontWeight: 700, color: "#c0442a", lineHeight: 1.3 }}>Book an evaluation if joint pain is affecting daily life</p>
+                  <div style={{ backgroundColor: "#0f616e", borderRadius: 0, padding: "28px 28px 28px", fontFamily: "var(--font-base)" }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: "14px", marginBottom: "20px" }}>
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0 }}><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#a0e2e4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      <p style={{ fontFamily: "var(--font-base)", fontSize: "16px", fontWeight: 700, color: "#ffffff", lineHeight: 1.3, margin: 0 }}>Book an evaluation if joint pain is affecting daily life</p>
                     </div>
 
-                    <ul style={{ listStyleType: "none", paddingLeft: 0, marginBottom: "2rem", display: "flex", flexDirection: "column", gap: "8px" }}>
+                    <ul style={{ listStyleType: "none", paddingLeft: 0, marginBottom: "24px", display: "flex", flexDirection: "column", gap: "10px" }}>
                       {[
                         "Joint pain that lasts more than 2-3 weeks or keeps coming back",
                         "Stiffness after waking up or after sitting that improves only after movement",
@@ -523,16 +521,16 @@ function OsteoarthritisGuide() {
                         "Hand pain that affects grip, writing, cooking, opening jars, or buttoning clothes",
                         "Pain that starts disturbing sleep, work, prayer, travel, or daily movement",
                       ].map((item, i) => (
-                        <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontFamily: "var(--font-base)" }}>
-                          <span style={{ width: 6, height: 6, borderRadius: "50%", backgroundColor: "#E86531", flexShrink: 0, marginTop: "9px" }} />
-                          <span className="text-[16px] leading-[1.8] text-navy-deep">{item}</span>
+                        <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}>
+                          <svg width="16" height="16" viewBox="0 0 10 8" fill="none" style={{ flexShrink: 0, marginTop: "4px" }}><path d="M1 4l2.5 2.5L9 1" stroke="#a0e2e4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          <span style={{ fontSize: "15px", lineHeight: 1.7, color: "rgba(255,255,255,0.88)", fontFamily: "var(--font-base)" }}>{item}</span>
                         </li>
                       ))}
                     </ul>
 
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 600, fontSize: "14px", padding: "12px 24px", borderRadius: "9999px", textDecoration: "none" }}
+                      style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 26px", borderRadius: "9999px", textDecoration: "none" }}
                     >
                       Book a Specialist Visit →
                     </a>
