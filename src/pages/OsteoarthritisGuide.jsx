@@ -518,8 +518,8 @@ function OsteoarthritisGuide() {
 
                   <div style={{ backgroundColor: "#fdf3ee", borderRadius: "8px", padding: "32px", textAlign: "left", fontFamily: "var(--font-base)" }}>
                     <div className="flex items-start gap-3" style={{ marginBottom: "1.5rem" }}>
-                      <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                        <span className="material-symbols-outlined text-white text-[18px]">priority_high</span>
+                      <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "18px", color: "#ffffff", fontWeight: 700 }}>
+                        !
                       </div>
                       <p style={{ fontFamily: "var(--font-base)", fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>Book an evaluation if joint pain is affecting daily life</p>
                     </div>

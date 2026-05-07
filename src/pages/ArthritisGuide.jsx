@@ -353,7 +353,6 @@ function ArthritisGuide() {
 
                   {/* Note */}
                   <div className="flex items-start gap-3 p-4" style={{ backgroundColor: "#fff3ec", borderRadius: "10px" }}>
-                    <span className="material-symbols-outlined text-[20px] shrink-0 mt-0.5" style={{ color: "#fd956a" }}>info</span>
                     <p className="text-[14px] leading-[1.65] text-navy-deep">
                       <strong className="font-semibold">Note:</strong> Not everyone progresses through all the stages. Early treatment can stop progression.
                     </p>
@@ -526,10 +525,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── EARLY RESPONSE ── */}
-                <div style={{ marginBottom: "2rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div style={{ marginBottom: "2rem", marginTop: "0" }}>
                   <h3
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", marginBottom: "1rem", textTransform: "uppercase" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", marginBottom: "1rem", textTransform: "uppercase", borderBottom: "2px solid #c8d0dc", paddingBottom: "0.75rem" }}
                   >
                     Early Response is the Key
                   </h3>
@@ -555,8 +554,8 @@ function ArthritisGuide() {
 
                   <div style={{ backgroundColor: "#fdf3ee", borderRadius: "16px", padding: "32px" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "1.5rem" }}>
-                      <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                        <span className="material-symbols-outlined text-white text-[18px]">priority_high</span>
+                      <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "18px", color: "#ffffff", fontWeight: 700 }}>
+                        !
                       </div>
                       <p style={{ fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>See a rheumatologist if you have any of these</p>
                     </div>
@@ -624,16 +623,16 @@ function ArthritisGuide() {
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>
-                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
-                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#ffffff" }}>Dr. Raghavendra H</p>
+                        <p style={{ fontFamily: "var(--font-base)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontFamily: "var(--font-base)", fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#ffffff" }}>Dr. Raghavendra H</p>
                       </div>
                     </div>
-                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
+                    <p style={{ fontFamily: "var(--font-base)", fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
                       Consultant Rheumatologist for rheumatoid arthritis evaluation and long-term joint care.
                     </p>
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                      style={{ fontFamily: "var(--font-base)", display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
                     >
                       Book a Visit →
                     </a>

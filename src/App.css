@@ -10,6 +10,18 @@
   font-family: var(--font-display) !important;
 }
 
+.guide-article-content h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.15 !important;
+}
+
+.guide-article-content h3 {
+  font-size: clamp(1.15rem, 2vw, 1.5rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
+}
+
 .guide-article-content p,
 .guide-article-content li,
 .guide-article-content span,
