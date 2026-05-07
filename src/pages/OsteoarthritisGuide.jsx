@@ -156,23 +156,25 @@ function OsteoarthritisGuide() {
         <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
           <div className="max-w-7xl mx-auto grid grid-cols-3 gap-2 px-5 py-4 sm:flex sm:gap-3 sm:overflow-x-auto sm:px-6">
             {[
-              { label: "Causes & Symptoms", href: "/osteoarthritis" },
-              { label: "Diagnosis", href: "/Osteoarthritis-Living" },
-              { label: "Treatment", href: "/Osteoarthritis-Advanced" },
-            ].map((tab) => (
-              <a
-                key={tab.label}
-                href={tab.href}
-                className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
-                style={{
-                  backgroundColor: "rgba(255,255,255,0.12)",
-                  color: "#ffffff",
-                  textDecoration: "none",
-                }}
-              >
-                {tab.label}
-              </a>
-            ))}
+              { label: "Causes & Symptoms", id: "overview", ids: ["overview", "what-is-oa", "types", "causes", "symptoms"] },
+              { label: "Diagnosis", id: "diagnosis", ids: ["diagnosis"] },
+              { label: "Treatment", id: "treatment", ids: ["treatment", "living-well", "when-to-consult", "faq"] },
+            ].map((tab) => {
+              const isActive = tab.ids.includes(activeSection)
+              return (
+                <button
+                  key={tab.label}
+                  onClick={() => scrollToSection(tab.id)}
+                  className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
+                  style={{
+                    backgroundColor: isActive ? "#ffffff" : "rgba(255,255,255,0.12)",
+                    color: isActive ? "#0f616e" : "#ffffff",
+                  }}
+                >
+                  {tab.label}
+                </button>
+              )
+            })}
           </div>
         </div>
       </header>
@@ -592,8 +594,8 @@ function OsteoarthritisGuide() {
 
               {/* ── Right: TOC ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
-                <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 100px)", display: "flex", flexDirection: "column", gap: "12px" }}>
+                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {
@@ -617,15 +619,15 @@ function OsteoarthritisGuide() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#e0f3f5", color: "#0f616e", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>
-                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "#0f616e", marginBottom: "5px" }}>Medically reviewed by</p>
-                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#0f616e" }}>Dr. Raghavendra H</p>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#ffffff" }}>Dr. Raghavendra H</p>
                       </div>
                     </div>
-                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "#2d5a62", marginBottom: "14px" }}>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
                       Consultant Rheumatologist for osteoarthritis evaluation and long-term joint care.
                     </p>
                     <a
