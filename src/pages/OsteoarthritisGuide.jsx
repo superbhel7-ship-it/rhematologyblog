@@ -46,8 +46,8 @@ const tocSections = [
   { id: "faq", label: "FAQs" },
 ]
 
-const tealHighlight = { backgroundColor: "#d1edf0", borderRadius: "3px", padding: "1px 3px" }
-const peachHighlight = { backgroundColor: "#fde1d5", borderRadius: "3px", padding: "1px 3px" }
+const tealHighlight = { backgroundColor: "#d1edf0", borderRadius: "3px", padding: "1px 3px", fontWeight: 600, textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "3px", textDecorationThickness: "2px" }
+const peachHighlight = { backgroundColor: "#fde1d5", borderRadius: "3px", padding: "1px 3px", fontWeight: 600, textDecoration: "underline", textDecorationColor: "#e86531", textUnderlineOffset: "3px", textDecorationThickness: "2px" }
 
 /* ─────────────────────────────────────────────
    COMPONENT
@@ -112,9 +112,9 @@ function OsteoarthritisGuide() {
               <h1
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "64px",
+                  fontSize: "clamp(36px, 8vw, 64px)",
                   fontWeight: 400,
-                  lineHeight: "69px",
+                  lineHeight: "1.1",
                   letterSpacing: "-0.5px",
                   color: "#ffffff",
                   marginBottom: "0.85rem",
@@ -192,13 +192,13 @@ function OsteoarthritisGuide() {
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." <span style={peachHighlight}>The pain you suffer is not something to ignore.</span> For many Indians, this can be a first sign of osteoarthritis.
+                    While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." The pain you suffer is not something to ignore. For many Indians, this can be a first sign of osteoarthritis.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span> Osteoarthritis is no longer just a condition concerned with aging - <span style={tealHighlight}>it has quietly become a major global health concern.</span> In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
+                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span> Osteoarthritis is no longer just a condition concerned with aging - it has quietly become a major global health concern. In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.5rem" }}>
-                    This is a practical guide that will help you understand what osteoarthritis is, why it happens to you, <span style={tealHighlight}>how you can find out if you suffer from the condition, and what treatment options are available in India.</span>
+                    This is a practical guide that will help you understand what osteoarthritis is, why it happens to you, how you can find out if you suffer from the condition, and what treatment options are available in India.
                   </p>
                 </div>
 
@@ -216,7 +216,7 @@ function OsteoarthritisGuide() {
                     A joint is where two bones meet. The ends of these bones are covered with a soft and flexible tissue called cartilage. This cushion-like tissue allows you to move easily without friction. In osteoarthritis, <span style={tealHighlight}>this cartilage gradually wears down.</span> As the cushion becomes thin, the bones start to rub against each other. This causes pain, stiffness, swelling, and reduced movement.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    One can imagine it as a door hinge that has lost its oil. It still works, but every movement feels very rough and uncomfortable. <span style={peachHighlight}>Osteoarthritis usually develops slowly, but with the right care, most people can manage their symptoms and continue to lead active lives.</span>
+                    One can imagine it as a door hinge that has lost its oil. It still works, but every movement feels very rough and uncomfortable. Osteoarthritis usually develops slowly, but with the right care, most people can manage their symptoms and continue to lead active lives.
                   </p>
 
                   <h3
@@ -225,7 +225,7 @@ function OsteoarthritisGuide() {
                     How Common Is Osteoarthritis in India?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Osteoarthritis has now become very common in India. <span style={tealHighlight}>Studies estimate that around 22% to 39% of adults over 40 are affected - roughly one in three to four adults.</span>
+                    Osteoarthritis has now become very common in India. Studies estimate that around 22% to 39% of adults over 40 are affected - roughly one in three to four adults.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     <span style={peachHighlight}>Knee osteoarthritis is the most common type, especially among women after menopause.</span> Daily habits like squatting and sitting for long periods on the floor for meals or during prayers can increase stress on the knees. This makes osteoarthritis one of the leading causes of mobility issues in the country.
@@ -240,7 +240,7 @@ function OsteoarthritisGuide() {
                     If you are obese and aged above 45 years with a family history of joint problems, you might have a higher risk. Factors such as increasing life expectancy, higher rates of obesity, and more sedentary lifestyles are contributing to rising numbers.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    <span style={peachHighlight}>Frequent squatting, sitting cross-legged, and climbing stairs can add extra strain on the knees over time.</span> Physically demanding work like farming or construction, and previous joint injuries, make the condition much worse.
+                    Frequent squatting, sitting cross-legged, and climbing stairs can add extra strain on the knees over time. Physically demanding work like farming or construction, and previous joint injuries, make the condition much worse.
                   </p>
                 </div>
 
@@ -284,7 +284,7 @@ function OsteoarthritisGuide() {
                     Age and Wear Over Time
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    As we grow older, cartilage becomes less flexible and loses its capacity to repair or heal on its own. <span style={tealHighlight}>However, aging alone does not contribute to the disease.</span> If you have a poor lifestyle with a lack of exercise and unhealthy diet patterns, they add up to your ageing journey.
+                    As we grow older, cartilage becomes less flexible and loses its capacity to repair or heal on its own. However, aging alone does not contribute to the disease. If you have a poor lifestyle with a lack of exercise and unhealthy diet patterns, they add up to your ageing journey.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
@@ -303,13 +303,13 @@ function OsteoarthritisGuide() {
                     Risk Factors Common in India
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Though we reside in a tropical region where abundant vitamin D is available from the sun, most of us suffer from Vitamin D deficiency. <span style={peachHighlight}>This affects bone and joint health and influences bone integrity and strength.</span>
+                    Though we reside in a tropical region where abundant vitamin D is available from the sun, most of us suffer from Vitamin D deficiency. This affects bone and joint health and influences bone integrity and strength.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     Though frequent squatting and floor sitting help in deep knee flexion, as you age, they strain your joints slowly.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    <span style={tealHighlight}>Among all forms, knee osteoarthritis stands out as particularly common - with a noticeably higher prevalence among older adults, especially women.</span> Hormonal changes, bone health, and longer life expectancy all contribute to this pattern. The number of new cases continues to rise, driven by a combination of ageing populations, rising obesity rates, and increasingly sedentary lifestyles.
+                    Among all forms, knee osteoarthritis stands out as particularly common - with a noticeably higher prevalence among older adults, especially women. Hormonal changes, bone health, and longer life expectancy all contribute to this pattern. The number of new cases continues to rise, driven by a combination of ageing populations, rising obesity rates, and increasingly sedentary lifestyles.
                   </p>
                 </div>
 
@@ -328,44 +328,44 @@ function OsteoarthritisGuide() {
                     The Early Signs
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    At first, you begin to feel tired. Slowly, small activities become great tasks. Your joints start becoming stiff. <span style={tealHighlight}>These symptoms often improve once you start moving.</span> Gradually, you may start hearing grinding and creaking sounds.
+                    At first, you begin to feel tired. Slowly, small activities become great tasks. Your joints start becoming stiff. These symptoms often improve once you start moving. Gradually, you may start hearing grinding and creaking sounds.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     As Your Condition Progresses
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    As your condition becomes worse, <span style={peachHighlight}>your pain refuses to disappear even after you rest.</span> Your joints become swollen and red. Your knees wouldn't let you climb stairs, and your fingers would need help opening a tight jar.
+                    As your condition becomes worse, your pain refuses to disappear even after you rest. Your joints become swollen and red. Your knees wouldn't let you climb stairs, and your fingers would need help opening a tight jar.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     When Should You See a Doctor?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    <span style={peachHighlight}>Early visits to specialists help you diagnose the condition as early as possible.</span> A rheumatologist is the specialist who can properly evaluate your joint problems and guide you through the treatment.
+                    Early visits to specialists help you diagnose the condition as early as possible. A rheumatologist is the specialist who can properly evaluate your joint problems and guide you through the treatment.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    <span style={tealHighlight}>When the pain starts disturbing your sleep and the stiffness hinders your daily activities,</span> you should definitely consider seeing a doctor.
+                    When the pain starts disturbing your sleep and the stiffness hinders your daily activities, you should definitely consider seeing a doctor.
                   </p>
                 </div>
 
                 {/* ── INLINE CTA BANNER ── */}
-                {/* <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: "8px", padding: "0", marginBottom: "4rem", display: "flex", alignItems: "stretch", overflow: "hidden", textAlign: "left", fontFamily: "var(--font-base)" }}>
-                  <div className="guide-cta-photo" style={{ width: "126px", flexShrink: 0, backgroundColor: "#0a4f5a", display: "flex", alignItems: "flex-end", justifyContent: "center", paddingTop: "18px" }}>
-                    <img src="/raghav.png" alt="Dr. Raghavendra H" style={{ width: "92px", height: "118px", objectFit: "cover", objectPosition: "center top", display: "block" }} />
-                  </div>
-                  <div className="guide-cta-copy" style={{ flex: 1, minWidth: "220px", padding: "26px 30px" }}>
+                <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: 0, padding: "0", marginBottom: "2rem", display: "flex", alignItems: "stretch", overflow: "hidden", textAlign: "left", fontFamily: "var(--font-base)" }}>
+                  <div style={{ flex: 1, padding: "26px 30px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                     <p style={{ fontFamily: "var(--font-base)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.13em", color: "#a0e2e4", marginBottom: "9px" }}>Reviewed consultation</p>
                     <p style={{ fontFamily: "var(--font-base)", fontSize: "20px", fontWeight: 800, color: "#ffffff", marginBottom: "9px", lineHeight: 1.25 }}>Worried these symptoms sound familiar?</p>
                     <p style={{ fontFamily: "var(--font-base)", fontSize: "14px", color: "rgba(255,255,255,0.82)", lineHeight: 1.65, maxWidth: "560px", marginBottom: "18px" }}>Get a personal review from Dr. Raghavendra. Most patients leave their first visit with clarity on what&apos;s happening and a plan for next steps.</p>
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 22px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap" }}
+                      style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 22px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap", alignSelf: "flex-start" }}
                     >
-                      Book a Visit →
+                      Book a Visit
                     </a>
                   </div>
-                </div> */}
+                  <div className="hidden md:block" style={{ width: "200px", flexShrink: 0, overflow: "hidden" }}>
+                    <img src="/images/12hero-slide-1.png" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+                  </div>
+                </div>
 
                 {/* ── KEY FACTORS divider ── */}
                 <div data-toc-section style={{ paddingBottom: "1.5rem" }}>
@@ -375,7 +375,7 @@ function OsteoarthritisGuide() {
                     Key Factors to Consider for Osteoarthritis
                   </h2>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.75rem" }}>
-                    <span style={tealHighlight}>Effective management begins with understanding the factors most relevant to your situation:</span>
+                    Effective management begins with understanding the factors most relevant to your situation:
                   </p>
                   <ul style={{ listStyleType: "disc", paddingLeft: "1.5rem", marginBottom: "2rem" }}>
                     {[
@@ -506,15 +506,15 @@ function OsteoarthritisGuide() {
                     When to see a rheumatologist
                   </h2>
 
-                  <div style={{ backgroundColor: "#fdf3ee", borderRadius: "8px", padding: "32px", textAlign: "left", fontFamily: "var(--font-base)" }}>
-                    <div className="flex items-start gap-3" style={{ marginBottom: "1.5rem" }}>
-                      <div style={{ width: 36, height: 36, borderRadius: "50%", backgroundColor: "#c0442a", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "18px", color: "#ffffff", fontWeight: 700 }}>
+                  <div style={{ backgroundColor: "#fdf3ee", borderRadius: "16px", padding: "32px", textAlign: "left", fontFamily: "var(--font-base)" }}>
+                    <div className="flex items-center gap-3" style={{ marginBottom: "1.25rem" }}>
+                      <div style={{ width: 38, height: 38, borderRadius: "50%", backgroundColor: "#E86531", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontSize: "20px", color: "#ffffff", fontWeight: 700 }}>
                         !
                       </div>
-                      <p style={{ fontFamily: "var(--font-base)", fontSize: "16px", fontWeight: 700, color: "#c0442a" }}>Book an evaluation if joint pain is affecting daily life</p>
+                      <p style={{ fontFamily: "var(--font-base)", fontSize: "17px", fontWeight: 700, color: "#c0442a", lineHeight: 1.3 }}>Book an evaluation if joint pain is affecting daily life</p>
                     </div>
 
-                    <ul style={{ listStyleType: "disc", paddingLeft: "1.25rem", marginBottom: "2rem", display: "flex", flexDirection: "column", gap: "2px" }}>
+                    <ul style={{ listStyleType: "none", paddingLeft: 0, marginBottom: "2rem", display: "flex", flexDirection: "column", gap: "8px" }}>
                       {[
                         "Joint pain that lasts more than 2-3 weeks or keeps coming back",
                         "Stiffness after waking up or after sitting that improves only after movement",
@@ -523,13 +523,16 @@ function OsteoarthritisGuide() {
                         "Hand pain that affects grip, writing, cooking, opening jars, or buttoning clothes",
                         "Pain that starts disturbing sleep, work, prayer, travel, or daily movement",
                       ].map((item, i) => (
-                        <li key={i} className="text-[16px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem", fontFamily: "var(--font-base)" }}>{item}</li>
+                        <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontFamily: "var(--font-base)" }}>
+                          <span style={{ width: 6, height: 6, borderRadius: "50%", backgroundColor: "#E86531", flexShrink: 0, marginTop: "9px" }} />
+                          <span className="text-[16px] leading-[1.8] text-navy-deep">{item}</span>
+                        </li>
                       ))}
                     </ul>
 
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 600, fontSize: "14px", padding: "12px 24px", borderRadius: "9999px", textDecoration: "none" }}
+                      style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 600, fontSize: "14px", padding: "12px 24px", borderRadius: "9999px", textDecoration: "none" }}
                     >
                       Book a Specialist Visit →
                     </a>
