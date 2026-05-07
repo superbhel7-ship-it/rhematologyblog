@@ -112,9 +112,9 @@ function OsteoarthritisGuide() {
               <h1
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(42px, 9vw, 72px)",
-                  fontWeight: 700,
-                  lineHeight: 1,
+                  fontSize: "64px",
+                  fontWeight: 400,
+                  lineHeight: "69px",
                   letterSpacing: "-0.5px",
                   color: "#ffffff",
                   marginBottom: "0.85rem",
@@ -125,10 +125,10 @@ function OsteoarthritisGuide() {
               <p
                 style={{
                   fontFamily: "var(--font-display)",
-                  fontSize: "clamp(20px, 2.5vw, 30px)",
-                  lineHeight: 1.25,
-                  color: "rgba(255,255,255,0.9)",
-                  marginBottom: "1.25rem",
+                  fontSize: "clamp(16px, 2vw, 22px)",
+                  lineHeight: 1.2,
+                  color: "rgba(255,255,255,0.92)",
+                  marginBottom: 0,
                   maxWidth: "720px",
                 }}
               >
@@ -141,9 +141,9 @@ function OsteoarthritisGuide() {
             </div>
 
             {/* Right: Image */}
-            <div className="hidden md:block" style={{ width: "420px", height: "clamp(240px, 24vw, 300px)", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end", backgroundColor: "rgba(255,255,255,0.08)" }}>
+            <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end", backgroundColor: "rgba(255,255,255,0.08)" }}>
               <img
-                src="/images/hero10.png"
+                src="/condition/Osteoarthritis.png"
                 alt="Osteoarthritis"
                 style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
               />

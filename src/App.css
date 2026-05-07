@@ -1,3 +1,23 @@
+/* Guide article fonts — match home page */
+.guide-article-content {
+  font-family: var(--font-base) !important;
+}
+
+.guide-article-content h1,
+.guide-article-content h2,
+.guide-article-content h3,
+.guide-article-content h4 {
+  font-family: var(--font-display) !important;
+}
+
+.guide-article-content p,
+.guide-article-content li,
+.guide-article-content span,
+.guide-article-content td,
+.guide-article-content th {
+  font-family: var(--font-base) !important;
+}
+
 /* Guide article h2 — bold underline line below, with space */
 .guide-article-content h2 {
   text-decoration: none !important;

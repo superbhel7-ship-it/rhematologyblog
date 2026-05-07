@@ -163,9 +163,9 @@ function ArthritisGuide() {
                 <h1
                   style={{
                     fontFamily: "var(--font-display)",
-                    fontSize: "clamp(32px, 10vw, 64px)",
-                    fontWeight: 700,
-                    lineHeight: 1.1,
+                    fontSize: "64px",
+                    fontWeight: 400,
+                    lineHeight: "69px",
                     letterSpacing: "-0.5px",
                     color: "#ffffff",
                     marginBottom: "1.25rem",
@@ -173,11 +173,10 @@ function ArthritisGuide() {
                 >
                   Rheumatoid Arthritis
                 </h1>
-
                 <p
                   style={{
                     fontFamily: "var(--font-display)",
-                    fontSize: "clamp(20px, 3vw, 32px)",
+                    fontSize: "clamp(16px, 2vw, 22px)",
                     lineHeight: 1.2,
                     color: "rgba(255,255,255,0.92)",
                     marginBottom: 0,
@@ -186,14 +185,10 @@ function ArthritisGuide() {
                   What It Is, Symptoms, Causes &amp; Treatment Options
                 </p>
 
-                {/* <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-                  Rheumatoid arthritis is a long-term condition where the body's immune system attacks its own joints. This guide covers what RA is, its symptoms, causes, how doctors diagnose it, and the treatment options available in India.
-                </p> */}
-
               </div>
 
               {/* Right: Image */}
-              <div className="hidden md:block" style={{ width: "420px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "stretch" }}>
+              <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "center" }}>
                 <img
                   src="/images/hero-slide-4.png"
                   alt="Rheumatoid Arthritis"
@@ -240,7 +235,7 @@ function ArthritisGuide() {
               <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
 
                 {/* ── OVERVIEW ── */}
-                <div id="overview" data-toc-section className="mb-4 md:mb-8" style={{ borderTop: "none", paddingTop: 0 }}>
+                <div id="overview" data-toc-section className="mb-4 md:mb-8" style={{}}>
                 </div>
 
                 {/* Author line hidden by request */}
@@ -262,10 +257,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── WHAT IS RA ── */}
-                <div id="what-is-ra" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="what-is-ra" data-toc-section style={{ marginBottom: "1.5rem" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What is Rheumatoid Arthritis?
                   </h2>
@@ -281,10 +276,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── SYMPTOMS ── */}
-                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What are the symptoms of Rheumatoid Arthritis?
                   </h2>
@@ -324,10 +319,10 @@ function ArthritisGuide() {
                 </div> */}
 
                 {/* ── STAGES ── */}
-                <div id="stages" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="stages" data-toc-section style={{ marginBottom: "1.5rem", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Stages of Rheumatoid Arthritis
                   </h2>
@@ -366,10 +361,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── CAUSES & RISK FACTORS ── */}
-                <div id="causes" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="causes" data-toc-section style={{ marginBottom: "1.5rem", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What are the causes of Rheumatoid Arthritis?
                   </h2>
@@ -396,10 +391,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── DIAGNOSIS ── */}
-                <div id="diagnosis" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="diagnosis" data-toc-section style={{ marginBottom: "1.5rem", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     How does a doctor diagnose Rheumatoid Arthritis?
                   </h2>
@@ -447,10 +442,10 @@ function ArthritisGuide() {
                   </div>
                 </div>
 
-                <div id="treatment" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="treatment" data-toc-section style={{ marginBottom: "1.5rem", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     What are the treatment options available for Rheumatoid Arthritis?
                   </h2>
@@ -499,10 +494,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── MANAGING RA ── */}
-                <div id="managing-ra" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="managing-ra" data-toc-section style={{ marginBottom: "2rem", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Managing Rheumatoid Arthritis on a Day-to-Day Basis
                   </h2>
@@ -550,10 +545,10 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO SEE A RHEUMATOLOGIST ── */}
-                <div id="when-to-see" data-toc-section style={{ marginBottom: "4rem", paddingTop: "2rem", marginTop: "0", borderTop: "1px solid #dadfe8" }}>
+                <div id="when-to-see" data-toc-section style={{ marginBottom: "4rem", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem", textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "8px", textDecorationThickness: "2px" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 500, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
                   >
                     When to see a rheumatologist
                   </h2>
