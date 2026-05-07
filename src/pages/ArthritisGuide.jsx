@@ -158,7 +158,7 @@ function ArthritisGuide() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
 
               {/* Left: Title + meta */}
-              <div className="flex-1 pb-7 md:pb-0">
+              <div className="flex-1 pb-7 text-left md:pb-0">
                 <p style={{ fontSize: "12px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#a0e2e4", marginBottom: "12px" }}>A Patient Guide for India</p>
                 <h1
                   style={{
@@ -168,7 +168,7 @@ function ArthritisGuide() {
                     lineHeight: "1.1",
                     letterSpacing: "-0.5px",
                     color: "#ffffff",
-                    marginBottom: "1.25rem",
+                    marginBottom: "0.85rem",
                   }}
                 >
                   Rheumatoid Arthritis
@@ -188,7 +188,7 @@ function ArthritisGuide() {
               </div>
 
               {/* Right: Image */}
-              <div className="hidden md:block" style={{ width: "420px", height: "320px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end" }}>
+              <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end" }}>
                 <img
                   src="/images/hero-slide-4.png"
                   alt="Rheumatoid Arthritis"
@@ -228,20 +228,14 @@ function ArthritisGuide() {
 
         {/* ═══════════ ARTICLE BODY + TOC ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-4 pt-0 pb-1 md:pt-0 md:pb-16">
+          <div className="max-w-7xl mx-auto px-4 py-1 md:pt-4 md:pb-16">
             <div className="lg:flex lg:gap-10">
 
               {/* ── Left: Article Content ── */}
               <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
 
                 {/* ── OVERVIEW ── */}
-                <div id="overview" data-toc-section className="mb-4 md:mb-8" style={{}}>
-                </div>
-
-                {/* Author line hidden by request */}
-
-                {/* Intro */}
-                <div style={{  marginBottom: "1rem" , }}>
+                <div id="overview" data-toc-section style={{ marginBottom: "1rem" }}>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
                     Have you ever experienced weakness or tiredness in your joints that makes it difficult to perform daily tasks? Do you often normalise these symptoms and ignore them? If you have experienced anything similar, this article covers everything you need to know.
                   </p>
@@ -276,7 +270,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── SYMPTOMS ── */}
-                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem", marginTop: "0" }}>
+                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem", marginTop: "0", paddingTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -380,7 +374,7 @@ function ArthritisGuide() {
                   >
                     Risk Factors of Rheumatoid Arthritis
                   </h3>
-                  <ul className="space-y-1 mb-8" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {riskFactors.map((r, i) => (
                       <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">
                         <strong className="font-bold">{r.factor}.</strong> {r.detail}
@@ -493,7 +487,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── MANAGING RA ── */}
-                <div id="managing-ra" data-toc-section style={{ marginBottom: "2rem", marginTop: "0" }}>
+                <div id="managing-ra" data-toc-section style={{ marginBottom: "2rem", marginTop: "0", paddingTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -544,7 +538,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO SEE A RHEUMATOLOGIST ── */}
-                <div id="when-to-see" data-toc-section style={{ marginBottom: "4rem", marginTop: "0" }}>
+                <div id="when-to-see" data-toc-section style={{ marginBottom: "4rem", marginTop: "0", paddingTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}

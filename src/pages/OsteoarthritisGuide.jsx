@@ -141,7 +141,7 @@ function OsteoarthritisGuide() {
             </div>
 
             {/* Right: Image */}
-            <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end", backgroundColor: "rgba(255,255,255,0.08)" }}>
+            <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end" }}>
               <img
                 src="/condition/Osteoarthritis.png"
                 alt="Osteoarthritis"
@@ -195,15 +195,15 @@ function OsteoarthritisGuide() {
                     While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." The pain you suffer is not something to ignore. For many Indians, this can be a first sign of osteoarthritis.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span> Osteoarthritis is no longer just a condition concerned with aging - it has quietly become a major global health concern. In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
+                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span> Osteoarthritis is no longer just a condition concerned with aging - <span style={tealHighlight}>it has quietly become a major global health concern.</span> In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
                   </p>
-                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.5rem" }}>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "0" }}>
                     This is a practical guide that will help you understand what osteoarthritis is, why it happens to you, how you can find out if you suffer from the condition, and what treatment options are available in India.
                   </p>
                 </div>
 
                 {/* ── WHAT IS OA ── */}
-                <div id="what-is-oa" data-toc-section style={{ marginBottom: "1.5rem" }}>
+                <div id="what-is-oa" data-toc-section style={{ marginBottom: "0.5rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -216,7 +216,7 @@ function OsteoarthritisGuide() {
                     A joint is where two bones meet. The ends of these bones are covered with a soft and flexible tissue called cartilage. This cushion-like tissue allows you to move easily without friction. In osteoarthritis, <span style={tealHighlight}>this cartilage gradually wears down.</span> As the cushion becomes thin, the bones start to rub against each other. This causes pain, stiffness, swelling, and reduced movement.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    One can imagine it as a door hinge that has lost its oil. It still works, but every movement feels very rough and uncomfortable. Osteoarthritis usually develops slowly, but with the right care, most people can manage their symptoms and continue to lead active lives.
+                    One can imagine it as a door hinge that has lost its oil. It still works, but every movement feels very rough and uncomfortable. <span style={peachHighlight}>Osteoarthritis usually develops slowly, but with the right care, most people can manage their symptoms and continue to lead active lives.</span>
                   </p>
 
                   <h3
@@ -225,7 +225,7 @@ function OsteoarthritisGuide() {
                     How Common Is Osteoarthritis in India?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Osteoarthritis has now become very common in India. Studies estimate that around 22% to 39% of adults over 40 are affected - roughly one in three to four adults.
+                    Osteoarthritis has now become very common in India. <span style={tealHighlight}>Studies estimate that around 22% to 39% of adults over 40 are affected - roughly one in three to four adults.</span>
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     <span style={peachHighlight}>Knee osteoarthritis is the most common type, especially among women after menopause.</span> Daily habits like squatting and sitting for long periods on the floor for meals or during prayers can increase stress on the knees. This makes osteoarthritis one of the leading causes of mobility issues in the country.
@@ -245,7 +245,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TYPES ── */}
-                <div id="types" data-toc-section style={{ marginBottom: "1.5rem" }}>
+                <div id="types" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1rem" }}
                   >
@@ -262,7 +262,7 @@ function OsteoarthritisGuide() {
                     { title: "Strained spine", desc: "When you sit for long hours, your spine and neck bear the brunt. It often shows up as stiffness in the neck or lower back. Sometimes, it may even cause radiating discomfort if nearby nerves are irritated." },
                     { title: "Feet and ankles - the collapsed support system", desc: "Your feet and ankles quietly support your entire body, so when osteoarthritis affects them, standing or walking for long periods can become very painful. You might feel stiffness, tenderness, or discomfort with every step." },
                   ].map((type, i) => (
-                    <div key={i} style={{ marginBottom: "1.25rem", paddingTop: i === 0 ? 0 : "1.25rem" }}>
+                    <div key={i} style={{ marginBottom: i === 4 ? 0 : "1.25rem", paddingTop: i === 0 ? 0 : "1.25rem" }}>
                       <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.5rem" }}>{type.title}</h3>
                       <p className="text-[17px] leading-[1.8] text-navy-deep">{type.desc}</p>
                     </div>
@@ -270,7 +270,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── CAUSES ── */}
-                <div id="causes" data-toc-section style={{ marginBottom: "1.5rem" }}>
+                <div id="causes" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -314,7 +314,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── SYMPTOMS ── */}
-                <div id="symptoms" data-toc-section style={{ marginBottom: "1.5rem" }}>
+                <div id="symptoms" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -350,7 +350,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── INLINE CTA BANNER ── */}
-                <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: 0, padding: "0", marginBottom: "2rem", display: "flex", alignItems: "stretch", overflow: "hidden", textAlign: "left", fontFamily: "var(--font-base)" }}>
+                <div className="guide-cta" style={{ backgroundColor: "#0f616e", borderRadius: 0, padding: "0", marginTop: "2rem", marginBottom: "0.5rem", display: "flex", alignItems: "stretch", overflow: "hidden", textAlign: "left", fontFamily: "var(--font-base)" }}>
                   <div style={{ flex: 1, padding: "26px 30px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                     <p style={{ fontFamily: "var(--font-base)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.13em", color: "#a0e2e4", marginBottom: "9px" }}>Reviewed consultation</p>
                     <p style={{ fontFamily: "var(--font-base)", fontSize: "20px", fontWeight: 800, color: "#ffffff", marginBottom: "9px", lineHeight: 1.25 }}>Worried these symptoms sound familiar?</p>
@@ -368,7 +368,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── KEY FACTORS divider ── */}
-                <div data-toc-section style={{ paddingBottom: "1.5rem" }}>
+                <div data-toc-section style={{ paddingBottom: "1.5rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -395,7 +395,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── DIAGNOSIS ── */}
-                <div id="diagnosis" data-toc-section style={{ marginBottom: "2.5rem" }}>
+                <div id="diagnosis" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -425,7 +425,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TREATMENT ── */}
-                <div id="treatment" data-toc-section style={{ marginBottom: "1.5rem" }}>
+                <div id="treatment" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -466,7 +466,7 @@ function OsteoarthritisGuide() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     If basic treatments are not enough, your doctor can prescribe alternate treatments in the later stages:
                   </p>
-                  <ul className="space-y-1 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-1" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Steroid injections provide short-term relief from your pain</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Hyaluronic acid injections lubricate your joints to reduce friction while you move</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Knee or hip replacement surgery is considered in severe cases, when other treatment options fail to help. Knee replacement surgeries are covered under government schemes like PM-JAY for eligible patients.</li>
@@ -474,7 +474,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── LIVING WELL ── */}
-                <div id="living-well" data-toc-section style={{ marginBottom: "2rem" }}>
+                <div id="living-well" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -483,7 +483,7 @@ function OsteoarthritisGuide() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
                     <span style={peachHighlight}>Many people live active, fulfilling lives despite osteoarthritis.</span> Small lifestyle changes can make a big difference. Some of the tiny efforts that help you take a great leap are:
                   </p>
-                  <ul className="space-y-1 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-2" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {[
                       "Losing even 5 kg can significantly reduce strain on your knees",
                       "Adding turmeric, ginger, amla, and fatty fish to your diet",
@@ -499,7 +499,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO CONSULT ── */}
-                <div data-toc-section style={{ marginBottom: "4rem" }}>
+                <div data-toc-section style={{ marginBottom: "4rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -539,21 +539,6 @@ function OsteoarthritisGuide() {
                   </div>
                 </div>
 
-                {/* ── TAKE NEXT STEP ── */}
-                <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginBottom: "4rem", borderRadius: 0, textAlign: "left" }}>
-                  <h2 style={{ fontFamily: "var(--font-display)", fontSize: "1.75rem", fontWeight: 400, lineHeight: 1.2, letterSpacing: "-0.3px", marginBottom: "16px" }}>
-                    Take the Next Step
-                  </h2>
-                  <p style={{ fontSize: "16px", lineHeight: 1.75, color: "rgba(255,255,255,0.85)", marginBottom: "28px" }}>
-                    If the symptoms discussed in this article sound familiar, a proper diagnosis is the need of the hour. Joint pain that is persistent, limiting, or getting worse is not something to be ignored. A rheumatologist can give you clarity on what's happening to your joints and a plan for managing it. The earlier you take action, the healthier your life can be.
-                  </p>
-                  <a
-                    href="#"
-                    style={{ display: "inline-block", backgroundColor: "#ffffff", color: "#0f616e", fontWeight: 700, fontSize: "15px", padding: "12px 28px", borderRadius: "9999px", textDecoration: "none" }}
-                  >
-                    Book Your First Visit
-                  </a>
-                </div>
 
                 {/* ── NEWSLETTER ── */}
                 <div style={{ marginBottom: "4rem" }}>
