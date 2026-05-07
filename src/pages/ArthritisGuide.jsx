@@ -208,26 +208,23 @@ function ArthritisGuide() {
           <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
             <div className="max-w-7xl mx-auto grid grid-cols-3 gap-2 px-5 py-4 sm:flex sm:gap-3 sm:overflow-x-auto sm:px-6">
               {[
-                { label: "Symptoms", id: "symptoms", ids: ["symptoms", "what-is-ra"] },
-                { label: "Treatment", id: "treatment", ids: ["treatment", "stages", "causes", "diagnosis"] },
-                { label: "Doctors & Departments", shortLabel: "Doctors & Dept.", id: "when-to-see", ids: ["when-to-see", "managing-ra", "faq"] },
-              ].map((tab) => {
-                const isActive = tab.ids.includes(activeSection)
-                return (
-                  <button
-                    key={tab.label}
-                    onClick={() => scrollToSection(tab.id)}
-                    className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
-                    style={{
-                      backgroundColor: isActive ? "#ffffff" : "rgba(255,255,255,0.12)",
-                      color: isActive ? "#0f616e" : "#ffffff",
-                    }}
-                  >
-                    <span className="sm:hidden">{tab.shortLabel || tab.label}</span>
-                    <span className="hidden sm:inline">{tab.label}</span>
-                  </button>
-                )
-              })}
+                { label: "Causes & Symptoms", href: "/Rheumatoid-Arthritis" },
+                { label: "Diagnosis", href: "/Rheumatoid-Arthritis" },
+                { label: "Treatment", href: "/Rheumatoid-Arthritis" },
+              ].map((tab) => (
+                <a
+                  key={tab.label}
+                  href={tab.href}
+                  className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
+                  style={{
+                    backgroundColor: "rgba(255,255,255,0.12)",
+                    color: "#ffffff",
+                    textDecoration: "none",
+                  }}
+                >
+                  {tab.label}
+                </a>
+              ))}
             </div>
           </div>
         </header>
