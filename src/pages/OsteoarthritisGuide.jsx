@@ -359,7 +359,7 @@ function OsteoarthritisGuide() {
                       href="#"
                       style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 22px", borderRadius: "9999px", textDecoration: "none", whiteSpace: "nowrap", alignSelf: "flex-start" }}
                     >
-                      Book a Visit
+                      Book Visit
                     </a>
                   </div>
                   <div className="hidden md:block" style={{ width: "200px", flexShrink: 0, overflow: "hidden" }}>

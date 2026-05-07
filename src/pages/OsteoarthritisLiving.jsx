@@ -463,7 +463,7 @@ function OsteoarthritisLiving() {
                       href="#"
                       style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
                     >
-                      Book a Visit →
+                      Book Visit →
                     </a>
                   </div>
                 </div>
