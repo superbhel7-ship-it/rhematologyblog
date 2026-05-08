@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
+import ReviewedConsultationCta from "../components/ReviewedConsultationCta"
 import { ArrowRight } from "lucide-react"
 
 /* ─────────────────────────────────────────────
@@ -93,14 +94,27 @@ function OsteoarthritisAdvanced() {
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
       <style>{`
+        .guide-article-content > [data-toc-section] {
+          margin-bottom: 0 !important;
+        }
+
         .guide-article-content > [data-toc-section] ~ [data-toc-section] {
-          margin-top: 2.5rem !important;
+          margin-top: 3.5rem !important;
           padding-top: 0 !important;
           border-top: 0 !important;
         }
 
         .guide-article-content > [data-toc-section] > h2 {
           margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > .guide-cta {
+          margin-top: 2rem !important;
+          margin-bottom: 0 !important;
+        }
+
+        .guide-article-content > .guide-cta + [data-toc-section] {
+          margin-top: 3.5rem !important;
         }
 
         .guide-article-content > [data-toc-section] h3 {
@@ -114,6 +128,11 @@ function OsteoarthritisAdvanced() {
 
         .guide-article-content > [data-toc-section] h2 + h3 {
           margin-top: 0 !important;
+        }
+
+        .guide-toc,
+        .guide-toc button {
+          border-radius: 0 !important;
         }
       `}</style>
       <main>
@@ -141,8 +160,8 @@ function OsteoarthritisAdvanced() {
 
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
-            <div className="lg:flex lg:gap-14">
+          <div className="max-w-7xl mx-auto px-4 py-1 md:pt-4 md:pb-16">
+            <div className="lg:flex lg:gap-10">
 
               {/* ── Left: Article ── */}
               <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
@@ -163,13 +182,15 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
                     That's when specialised treatment options come into the picture.
                   </p>
-                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "2.5rem" }}>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
                     These range from quick clinic-based injections to more definitive solutions like knee replacement surgery. By getting to know what each option offers, you can take a more confident step. Let's walk through when these treatments are considered, what they involve, and what you can expect - especially in the Indian context.
                   </p>
                 </div>
 
+                <ReviewedConsultationCta />
+
                 {/* ── WHEN SPECIALISED ── */}
-                <div id="when-specialised" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="when-specialised" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -198,13 +219,13 @@ function OsteoarthritisAdvanced() {
                 </div>
 
                 {/* ── INJECTIONS ── */}
-                <div id="injections" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="injections" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Injection-Based Treatments for Osteoarthritis
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Injections often bridge the gap between medicines and surgery. They are quick, usually done in a clinic, don't require hospital admission, and have no long recovery time. Based on your joint's damage, your doctor would recommend these options.
                   </p>
 
@@ -217,7 +238,7 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     Doctors generally limit these to 3–4 injections for a single joint in one year, as overuse may affect joint health over time. For some, the effect may last 4 to 8 weeks; for many it lasts up to 3 months.
                   </p>
-                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "1.25rem" }}>
                     Approximate cost in India: INR 500 to 2,000 per session
                   </p>
 
@@ -230,13 +251,13 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     It's worth noting that the evidence is mixed. While some people experience marked improvement, others may not. Some international associations like EULAR suggest cautious use. AAOS and ACR/Arthritis Foundation do not currently recommend these as standard treatment. So it's best to have an open discussion with your doctor before taking the final call.
                   </p>
-                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "1.25rem" }}>
                     Approximate cost in India: INR 8,000 to 20,000 per injection
                   </p>
                 </div>
 
                 {/* ── PRP ── */}
-                <div id="prp" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="prp" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -254,7 +275,7 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "0.5rem" }}>
                     Approximate cost in India: INR 15,000 to 25,000 per session (usually 2–3 sessions recommended)
                   </p>
-                  <p className="text-[13px] leading-[1.65] text-navy-muted" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[13px] leading-[1.65] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
                     Costs mentioned are approximate and may differ based on hospital, city, and clinical needs. Please consult a qualified doctor for personalised advice.
                   </p>
 
@@ -273,13 +294,13 @@ function OsteoarthritisAdvanced() {
                 </div>
 
                 {/* ── KNEE REPLACEMENT ── */}
-                <div id="knee-replacement" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="knee-replacement" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Knee Replacement Surgery
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     When all non-surgical options stop providing relief and joint damage becomes more severe, knee replacement can be a life-changing option. It gives back your peaceful, pain-free sleep and a carefree morning walk. Currently, this is the most effective treatment for advanced osteoarthritis.
                   </p>
 
@@ -299,7 +320,7 @@ function OsteoarthritisAdvanced() {
                       <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">{item}</li>
                     ))}
                   </ul>
-                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[15px] leading-[1.7] text-navy-muted italic" style={{ marginBottom: "1.25rem" }}>
                     Besides age, your doctor considers pain severity, walking ability, and how badly it affects your routine before suggesting surgery.
                   </p>
 
@@ -309,7 +330,7 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Specialists replace your damaged joint with specially designed components made of metal and durable plastic. These act like a new joint surface, helping the knee move more smoothly and with less pain. The surgery usually takes around 3 to 4 hours, with a hospital stay of about 3 to 4 days.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Based on how much of the joint is affected, your doctor may recommend a <strong className="font-semibold">total knee replacement</strong> - when most of the joint is damaged - or a <strong className="font-semibold">partial knee replacement</strong>, where only the affected portion is replaced while preserving the healthy parts.
                   </p>
 
@@ -337,13 +358,13 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
                     Government schemes like PM-JAY, CGHS, and ESI can help reduce costs significantly. PM-JAY can cover up to INR 5 lakh.
                   </p>
-                  <p className="text-[13px] leading-[1.65] text-navy-muted italic" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[13px] leading-[1.65] text-navy-muted italic" style={{ marginBottom: "1.25rem" }}>
                     Disclaimer: Treatment outcomes and suitability vary between individuals. Costs are approximate and may differ based on hospital, city, and clinical needs. Please consult a qualified doctor for personalised advice.
                   </p>
                 </div>
 
                 {/* ── COMPARISON TABLE ── */}
-                <div id="comparison" data-toc-section style={{ marginBottom: "2.5rem" }}>
+                <div id="comparison" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -374,16 +395,16 @@ function OsteoarthritisAdvanced() {
                 </div>
 
                 {/* ── CHOOSING TREATMENT ── */}
-                <div id="not-sure" data-toc-section style={{ marginBottom: "2.5rem" }}>
+                <div id="not-sure" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Not Sure Which Option Is Right for You?
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     Choosing the right treatment can feel confusing, and that's completely normal.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     The best option depends on your joint damage, pain level, and what your daily life demands from you. A good specialist will not just recommend a procedure but will help you understand why it fits your situation.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
@@ -421,7 +442,7 @@ function OsteoarthritisAdvanced() {
               {/* ── Right: TOC + Dr Card Sidebar ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
                 <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                  <div className="guide-sidebar-scroll guide-toc" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0, borderRadius: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {

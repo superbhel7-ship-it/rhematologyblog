@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
+import ReviewedConsultationCta from "../components/ReviewedConsultationCta"
 import { ArrowRight } from "lucide-react"
 
 /* ─────────────────────────────────────────────
@@ -86,14 +87,40 @@ function OsteoarthritisLiving() {
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
       <style>{`
+        .guide-article-content > [data-toc-section] {
+          margin-bottom: 0 !important;
+        }
+
         .guide-article-content > [data-toc-section] ~ [data-toc-section] {
-          margin-top: 2.5rem !important;
+          margin-top: 3.5rem !important;
           padding-top: 0 !important;
           border-top: 0 !important;
         }
 
         .guide-article-content > [data-toc-section] > h2 {
           margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > [data-toc-section] p {
+          margin-bottom: 1.25rem !important;
+        }
+
+        .guide-article-content > [data-toc-section] p:last-child {
+          margin-bottom: 0 !important;
+        }
+
+        .guide-article-content > [data-toc-section] > h2 + p,
+        .guide-article-content > [data-toc-section] h3 + p {
+          margin-top: 0 !important;
+        }
+
+        .guide-article-content > .guide-cta {
+          margin-top: 2rem !important;
+          margin-bottom: 0 !important;
+        }
+
+        .guide-article-content > .guide-cta + [data-toc-section] {
+          margin-top: 3.5rem !important;
         }
 
         .guide-article-content > [data-toc-section] h3 {
@@ -107,6 +134,11 @@ function OsteoarthritisLiving() {
 
         .guide-article-content > [data-toc-section] h2 + h3 {
           margin-top: 0 !important;
+        }
+
+        .guide-toc,
+        .guide-toc button {
+          border-radius: 0 !important;
         }
       `}</style>
       <main>
@@ -134,8 +166,8 @@ function OsteoarthritisLiving() {
 
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
-            <div className="lg:flex lg:gap-14">
+          <div className="max-w-7xl mx-auto px-4 py-1 md:pt-4 md:pb-16">
+            <div className="lg:flex lg:gap-10">
 
               {/* ── Left: Article ── */}
               <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
@@ -158,8 +190,10 @@ function OsteoarthritisLiving() {
                   </p>
                 </div>
 
+                <ReviewedConsultationCta />
+
                 {/* ── OA OVER TIME ── */}
-                <div id="oa-over-time" data-toc-section style={{ marginBottom: "2rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="oa-over-time" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -181,20 +215,20 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── PAIN & FLARES ── */}
-                <div id="pain-flares" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="pain-flares" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Managing Pain and Flares at Home
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     One of the most useful skills when living with osteoarthritis is learning how to respond to changes in your pain.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Is a Flare?
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     A flare is a temporary spike in your pain, swelling, and stiffness. It can be triggered when you overuse the joint, sit still for too long, when the weather turns cold, or even due to stress.
                   </p>
 
@@ -214,34 +248,34 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── EATING ── */}
-                <div id="eating" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="eating" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Eating for Joint Health
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     There isn't a strict "Osteoarthritis diet," but your daily food choices can either help calm the swelling or make it worse.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Foods for Your Joints
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Including oily fish such as mackerel, sardines, rohu, and hilsa in your daily meal can provide omega-3 fatty acids that help reduce inflammation. A variety of fruits and vegetables, like papaya, spinach, and carrots, supply antioxidants that support your joint health. Whole grains such as brown rice, jowar, bajra, and oats help with weight control and pain, while calcium-rich foods like curd, ragi, and sesame seeds strengthen bones. Using healthier oils like mustard oil or cold-pressed coconut oil instead of refined oils can also be beneficial.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Foods to Avoid
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     It is best to limit deep-fried foods like pakoras and pooris. Foods made from maida, such as white bread and biscuits, and sugary items like mithais and soft drinks can worsen your pain. Packaged and preserved snacks often contain high levels of salt and unhealthy fats that may negatively impact joint health.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Simple Indian Additions That Help
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Your everyday kitchen already offers you the most powerful support. Turmeric and ginger help reduce your pain and swelling, while amla, which is rich in vitamin C, supports cartilage health. Using these regularly in your dishes makes you feel light and your bones strong.
                   </p>
 
@@ -254,27 +288,27 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── EXERCISE ── */}
-                <div id="exercise" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="exercise" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Staying Active Without Overdoing It
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Movement is one of the most effective ways to manage osteoarthritis. The key is to choose the right kind of activity that suits your condition.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Types of Exercise Help?
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     A balanced exercise routine can include strengthening exercises like quadriceps workouts to reduce stress on joints, along with low-impact activities like walking, cycling, or swimming to improve overall fitness. Low-impact aerobic exercises can increase your flexibility. Gentle stretching helps to ease your stiffness, while balancing exercises can lower the risk of falling.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     During a Flare
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     During a flare, it is better to switch to much gentler or seated exercises. This reduces the intensity rather than stopping completely. As symptoms improve, you can gradually return to your usual routine.
                   </p>
 
@@ -287,7 +321,7 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── MENTAL HEALTH ── */}
-                <div id="mental-health" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="mental-health" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -296,7 +330,7 @@ function OsteoarthritisLiving() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Living with this condition can affect your mood more than just your joints. Many people with osteoarthritis experience low mood, anxiety, and poor sleep. This is common, and you are not alone. It definitely deserves attention.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Disturbed sleep, inability to follow your daily routine, and even some lifestyle changes like eating healthy and exercising could make you feel anxious and isolated. Prioritise your mental well-being equally. Studies say that when you are too depressed or anxious, your tolerance to pain may even drop. Try getting help as and when needed. Joining clubs or trusts for arthritis patients helps you build a healthier and like-minded community. This way, even healthier habits that were once boring become enjoyable.
                   </p>
 
@@ -309,7 +343,7 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── DAILY LIFE ── */}
-                <div id="daily-life" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="daily-life" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -319,14 +353,14 @@ function OsteoarthritisLiving() {
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     At Work
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     At work, make simple adjustments such as setting up your chair and desk comfortably. Keeping your feet flat on the floor and taking short breaks every 45-60 minutes can reduce your strain. If needed, discuss modified duties to stay productive without worsening symptoms.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     While Travelling
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     While travelling, choosing aisle seats allows easier movement. It also allows you to take some time to stretch or walk every 30-45 minutes. This can prevent stiffness. Carrying medicines with you and avoiding tightly packed schedules can make travel more comfortable. Make sure you eat healthy and have ample rest while travelling. One shouldn't forget to wear comfortable shoes with supportive soles while travelling. If you can, do not hesitate to customise the shoes for your needs.
                   </p>
 
@@ -339,7 +373,7 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── COSTS ── */}
-                <div id="costs" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="costs" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
@@ -352,7 +386,7 @@ function OsteoarthritisLiving() {
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Helpful Schemes
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Schemes like Ayushman Bharat (PM-JAY) can cover up to 5 lakhs for major surgeries such as knee replacement in specific hospitals, while CGHS and ESI provide treatment support like offering physiotherapy, medicines and referrals for surgeries for eligible individuals. eSanjeevani offers free online doctor consultations. This helps people in remote places or those who need help to travel.
                   </p>
 
@@ -365,7 +399,7 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── FINAL THOUGHT ── */}
-                <div id="final-thought" data-toc-section style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
+                <div id="final-thought" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
                   >
@@ -377,7 +411,7 @@ function OsteoarthritisLiving() {
                 </div>
 
                 {/* ── TAKE NEXT STEP ── */}
-                <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginBottom: "48px", borderRadius: 0 }}>
+                <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginTop: "3.5rem", marginBottom: "32px", borderRadius: 0 }}>
                   <h2 style={{ fontFamily: "var(--font-display)", fontSize: "1.75rem", fontWeight: 400, lineHeight: 1.2, letterSpacing: "-0.3px", marginBottom: "16px" }}>
                     Take the Next Step
                   </h2>
@@ -386,7 +420,7 @@ function OsteoarthritisLiving() {
                   </p>
                   <a
                     href="#"
-                    style={{ display: "inline-block", backgroundColor: "#ffffff", color: "#0f616e", fontWeight: 700, fontSize: "15px", padding: "12px 28px", borderRadius: "9999px", textDecoration: "none" }}
+                    style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontWeight: 700, fontSize: "15px", padding: "12px 28px", borderRadius: "9999px", textDecoration: "none" }}
                   >
                     Book Your First Visit
                   </a>
@@ -422,7 +456,7 @@ function OsteoarthritisLiving() {
               {/* ── Right: TOC + Dr Card Sidebar ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
                 <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                  <div className="guide-sidebar-scroll guide-toc" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0, borderRadius: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {

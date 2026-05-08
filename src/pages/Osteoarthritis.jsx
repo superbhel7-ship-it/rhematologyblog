@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import OsteoarthritisHero from "../components/OsteoarthritisHero"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
+import ReviewedConsultationCta from "../components/ReviewedConsultationCta"
 import { ArrowRight } from "lucide-react"
 
 /* ─────────────────────────────────────────────
@@ -208,6 +209,10 @@ function Osteoarthritis() {
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
       <style>{`
+        .guide-article-content > [data-toc-section] {
+          margin-bottom: 0 !important;
+        }
+
         .guide-article-content > [data-toc-section] ~ [data-toc-section] {
           margin-top: 3.5rem !important;
           padding-top: 0 !important;
@@ -216,6 +221,15 @@ function Osteoarthritis() {
 
         .guide-article-content > [data-toc-section] > h2 {
           margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > .guide-cta {
+          margin-top: 2rem !important;
+          margin-bottom: 0 !important;
+        }
+
+        .guide-article-content > .guide-cta + [data-toc-section] {
+          margin-top: 3.5rem !important;
         }
 
         .guide-article-content > [data-toc-section] > h1 {
@@ -235,70 +249,131 @@ function Osteoarthritis() {
         .guide-article-content > [data-toc-section] h2 + h3 {
           margin-top: 0 !important;
         }
+
+        .guide-toc,
+        .guide-toc button {
+          border-radius: 0 !important;
+        }
       `}</style>
       <main>
 
         {/* ═══════════ HERO ═══════════ */}
         {/* <OsteoarthritisHero /> */}
 
-           <section style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
-            <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
-              <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
-              <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4" }}>Diseases &amp; Conditions</span>
-            </div>
-            <h1
-              className="mb-4"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(48px, 6vw, 64px)",
-                fontWeight: 400,
-                letterSpacing: "-0.5px",
-                color: "#ffffff",
-                maxWidth: "1120px",
-              }}
+        <header style={{ backgroundColor: "#0f616e" }} className="text-white">
+          <div className="relative max-w-7xl mx-auto px-5 pt-6 pb-0 sm:px-6 md:pt-8" style={{ minHeight: "280px" }}>
+            <div
+              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px]"
+              style={{ color: "rgba(255,255,255,0.68)", marginBottom: "clamp(1.5rem, 6vw, 2rem)" }}
+              aria-label="Breadcrumb"
             >
-              Osteoarthritis Symptoms and Causes
-            </h1>
-           {/* <a href="#" className="inline-flex items-center gap-3 font-semibold" style={{ color: "#ffffff", fontSize: "13px", lineHeight: "20px" }}>
-              <span className="material-symbols-outlined text-[20px]">calendar_month</span>
-              Request an Appointment
-            </a> */}
+              <span className="whitespace-nowrap">Home</span>
+              <span aria-hidden="true">›</span>
+              <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
+              <span aria-hidden="true">›</span>
+              <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Osteoarthritis</span>
+            </div>
+
+            <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
+              <div className="flex-1 pb-7 text-left md:pb-0">
+                <div
+                  role="heading"
+                  aria-level={2}
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "clamp(36px, 8vw, 64px)",
+                    fontWeight: 400,
+                    lineHeight: "1.1",
+                    letterSpacing: "-0.5px",
+                    color: "#ffffff",
+                    marginBottom: "1.15rem",
+                  }}
+                >
+                  Osteoarthritis
+                </div>
+                <p
+                  style={{
+                    fontFamily: "var(--font-display)",
+                    fontSize: "clamp(16px, 2vw, 22px)",
+                    lineHeight: 1.2,
+                    color: "rgba(255,255,255,0.92)",
+                    maxWidth: "760px",
+                    marginBottom: 0,
+                  }}
+                >
+                  Symptoms and Causes: What Your Joints Are Trying to Tell You
+                </p>
+              </div>
+
+              <div className="hidden md:block" style={{ position: "absolute", top: 0, right: "24px", width: "420px", height: "280px", overflow: "hidden" }}>
+                <img
+                  src="/OA.png"
+                  alt="Osteoarthritis"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
+                />
+              </div>
+
+            </div>
           </div>
-        </section>
+
+          {/* <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
+            <div className="max-w-7xl mx-auto grid grid-cols-3 gap-2 px-5 py-4 sm:flex sm:gap-3 sm:overflow-x-auto sm:px-6">
+              {[
+                { label: "Causes & Symptoms", id: "what-it-feels-like", ids: ["overview", "what-it-feels-like", "causes", "risk-factors", "early-symptoms"] },
+                { label: "Progression", id: "progression", ids: ["progression", "differential"] },
+                { label: "Doctor & FAQs", id: "when-to-see", ids: ["when-to-see", "faq"] },
+              ].map((tab) => {
+                const isActive = tab.ids.includes(activeSection)
+                return (
+                  <button
+                    key={tab.label}
+                    onClick={() => scrollToSection(tab.id)}
+                    className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
+                    style={{
+                      backgroundColor: isActive ? "#ffffff" : "rgba(255,255,255,0.12)",
+                      color: isActive ? "#0f616e" : "#ffffff",
+                    }}
+                  >
+                    {tab.label}
+                  </button>
+                )
+              })}
+            </div>
+          </div> */}
+        </header>
 
         {/* ═══════════ ARTICLE BODY + CTA SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
-            <div className="lg:flex lg:gap-14">
+          <div className="max-w-7xl mx-auto px-4 py-1 md:pt-4 md:pb-16">
+            <div className="lg:flex lg:gap-10">
 
               {/* ── Left: Article Content ── */}
-              <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#5e5e5e" }}>
+              <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
                   <h1
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.4px", paddingBottom: "1rem", marginBottom: "2rem", borderBottom: "2px solid #dadfe8" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.4px", paddingBottom: "1rem", marginBottom: "1.5rem", borderBottom: "2px solid #dadfe8" }}
                   >
                     Osteoarthritis, Symptoms and Causes: What Your Joints Are Trying to Tell You
                   </h1>
 
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginTop: "0.5rem", marginBottom: "0.85rem" }}>
                     Deepa, a 45-year-old mom of two, leads a busy city life. Her mild joint discomfort gradually worsened. She was exhausted — tired of following health hacks, hitting the gym, and people's never-ending advice.
                   </p>
-                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "0.85rem" }}>
                     One evening, as she sat down with her coffee, her knees made a noticeable creaking sound. She paused and wondered: <em>What is my body trying to tell me? Am I the only one going through this? Why are my joints getting stiff?</em>
                   </p>
-                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "2rem" }}>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
                     Reasons for pain may vary. From a mild strain and sprain to long-term conditions like Gout, Rheumatoid arthritis and Osteoarthritis.
                   </p>
 
                   {/* "What makes OA tricky" callout box */}
                   <div
-                    style={{ borderLeft: "4px solid #1AA3B5", backgroundColor: "#E0F3F5", padding: "24px 28px", borderRadius: "0 4px 4px 0", marginBottom: "2rem" }}
+                    style={{ borderLeft: "4px solid #1AA3B5", backgroundColor: "#E0F3F5", padding: "20px 24px", borderRadius: "0 4px 4px 0", marginBottom: "1.25rem" }}
                   >
-                    <p className="text-[15px] font-bold text-navy-deep" style={{ marginBottom: "10px" }}>What makes osteoarthritis tricky?</p>
+                    <p className="text-[15px] font-bold text-navy-deep" style={{ marginBottom: "6px" }}>What makes osteoarthritis tricky?</p>
                     <p className="text-[15px] leading-[1.75] text-navy-deep">
                       Osteoarthritis does not begin with an obvious warning sign. It begins quietly. A stiff knee after sitting through a long meeting. A dull ache in the fingers after cooking. A grinding sensation after climbing the stairs that wasn't there a year ago. When life becomes busy, it is easy to ignore these signs. Often, a bit of joint discomfort feels like it comes with the territory of getting older.
                     </p>
@@ -309,8 +384,10 @@ function Osteoarthritis() {
                   </p>
                 </div>
 
+                <ReviewedConsultationCta />
+
                 {/* ── WHAT IT FEELS LIKE ── */}
-                <div id="what-it-feels-like" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "0" }}>
+                <div id="what-it-feels-like" data-toc-section style={{ paddingTop: "0", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -326,7 +403,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── CAUSES ── */}
-                <div id="causes" data-toc-section style={{ marginBottom: "1.25rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
+                <div id="causes" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -342,7 +419,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── RISK FACTORS ── */}
-                <div id="risk-factors" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
+                <div id="risk-factors" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -364,7 +441,7 @@ function Osteoarthritis() {
                   >
                     Factors you cannot reverse
                   </h3>
-                  <ul className="space-y-2 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-5" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {irreversibleFactors.map((f, i) => (
                       <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">
                         <strong className="font-bold">{f.title}:</strong> {f.desc}
@@ -411,7 +488,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── EARLY SYMPTOMS ── */}
-                <div id="early-symptoms" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
+                <div id="early-symptoms" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -436,7 +513,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── PROGRESSION ── */}
-                <div id="progression" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0" }}>
+                <div id="progression" data-toc-section style={{ paddingTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -502,16 +579,26 @@ function Osteoarthritis() {
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" style={{ marginBottom: "1.5rem" }}>
                     {jointSymptoms.map((j, i) => (
-                      <div key={i} className="bg-sky-faint/50 border border-sky-soft/40 p-5" style={{ borderRadius: 0 }}>
-                        <p className="text-xs font-bold uppercase tracking-[0.15em] text-navy-muted/60 mb-2">{j.joint}</p>
-                        <p className="text-[15px] text-navy-deep leading-[1.7]">{j.symptoms}</p>
+                      <div key={i} className="bg-sky-faint/50 border border-sky-soft/40 p-5" style={{ borderRadius: 0, fontFamily: "var(--font-base)" }}>
+                        <p
+                          className="text-navy-deep"
+                          style={{ fontFamily: "var(--font-base)", fontSize: "15px", fontWeight: 700, lineHeight: 1.35, marginBottom: "0.55rem" }}
+                        >
+                          {j.joint}
+                        </p>
+                        <p
+                          className="text-navy-muted"
+                          style={{ fontFamily: "var(--font-base)", fontSize: "15px", lineHeight: 1.7, margin: 0 }}
+                        >
+                          {j.symptoms}
+                        </p>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 {/* ── DIFFERENTIAL DIAGNOSIS ── */}
-                <div id="differential" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "6rem", borderTop: 0 }}>
+                <div id="differential" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -548,7 +635,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── WHEN TO SEE A DOCTOR ── */}
-                <div id="when-to-see" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
+                <div id="when-to-see" data-toc-section style={{ paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -574,7 +661,7 @@ function Osteoarthritis() {
                     backgroundColor: "#0f616e",
                     color: "#ffffff",
                     padding: "40px 36px",
-                    marginBottom: "48px",
+                    marginBottom: "32px",
                     borderRadius: 0,
                   }}
                 >
@@ -649,7 +736,7 @@ function Osteoarthritis() {
               {/* ── Right: TOC + Dr Card Sidebar ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
                 <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                  <div className="guide-sidebar-scroll guide-toc" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0, borderRadius: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {
