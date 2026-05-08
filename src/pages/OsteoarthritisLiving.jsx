@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
+import { ArrowRight } from "lucide-react"
 
 /* ─────────────────────────────────────────────
    DATA
@@ -43,6 +44,7 @@ const tocSections = [
   { id: "mental-health", label: "Mental Health" },
   { id: "daily-life", label: "Making Daily Life Easier" },
   { id: "costs", label: "Managing Expenses in India" },
+  { id: "final-thought", label: "Final Thought" },
   { id: "faq", label: "FAQs" },
 ]
 
@@ -83,6 +85,30 @@ function OsteoarthritisLiving() {
   return (
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
+      <style>{`
+        .guide-article-content > [data-toc-section] ~ [data-toc-section] {
+          margin-top: 3.5rem !important;
+          padding-top: 0 !important;
+          border-top: 0 !important;
+        }
+
+        .guide-article-content > [data-toc-section] > h2 {
+          margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > [data-toc-section] h3 {
+          margin-top: 1.75rem !important;
+          margin-bottom: 1rem !important;
+          text-decoration: underline;
+          text-decoration-color: #1AA3B5;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
+        }
+
+        .guide-article-content > [data-toc-section] h2 + h3 {
+          margin-top: 0 !important;
+        }
+      `}</style>
       <main>
         <section style={{ backgroundColor: "#0f616e" }} className="text-white">
           <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
@@ -101,7 +127,7 @@ function OsteoarthritisLiving() {
                 maxWidth: "1120px",
               }}
             >
-              Osteoarthritis - Living With Osteoarthritis
+              Living With Osteoarthritis: Daily Habits That Make a Real Difference
             </h1>
           </div>
         </section>
@@ -132,11 +158,19 @@ function OsteoarthritisLiving() {
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
+                  <h2
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                  >
+                    Living With Osteoarthritis: Daily Habits That Make a Real Difference
+                  </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Rita is a 56-year-old first-time nanny. The excitement of being a new granny and dreams of enjoying her retirement journey were shattered the moment she was diagnosed with osteoarthritis. Being diagnosed can feel overwhelming at first. But it doesn't mean your life has to shrink around pain.
+                    Rita is a 56-year-old first-time nanny. The excitement of being a new granny and dreams of enjoying her retirement journey were shattered the moment she heard that she was being diagnosed with osteoarthritis. Being diagnosed with osteoarthritis can make you feel overwhelmed at first. But it doesn't mean your life has to shrink around pain.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    In reality, the small choices you make every day - what you eat, how you move, how you rest, and how you care for your mind - can truly shape how you feel. Think of managing osteoarthritis as building a strong bond with your body. It's not about doing things perfectly, but taking little steps consistently. Over time, even these small habits can add up to meaningful relief.
+                    In reality, the small choices you make every day, like what you eat, how you move, how you rest, and how you care for your mind, can truly shape how you feel.
+                  </p>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
+                    Think of managing osteoarthritis as building a strong bond with your body. It's not about doing things perfectly but taking little steps consistently. Over time, even these small habits can add up to some meaningful relief.
                   </p>
                 </div>
 
@@ -151,7 +185,7 @@ function OsteoarthritisLiving() {
                     Osteoarthritis is a long-term condition, and it doesn't follow a straight path. Some days may feel much lighter and easier, while others may hit you hard with stiffness or discomfort. For many people, it progresses slowly or stays stable for many years, based on their healthy routine.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Once diagnosed, one shouldn't wait for a miracle pill that reverses the entire condition. Our focus must shift to staying active and healthy with proper medical support.
+                    Once diagnosed, one shouldn't wait for a miracle pill that reverses the entire condition. Our focus must shift to keep us active and healthy with proper medical support.
                   </p>
 
                   <div style={{ borderLeft: "4px solid #1AA3B5", backgroundColor: "#E0F3F5", padding: "20px 24px", borderRadius: "0 4px 4px 0", marginTop: "1.5rem" }}>
@@ -184,14 +218,14 @@ function OsteoarthritisLiving() {
                     What Helps During a Flare?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
-                    During a flare, it is better to take ample rest. A cold pack for 15–20 minutes can reduce swelling, while a warm pack works better for easing stiffness. Taking medicines as prescribed and putting less pressure on the joint - using support if needed - makes the phase more manageable. Whenever necessary, do not forget to use your walking stick or a brace.
+                    During a flare, it is better to take ample rest. Applying a cold pack for 15-20 minutes can reduce your swelling, while a warm pack works better for easing your stiffness. Taking medicines as prescribed by your doctor and putting less pressure on the joint, like using support if needed, can make the phase more manageable. Whenever necessary, do not forget to use your walking stick or a brace.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem", marginTop: "1.75rem" }}>
                     How to Prevent Flares
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    A steady and healthy routine makes a big difference. Do not overwork your joints on good days. Stay consistent with gentle exercise, maintain a healthy weight, and try to have a balanced diet. Keeping yourself warm in colder weather can help reduce the frequency of flares.
+                    A steady and healthy routine makes a big difference. Do not overwork your joint on good days. Stay consistent with gentle exercise, maintain a healthy weight and try to have a balanced diet. Keeping yourself warm in colder weather can help reduce the frequency of flares. These tiny steps make sure that you don't need to worry about flares anymore.
                   </p>
                 </div>
 
@@ -209,35 +243,29 @@ function OsteoarthritisLiving() {
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Foods for Your Joints
                   </h3>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Oily fish such as mackerel, sardines, rohu, and hilsa provide omega-3 fatty acids that help reduce inflammation.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">A variety of fruits and vegetables like papaya, spinach, and carrots supply antioxidants that support joint health.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Whole grains such as brown rice, jowar, bajra, and oats help with weight control and pain.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Calcium-rich foods like curd, ragi, and sesame seeds strengthen bones.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Using healthier oils like mustard oil or cold-pressed coconut oil instead of refined oils can also be beneficial.</li>
-                  </ul>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                    Including oily fish such as mackerel, sardines, rohu, and hilsa in your daily meal can provide omega-3 fatty acids that help reduce inflammation. A variety of fruits and vegetables, like papaya, spinach, and carrots, supply antioxidants that support your joint health. Whole grains such as brown rice, jowar, bajra, and oats help with weight control and pain, while calcium-rich foods like curd, ragi, and sesame seeds strengthen bones. Using healthier oils like mustard oil or cold-pressed coconut oil instead of refined oils can also be beneficial.
+                  </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Foods to Avoid
                   </h3>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Deep-fried foods like pakoras and pooris</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Foods made from maida - white bread, biscuits - and sugary items like mithais and soft drinks can worsen pain.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Packaged and preserved snacks contain high levels of salt and unhealthy fats that negatively impact joint health.</li>
-                  </ul>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                    It is best to limit deep-fried foods like pakoras and pooris. Foods made from maida, such as white bread and biscuits, and sugary items like mithais and soft drinks can worsen your pain. Packaged and preserved snacks often contain high levels of salt and unhealthy fats that may negatively impact joint health.
+                  </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Simple Indian Additions That Help
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    Your everyday kitchen already offers powerful support. Turmeric and ginger help reduce pain and swelling, while amla - rich in vitamin C - supports cartilage health. Using these regularly in your dishes makes you feel light and keeps your bones strong.
+                    Your everyday kitchen already offers you the most powerful support. Turmeric and ginger help reduce your pain and swelling, while amla, which is rich in vitamin C, supports cartilage health. Using these regularly in your dishes makes you feel light and your bones strong.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What About Supplements?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    Some people consider supplements such as glucosamine and chondroitin, although results vary. Vitamin D is especially important in India due to prevailing deficiencies. Fish oil capsules can be helpful for those who don't consume fish regularly. Always consult your doctor before starting any supplement.
+                    Some people consider supplements such as glucosamine and chondroitin, although results might vary. Vitamin D is especially important in India due to the prevailing deficiencies. Fish oil capsules can be helpful for those who do not consume fish regularly. It is always advisable to consult your doctor before starting any supplement.
                   </p>
                 </div>
 
@@ -255,26 +283,22 @@ function OsteoarthritisLiving() {
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Types of Exercise Help?
                   </h3>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Strengthening exercises like quadriceps workouts reduce stress on joints.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Low-impact activities like walking, cycling, or swimming improve overall fitness.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Low-impact aerobic exercises increase flexibility.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Gentle stretching helps ease stiffness.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Balancing exercises lower the risk of falling.</li>
-                  </ul>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                    A balanced exercise routine can include strengthening exercises like quadriceps workouts to reduce stress on joints, along with low-impact activities like walking, cycling, or swimming to improve overall fitness. Low-impact aerobic exercises can increase your flexibility. Gentle stretching helps to ease your stiffness, while balancing exercises can lower the risk of falling.
+                  </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     During a Flare
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    During a flare, switch to gentler or seated exercises - reduce the intensity rather than stopping completely. As symptoms improve, you can gradually return to your usual routine.
+                    During a flare, it is better to switch to much gentler or seated exercises. This reduces the intensity rather than stopping completely. As symptoms improve, you can gradually return to your usual routine.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Is Yoga Really Helpful?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    Yoga can be a gentle and supportive addition. Some studies suggest it may help improve pain, flexibility, and joint function. Safer options include chair yoga and modified standing poses. As these are slow and rhythmic movements, they don't stress your joints. Deep squats or high-pressure positions are best avoided.
+                    Yoga can be a gentle and supportive addition. Some studies suggest that it may help improve pain, flexibility, and joint function. Safer options include chair yoga and modified standing poses. As these are slow and rhythmic movements, it doesn't hurt your joints much. But deep squats or high-pressure positions are best avoided.
                   </p>
                 </div>
 
@@ -286,21 +310,18 @@ function OsteoarthritisLiving() {
                     Taking Care of Your Mental Health
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Living with this condition can affect your mood more than just your joints. Many people with osteoarthritis experience low mood, anxiety, and poor sleep. This is common, and you are not alone - it deserves attention.
+                    Living with this condition can affect your mood more than just your joints. Many people with osteoarthritis experience low mood, anxiety, and poor sleep. This is common, and you are not alone. It definitely deserves attention.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    Disturbed sleep, inability to follow your daily routine, and even some of the lifestyle changes like eating healthy and exercising can make you feel anxious and isolated. Studies show that when you are too depressed or anxious, your tolerance to pain may drop. Joining clubs or trusts for arthritis patients helps you build a healthier, like-minded community - making healthy habits more enjoyable.
+                    Disturbed sleep, inability to follow your daily routine, and even some lifestyle changes like eating healthy and exercising could make you feel anxious and isolated. Prioritise your mental well-being equally. Studies say that when you are too depressed or anxious, your tolerance to pain may even drop. Try getting help as and when needed. Joining clubs or trusts for arthritis patients helps you build a healthier and like-minded community. This way, even healthier habits that were once boring become enjoyable.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     What Can Help
                   </h3>
-                  <ul className="space-y-4 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Breaking tasks into smaller, manageable steps while setting realistic daily goals makes everyday life feel less overwhelming.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Practising breathing or relaxation techniques can help during difficult moments.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Counselling or cognitive behavioural therapy - available online too - may also be useful.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Staying connected with family, friends, or support groups gives emotional support and reduces feelings of isolation.</li>
-                  </ul>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep">
+                    Breaking tasks into smaller and manageable steps while setting realistic daily goals can make everyday life feel less overwhelming. Practising breathing or relaxation techniques can help during difficult moments. Counselling or cognitive behavioural therapy, which is also available online, may also be useful. Staying connected with family, friends, or support groups can give you emotional support and reduce feelings of isolation.
+                  </p>
                 </div>
 
                 {/* ── DAILY LIFE ── */}
@@ -315,25 +336,22 @@ function OsteoarthritisLiving() {
                     At Work
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    Set up your chair and desk comfortably. Keep your feet flat on the floor and take short breaks every 45–60 minutes to reduce strain. If needed, discuss modified duties with your employer to stay productive without worsening symptoms.
+                    At work, make simple adjustments such as setting up your chair and desk comfortably. Keeping your feet flat on the floor and taking short breaks every 45-60 minutes can reduce your strain. If needed, discuss modified duties to stay productive without worsening symptoms.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     While Travelling
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    Choose aisle seats to allow easier movement and take time to stretch or walk every 30–45 minutes to prevent stiffness. Carry medicines with you and avoid tightly packed schedules. Eat healthy, rest well, and wear comfortable shoes with supportive soles. Don't hesitate to customise shoes for your needs if required.
+                    While travelling, choosing aisle seats allows easier movement. It also allows you to take some time to stretch or walk every 30-45 minutes. This can prevent stiffness. Carrying medicines with you and avoiding tightly packed schedules can make travel more comfortable. Make sure you eat healthy and have ample rest while travelling. One shouldn't forget to wear comfortable shoes with supportive soles while travelling. If you can, do not hesitate to customise the shoes for your needs.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     At Home
                   </h3>
-                  <ul className="space-y-4 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Install grab rails in the bathroom to make walking easier.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Use non-slip mats and western lavatories to avoid squatting.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Use long-handled kitchen tools to reduce strain on your joints.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Avoid sitting on the floor for meals and prayers to reduce strain on your knees.</li>
-                  </ul>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep">
+                    At home, make some small changes. Install grab rails in the bathroom to make you walk with ease. Using non-slip mats and using western lavatories to avoid squatting can be a great benefit. Using long-handled kitchen tools can significantly reduce the strain on your joints, and avoiding sitting on the floor for meals and prayers can reduce the strain on your knees.
+                  </p>
                 </div>
 
                 {/* ── COSTS ── */}
@@ -344,29 +362,26 @@ function OsteoarthritisLiving() {
                     Managing the Expenses in India
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Long-term care doesn't always have to be expensive. Jan Aushadhi stores offer generic medicines at affordable prices. Government hospitals provide physiotherapy sessions, and telemedicine services can reduce your travel costs significantly.
+                    Long-term care doesn't always have to be very expensive. Jan Aushadhi stores offer generic medicines at affordable prices. Government hospitals provide physiotherapy sessions, which are very helpful, and some telemedicine services definitely help reduce your travel costs.
                   </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Helpful Schemes
                   </h3>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1"><strong className="font-semibold">Ayushman Bharat (PM-JAY):</strong> Can cover up to ₹5 lakh for major surgeries such as knee replacement at specific hospitals.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1"><strong className="font-semibold">CGHS and ESI:</strong> Provide treatment support including physiotherapy, medicines, and referrals for surgeries for eligible individuals.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1"><strong className="font-semibold">eSanjeevani:</strong> Offers free online doctor consultations - especially helpful for people in remote areas or those with limited mobility.</li>
-                  </ul>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
+                    Schemes like Ayushman Bharat (PM-JAY) can cover up to 5 lakhs for major surgeries such as knee replacement in specific hospitals, while CGHS and ESI provide treatment support like offering physiotherapy, medicines and referrals for surgeries for eligible individuals. eSanjeevani offers free online doctor consultations. This helps people in remote places or those who need help to travel.
+                  </p>
 
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 400, lineHeight: 1.25, letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Regular Check-Ups Matter
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    Even if symptoms feel stable, regular reviews will help you stay on track. Your doctor can monitor disease progression, adjust medicines when needed, and address issues early. A yearly check-up is always recommended - doctors may notice changes in symptoms that you might miss.
+                    Even if symptoms feel stable, regular reviews will help you stay on track. Your doctor can monitor disease progression, adjust medicines when needed, and address issues early. A yearly check-up is always recommended, and it is better as doctors may notice changes in symptoms when you fail to keep track.
                   </p>
                 </div>
 
-                {/* ── KEY FACTORS divider ── */}
-                <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginTop: "1rem" }} />
-                <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
+                {/* ── FINAL THOUGHT ── */}
+                <div id="final-thought" data-toc-section style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
                   <h2
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
                   >
@@ -376,7 +391,6 @@ function OsteoarthritisLiving() {
                     Living with osteoarthritis is not about making drastic changes overnight. It's about building steady, sustainable habits that support your body over time. When you stay consistent, listen to your body, and make thoughtful daily choices, it's entirely possible to live an active and fulfilling life with osteoarthritis.
                   </p>
                 </div>
-                <hr style={{ border: "none", borderTop: "1px solid #dcdcdc", marginBottom: "2.5rem" }} />
 
                 {/* ── TAKE NEXT STEP ── */}
                 <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "40px 36px", marginBottom: "48px", borderRadius: 0 }}>
@@ -424,7 +438,7 @@ function OsteoarthritisLiving() {
               {/* ── Right: TOC + Dr Card Sidebar ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
                 <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {
@@ -448,22 +462,26 @@ function OsteoarthritisLiving() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#e0f3f5", color: "#0f616e", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>
-                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "#0f616e", marginBottom: "5px" }}>Medically reviewed by</p>
-                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#0f616e" }}>Dr. Raghavendra H</p>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#ffffff" }}>Dr. Raghavendra H</p>
                       </div>
                     </div>
-                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "#2d5a62", marginBottom: "14px" }}>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
                       Consultant Rheumatologist for osteoarthritis evaluation and long-term joint care.
                     </p>
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                      className="group"
+                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E86531", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 16px 11px 18px", borderRadius: "9999px", textDecoration: "none" }}
                     >
-                      Book Visit →
+                      Book Appointment
+                      <span className="inline-flex h-5 w-5 items-center justify-center rounded-full transition-colors group-hover:bg-white/30" style={{ backgroundColor: "rgba(255,255,255,0.2)" }}>
+                        <ArrowRight size={14} />
+                      </span>
                     </a>
                   </div>
                 </div>

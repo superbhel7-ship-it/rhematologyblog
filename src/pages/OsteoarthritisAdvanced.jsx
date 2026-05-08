@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Header from "../components/Header"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
+import { ArrowRight } from "lucide-react"
 
 /* ─────────────────────────────────────────────
    DATA
@@ -48,9 +49,9 @@ const tocSections = [
   { id: "when-specialised", label: "When Specialised Procedure?" },
   { id: "injections", label: "Injection-Based Treatments" },
   { id: "prp", label: "PRP Injections" },
-  { id: "stem-cell", label: "Stem Cell Therapy" },
   { id: "knee-replacement", label: "Knee Replacement Surgery" },
   { id: "comparison", label: "Quick Comparison Guide" },
+  { id: "not-sure", label: "Choosing Treatment" },
   { id: "faq", label: "FAQs" },
 ]
 
@@ -91,6 +92,30 @@ function OsteoarthritisAdvanced() {
   return (
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
+      <style>{`
+        .guide-article-content > [data-toc-section] ~ [data-toc-section] {
+          margin-top: 3.5rem !important;
+          padding-top: 0 !important;
+          border-top: 0 !important;
+        }
+
+        .guide-article-content > [data-toc-section] > h2 {
+          margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > [data-toc-section] h3 {
+          margin-top: 1.75rem !important;
+          margin-bottom: 1rem !important;
+          text-decoration: underline;
+          text-decoration-color: #1AA3B5;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
+        }
+
+        .guide-article-content > [data-toc-section] h2 + h3 {
+          margin-top: 0 !important;
+        }
+      `}</style>
       <main>
         <section style={{ backgroundColor: "#0f616e" }} className="text-white">
           <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
@@ -140,6 +165,11 @@ function OsteoarthritisAdvanced() {
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
+                  <h2
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                  >
+                    Osteoarthritis: Specialised Treatment Procedures - Injections, Surgery and What to Expect
+                  </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Meena, a 54-year-old woman, had a busy city life. Recently, she volunteered to retire from her tiring job. Her health condition did not allow her to continue. Neither could she board a bus nor walk across the crowded streets.
                   </p>
@@ -150,7 +180,7 @@ function OsteoarthritisAdvanced() {
                     That's when specialised treatment options come into the picture.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "2.5rem" }}>
-                    This range from quick clinic-based injections to more definitive solutions like a knee replacement surgery. By getting to know what each option offers, you can take a more confident step. Let's walk through when these treatments are considered, what they involve, and what you can expect - especially in the Indian context.
+                    These range from quick clinic-based injections to more definitive solutions like knee replacement surgery. By getting to know what each option offers, you can take a more confident step. Let's walk through when these treatments are considered, what they involve, and what you can expect - especially in the Indian context.
                   </p>
                 </div>
 
@@ -167,7 +197,7 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     Before suggesting the next step, your doctor might look for these signs:
                   </p>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-2 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {[
                       "Pain that doesn't let you have a peaceful sleep",
                       "Feeling exhausted after taking a few steps",
@@ -275,7 +305,7 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     Your specialist may look for these signs before recommending knee replacement:
                   </p>
-                  <ul className="space-y-4 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-2 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {[
                       "Stubborn pain that doesn't respond to medicines and injections",
                       "Daily activities become so tiring that you cannot manage them",
@@ -315,7 +345,7 @@ function OsteoarthritisAdvanced() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.75rem" }}>
                     Costs may vary depending on hospital, city, and implant type. Approximate ranges are:
                   </p>
-                  <ul className="space-y-3 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-2 mb-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Total knee replacement: INR 1.8 lakh to 4.5 lakh</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Partial knee replacement: INR 1.5 lakh to 2.8 lakh</li>
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Bilateral knee replacement: INR 3 lakh to 8 lakh</li>
@@ -327,23 +357,6 @@ function OsteoarthritisAdvanced() {
                     Disclaimer: Treatment outcomes and suitability vary between individuals. Costs are approximate and may differ based on hospital, city, and clinical needs. Please consult a qualified doctor for personalised advice.
                   </p>
                 </div>
-
-                {/* ── KEY FACTORS divider ── */}
-                <div style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
-                  <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
-                  >
-                    Not Sure Which Option Is Right for You?
-                  </h2>
-                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Choosing the right treatment can feel confusing, and that's completely normal. The best option depends on your joint damage, pain level, and what your daily life demands from you. A good specialist will not just recommend a procedure but will help you understand why it fits your situation.
-                  </p>
-                  <p className="text-[16px] leading-[1.8] text-navy-muted">
-                    There's no one-size-fits-all answer here. Based on your condition, your rheumatologist will recommend the best option suitable for you.
-                  </p>
-                </div>
-
-                <hr style={{ border: "none", borderTop: "1px solid #dadfe8", marginBottom: "0" }} />
 
                 {/* ── COMPARISON TABLE ── */}
                 <div id="comparison" data-toc-section style={{ marginBottom: "2.5rem" }}>
@@ -376,6 +389,24 @@ function OsteoarthritisAdvanced() {
                   </div>
                 </div>
 
+                {/* ── CHOOSING TREATMENT ── */}
+                <div id="not-sure" data-toc-section style={{ marginBottom: "2.5rem" }}>
+                  <h2
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                  >
+                    Not Sure Which Option Is Right for You?
+                  </h2>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                    Choosing the right treatment can feel confusing, and that's completely normal.
+                  </p>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
+                    The best option depends on your joint damage, pain level, and what your daily life demands from you. A good specialist will not just recommend a procedure but will help you understand why it fits your situation.
+                  </p>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep">
+                    There's no one-size-fits-all answer here, and based on your condition, your rheumatologist will recommend the best option suitable for you.
+                  </p>
+                </div>
+
                 {/* ── NEWSLETTER ── */}
                 <GoutNewsletter />
 
@@ -406,7 +437,7 @@ function OsteoarthritisAdvanced() {
               {/* ── Right: TOC + Dr Card Sidebar ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
                 <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {
@@ -430,22 +461,26 @@ function OsteoarthritisAdvanced() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#e0f3f5", color: "#0f616e", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>
-                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "#0f616e", marginBottom: "5px" }}>Medically reviewed by</p>
-                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#0f616e" }}>Dr. Raghavendra H</p>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#ffffff" }}>Dr. Raghavendra H</p>
                       </div>
                     </div>
-                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "#2d5a62", marginBottom: "14px" }}>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
                       Consultant Rheumatologist for osteoarthritis evaluation and long-term joint care.
                     </p>
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                      className="group"
+                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E86531", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 16px 11px 18px", borderRadius: "9999px", textDecoration: "none" }}
                     >
-                      Book Visit →
+                      Book Appointment
+                      <span className="inline-flex h-5 w-5 items-center justify-center rounded-full transition-colors group-hover:bg-white/30" style={{ backgroundColor: "rgba(255,255,255,0.2)" }}>
+                        <ArrowRight size={14} />
+                      </span>
                     </a>
                   </div>
                 </div>

@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import OsteoarthritisHero from "../components/OsteoarthritisHero"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
+import { ArrowRight } from "lucide-react"
 
 /* ─────────────────────────────────────────────
    DATA
@@ -37,10 +38,10 @@ const irreversibleFactors = [
 ]
 
 const reversibleFactors = [
-  "Excess body weight placing unequal stress on the knees and hips — with every extra kilogram, more stress is added to the joints with each step.",
-  "Previous joint injuries — even if older injuries seemed to heal, there is an increased chance of cartilage breakdown later in life.",
+  "In obese people, excess body weight can place unequal stress on the knees and hips. With every extra kilogram, more stress is added to the joints as they walk.",
+  "Even if older injuries seemed to heal, there is an increased chance of cartilage breakdown later in life.",
   "Physically demanding jobs or those that involve prolonged kneeling, lifting, or squatting.",
-  "A sedentary lifestyle with lack of movement, which weakens the muscles and reduces the stability and support around a joint.",
+  "A sedentary lifestyle with a lack of movement often makes muscles weak and tired. It offers less support and stability around a joint.",
 ]
 
 const indiaFactors = [
@@ -62,17 +63,17 @@ const earlySymptoms = [
   {
     id: "stiffness",
     title: "Joint Stiffness",
-    desc: "You may notice a stiff, sluggish feeling in your joints when you wake up or after sitting still for a long time. This stiffness usually eases within 30 minutes of moving. If your stiffness lasts longer than an hour, it is more likely to be rheumatoid arthritis rather than osteoarthritis — and that needs a doctor's visit.",
+    desc: "You may notice a stiff, sluggish feeling in your joints when you wake up or after sitting still for a long time. The good news is, this stiffness usually eases within 30 minutes of moving. That 30-minute threshold is actually helpful. If your stiffness lasts longer than an hour, it's more likely to be rheumatoid arthritis rather than osteoarthritis, and that needs a doctor's visit.",
   },
   {
     id: "dull-ache",
     title: "A Dull Ache",
-    desc: "In early osteoarthritis, pain appears while walking, holding something tight, or climbing stairs. It typically settles down with rest. Though the pain is inconsistent in the early stages, it is still worth noticing and discussing if it keeps coming back.",
+    desc: "In early osteoarthritis, pain appears while walking, holding something tight, or climbing stairs. It typically settles down with rest. Though the pain is inconsistent in the early stages of osteoarthritis, it's still worth noticing and discussing if it keeps coming back.",
   },
   {
     id: "crepitus",
     title: "Creaking or Grinding Sensation",
-    desc: "Some people notice a faint crackling when they move the affected joint. This is called crepitus. It happens when rough, worn-down cartilage rubs against itself. Crepitus, along with pain and stiffness, are signs that deserve medical review.",
+    desc: "Some notice a faint crackling when they move the affected joint. This is called crepitus. It happens when rough, worn-down cartilage rubs against each other. Crepitus, along with pain and stiffness, are signs that deserve medical review.",
   },
 ]
 
@@ -206,6 +207,30 @@ function Osteoarthritis() {
   return (
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
+      <style>{`
+        .guide-article-content > [data-toc-section] ~ [data-toc-section] {
+          margin-top: 3.5rem !important;
+          padding-top: 0 !important;
+          border-top: 0 !important;
+        }
+
+        .guide-article-content > [data-toc-section] > h2 {
+          margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > [data-toc-section] h3 {
+          margin-top: 1.75rem !important;
+          margin-bottom: 1rem !important;
+          text-decoration: underline;
+          text-decoration-color: #1AA3B5;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
+        }
+
+        .guide-article-content > [data-toc-section] h2 + h3 {
+          margin-top: 0 !important;
+        }
+      `}</style>
       <main>
 
         {/* ═══════════ HERO ═══════════ */}
@@ -265,7 +290,7 @@ function Osteoarthritis() {
                 <div id="overview" data-toc-section>
                   <h1
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.4px", marginBottom: "2rem" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.4px", paddingBottom: "1rem", marginBottom: "2rem", borderBottom: "2px solid #dadfe8" }}
                   >
                     Osteoarthritis, Symptoms and Causes: What Your Joints Are Trying to Tell You
                   </h1>
@@ -277,7 +302,7 @@ function Osteoarthritis() {
                     One evening, as she sat down with her coffee, her knees made a noticeable creaking sound. She paused and wondered: <em>What is my body trying to tell me? Am I the only one going through this? Why are my joints getting stiff?</em>
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "2rem" }}>
-                    Reasons for pain may vary — from a mild strain and sprain to long-term conditions like Gout, Rheumatoid arthritis, and Osteoarthritis.
+                    Reasons for pain may vary. From a mild strain and sprain to long-term conditions like Gout, Rheumatoid arthritis and Osteoarthritis.
                   </p>
 
                   {/* "What makes OA tricky" callout box */}
@@ -286,12 +311,12 @@ function Osteoarthritis() {
                   >
                     <p className="text-[15px] font-bold text-navy-deep" style={{ marginBottom: "10px" }}>What makes osteoarthritis tricky?</p>
                     <p className="text-[15px] leading-[1.75] text-navy-deep">
-                      Osteoarthritis does not begin with an obvious warning sign. It begins quietly — a stiff knee after sitting through a long meeting, a dull ache in the fingers after cooking, a grinding sensation after climbing the stairs that wasn't there a year ago. When life becomes busy, it is easy to ignore these signs.
+                      Osteoarthritis does not begin with an obvious warning sign. It begins quietly. A stiff knee after sitting through a long meeting. A dull ache in the fingers after cooking. A grinding sensation after climbing the stairs that wasn't there a year ago. When life becomes busy, it is easy to ignore these signs. Often, a bit of joint discomfort feels like it comes with the territory of getting older.
                     </p>
                   </div>
 
                   <p className="text-[16px] leading-[1.8] text-navy-muted mb-6">
-                    Understanding what osteoarthritis feels like, what causes it, and which risk factors are most relevant in the Indian context can make a real difference in catching it early. This article walks you through all of that — including how to tell osteoarthritis apart from other similar conditions.
+                    But these are signals worth paying attention to. Understanding what osteoarthritis feels like, what causes it, and which risk factors are most relevant in the Indian context can make a real difference in catching it early. This article walks you through all of that, including how to tell Osteoarthritis apart from other similar conditions.
                   </p>
                 </div>
 
@@ -350,9 +375,9 @@ function Osteoarthritis() {
                   >
                     Factors you cannot reverse
                   </h3>
-                  <ul className="space-y-5 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-2 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {irreversibleFactors.map((f, i) => (
-                      <li key={i} className="te/osteoarthritis xt-[17px] leading-[1.75] text-navy-deep pl-1">
+                      <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">
                         <strong className="font-bold">{f.title}:</strong> {f.desc}
                       </li>
                     ))}
@@ -368,7 +393,7 @@ function Osteoarthritis() {
                   >
                     Factors you could reverse
                   </h3>
-                  <ul className="space-y-5 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-2 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {reversibleFactors.map((f, i) => (
                       <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">{f}</li>
                     ))}
@@ -387,7 +412,7 @@ function Osteoarthritis() {
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
                     A few lifestyle patterns make osteoarthritis particularly relevant to Indian patients, while often absent in the global scenario.
                   </p>
-                  <ul className="space-y-4" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-2" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {indiaFactors.map((f, i) => (
                       <li key={i} className="text-[16px] leading-[1.75] text-navy-deep pl-1">
                         <strong className="font-bold">{f.title}:</strong> {f.desc}
@@ -397,22 +422,22 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── EARLY SYMPTOMS ── */}
-                <div id="early-symptoms" data-toc-section style={{ marginBottom: "5rem", paddingTop: "1.75rem", marginTop: "-1.25rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="early-symptoms" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.75rem", marginTop: "-1.25rem", borderTop: "1px solid #dadfe8" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Early Symptoms of Osteoarthritis
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep mb-8">
-                    In the early stages, osteoarthritis is often ignored as signs of weakness and ageing. As the symptoms tend to be mild, inconsistent, and to progress over time, one might miss noticing the condition at its starting stage. Some of the early red flags to be concerned about:
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
+                    In the early stages, osteoarthritis is often ignored as signs of weakness and ageing. As the symptoms tend to be mild, inconsistent, and to progress over time, one might miss noticing the condition in their starting stage. Some of the early red flags to be concerned about are:
                   </p>
 
                   {earlySymptoms.map((s) => (
-                    <div key={s.id} style={{ marginBottom: "1.5rem", paddingTop: "1.5rem", borderTop: "1px solid #dadfe8" }}>
+                    <div key={s.id} style={{ marginBottom: "1.75rem" }}>
                       <h3
-                        className="text-navy-deep mb-3"
-                        style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 400, lineHeight: 1.25 }}
+                        className="text-navy-deep"
+                        style={{ fontFamily: "var(--font-display)", fontSize: "1.25rem", fontWeight: 400, lineHeight: 1.25, marginBottom: "0.75rem" }}
                       >
                         {s.title}
                       </h3>
@@ -420,45 +445,6 @@ function Osteoarthritis() {
                     </div>
                   ))}
                 </div>
-
-                {/* ── KEY FACTORS mid-blog divider ── */}
-                <hr style={{ border: "none", borderTop: "1px solid #1AA3B5", marginTop: "1rem", marginBottom: "0" }} />
-                <div style={{ paddingTop: "3rem", paddingBottom: "2.5rem" }}>
-                  <h2
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: "clamp(2rem, 4vw, 2.75rem)",
-                      fontWeight: 400,
-                      lineHeight: 1.15,
-                      letterSpacing: "-0.5px",
-                      color: "#0f616e",
-                      marginBottom: "2rem",
-                    }}
-                  >
-                    Key Factors to Consider for Osteoarthritis
-                  </h2>
-                  <p className="text-[16px] leading-[1.8]" style={{ color: "#5e5e5e", marginBottom: "1.75rem" }}>
-                    Effective management begins with understanding the factors most relevant to your situation:
-                  </p>
-                  <ul style={{ listStyleType: "disc", paddingLeft: "1.5rem", marginBottom: "2rem" }}>
-                    {[
-                      "Accurate, early diagnosis to prevent silent disease progression",
-                      "Identifying reversible risk factors such as weight, activity level, and Vitamin D status",
-                      "Personalised physiotherapy and muscle-strengthening plans",
-                      "Dietary guidance and weight management tailored to your profile",
-                      "Regular monitoring of joint health and imaging where needed",
-                      "Distinguishing osteoarthritis from conditions like rheumatoid arthritis and post-chikungunya arthritis",
-                    ].map((item, i) => (
-                      <li key={i} style={{ color: "#182439", fontSize: "16px", lineHeight: 1.8, marginBottom: "0.25rem", fontWeight: 500 }}>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-[16px] leading-[1.8]" style={{ color: "#5e5e5e" }}>
-                    At RheumaInsights, our rheumatologists specialise in comprehensive osteoarthritis care. With evidence-based protocols, personalised treatment plans, and a patient-first approach, we help you manage symptoms effectively and protect your joints for the long term.
-                  </p>
-                </div>
-                <hr style={{ border: "none", borderTop: "1px solid #dadfe8", marginBottom: "2.5rem" }} />
 
                 {/* ── PROGRESSION ── */}
                 <div id="progression" data-toc-section style={{ marginBottom: "5rem", paddingTop: "0" }}>
@@ -469,7 +455,7 @@ function Osteoarthritis() {
                     Symptoms as the Disease Progresses
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
-                    As cartilage continues to wear and tear, symptoms become more consistent and start to affect your everyday life evidently. The table below gives a simple picture of how osteoarthritis gradually evolves over time if left untreated.
+                    As cartilage continues to wear and tear, symptoms become more consistent and start to affect your everyday life, evidently. The table below gives a simple picture of how Osteoarthritis gradually evolves over time if left untreated.
                   </p>
 
                   <img
@@ -504,9 +490,15 @@ function Osteoarthritis() {
                     </table>
                   </div>
 
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1rem" }}>
+                    Starting as an occasional pain in mild cases, the symptoms change through various stages.
+                  </p>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1rem" }}>
+                    In the most severe cases, the bones at the joints may lose their normal shape and form bony lumps. They are called{" "}
+                    <strong className="font-semibold text-navy-deep">Heberden's nodes</strong>. They form near the finger joints, making it difficult to hold things with a tight grip.
+                  </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.75rem" }}>
-                    In the most severe cases, the bones at the joints may lose their normal shape and form bony lumps called{" "}
-                    <strong className="font-semibold text-navy-deep">Heberden's nodes</strong> — which form near the finger joints, making it difficult to hold things with a tight grip. While limping, struggling to stretch your knees, and waking up at night are signs of advanced osteoarthritis, the disease can be treated effectively and managed before reaching this stage.
+                    While you are limping, struggling to stretch your knees, and waking up at night, these are the signs of advanced Osteoarthritis. It is encouraging as the disease could be treated effectively. You could manage it efficiently before reaching an advanced stage.
                   </p>
 
                   {/* Joint-specific symptoms */}
@@ -516,6 +508,9 @@ function Osteoarthritis() {
                   >
                     Joint-Specific Symptoms of Osteoarthritis
                   </h3>
+                  <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
+                    Osteoarthritis may develop in specific areas and the symptoms may vary, which are as follows:
+                  </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" style={{ marginBottom: "1.5rem" }}>
                     {jointSymptoms.map((j, i) => (
                       <div key={i} className="bg-sky-faint/50 border border-sky-soft/40 p-5" style={{ borderRadius: 0 }}>
@@ -574,7 +569,7 @@ function Osteoarthritis() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-6">
                     Consider seeing a doctor if you notice any of the following signs:
                   </p>
-                  <ul className="space-y-4 mb-8" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-2 mb-8" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {whenToSeeDoctor.map((item, i) => (
                       <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">{item}</li>
                     ))}
@@ -659,7 +654,7 @@ function Osteoarthritis() {
               {/* ── Right: TOC + Dr Card Sidebar ── */}
               <aside className="hidden lg:block w-[360px] shrink-0">
                 <div className="sticky top-[88px]" style={{ maxHeight: "calc(100vh - 112px)", display: "flex", flexDirection: "column", gap: "16px" }}>
-                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#edf2fc", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
+                  <div className="guide-sidebar-scroll" style={{ backgroundColor: "#E8F4F8", overflowY: "auto", overflowX: "hidden", flex: "1 1 auto", minHeight: 0 }}>
                     <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.14em", color: "#7f8da3", padding: "20px 20px 12px" }}>On This Page</p>
                     <nav className="flex flex-col">
                       {tocSections.map((s, i) => {
@@ -683,22 +678,26 @@ function Osteoarthritis() {
                       })}
                     </nav>
                   </div>
-                  <div style={{ backgroundColor: "#e0f3f5", color: "#0f616e", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
+                  <div style={{ backgroundColor: "#0f616e", color: "#ffffff", padding: "20px 22px", fontFamily: "var(--font-base)", flex: "0 0 auto" }}>
                     <div className="flex items-center gap-3" style={{ marginBottom: "12px" }}>
                       <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-12 h-12 rounded-full object-cover object-top bg-[#f0cfc4] shrink-0" />
                       <div>
-                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "#0f616e", marginBottom: "5px" }}>Medically reviewed by</p>
-                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#0f616e" }}>Dr. Raghavendra H</p>
+                        <p style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.62)", marginBottom: "5px" }}>Medically reviewed by</p>
+                        <p style={{ fontSize: "16px", fontWeight: 700, lineHeight: 1.2, color: "#ffffff" }}>Dr. Raghavendra H</p>
                       </div>
                     </div>
-                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "#2d5a62", marginBottom: "14px" }}>
+                    <p style={{ fontSize: "13px", lineHeight: 1.55, color: "rgba(255,255,255,0.78)", marginBottom: "14px" }}>
                       Consultant Rheumatologist for osteoarthritis evaluation and long-term joint care.
                     </p>
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#fa885a", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                      className="group"
+                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E86531", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 16px 11px 18px", borderRadius: "9999px", textDecoration: "none" }}
                     >
-                      Book Visit →
+                      Book Appointment
+                      <span className="inline-flex h-5 w-5 items-center justify-center rounded-full transition-colors group-hover:bg-white/30" style={{ backgroundColor: "rgba(255,255,255,0.2)" }}>
+                        <ArrowRight size={14} />
+                      </span>
                     </a>
                   </div>
                 </div>
