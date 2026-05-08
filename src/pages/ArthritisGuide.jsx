@@ -188,7 +188,7 @@ function ArthritisGuide() {
               </div>
 
               {/* Right: Image */}
-              <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end" }}>
+              <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, overflow: "hidden", alignSelf: "flex-end" }}>
                 <img
                   src="/images/hero-slide-4.png"
                   alt="Rheumatoid Arthritis"

@@ -129,21 +129,16 @@ function OsteoarthritisGuide() {
                   lineHeight: 1.2,
                   color: "rgba(255,255,255,0.92)",
                   marginBottom: 0,
-                  maxWidth: "720px",
                 }}
               >
                 What It Is, Symptoms, Causes & Treatment Options
               </p>
-
-              {/* <p style={{ fontSize: "16px", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-                Learn what osteoarthritis is, why it happens, the symptoms to watch for, how doctors diagnose it, and the treatment options available in India.
-              </p> */}
             </div>
 
             {/* Right: Image */}
-            <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, borderRadius: "8px 8px 0 0", overflow: "hidden", alignSelf: "flex-end" }}>
+            <div className="hidden md:block" style={{ width: "420px", height: "280px", flexShrink: 0, overflow: "hidden", alignSelf: "flex-end" }}>
               <img
-                src="/condition/Osteoarthritis.png"
+                src="/OA.png"
                 alt="Osteoarthritis"
                 style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
               />
@@ -425,13 +420,13 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TREATMENT ── */}
-                <div id="treatment" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "3rem" }}>
+                <div id="treatment" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "4rem" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     How Can Osteoarthritis Be Treated?
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginTop: "4rem", marginBottom: "2rem" }}>
                     While osteoarthritis cannot be reversed completely, <span style={peachHighlight}>treatment can help reduce your pain and improve your quality of life.</span>
                   </p>
 
