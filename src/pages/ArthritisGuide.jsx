@@ -135,6 +135,16 @@ function ArthritisGuide() {
   return (
     <div className="landing-page bg-white text-navy-deep antialiased" style={{}}>
       <Header />
+      <style>{`
+        .guide-article-content > [data-toc-section] ~ [data-toc-section] {
+          margin-top: 3rem !important;
+          padding-top: 0 !important;
+        }
+
+        .guide-article-content > [data-toc-section] > h2 {
+          margin-bottom: 2rem !important;
+        }
+      `}</style>
       <main>
 
         {/* ═══════════ HERO ═══════════ */}
@@ -522,7 +532,7 @@ function ArthritisGuide() {
                 <div style={{ marginBottom: "2rem", marginTop: "0" }}>
                   <h3
                     className="text-navy-deep"
-                    style={{ letterSpacing: "-0.2px", marginBottom: "1rem", textTransform: "uppercase", borderBottom: "2px solid #c8d0dc", paddingBottom: "0.75rem" }}
+                    style={{ letterSpacing: "-0.2px", marginBottom: "2rem", textTransform: "uppercase", borderBottom: "2px solid #c8d0dc", paddingBottom: "0.75rem" }}
                   >
                     Early Response is the Key
                   </h3>

@@ -86,6 +86,16 @@ function OsteoarthritisGuide() {
   return (
     <div className="landing-page bg-white text-navy-deep antialiased">
       <Header />
+      <style>{`
+        .guide-article-content > [data-toc-section] ~ [data-toc-section] {
+          margin-top: 3rem !important;
+          padding-top: 0 !important;
+        }
+
+        .guide-article-content > [data-toc-section] > h2 {
+          margin-bottom: 2rem !important;
+        }
+      `}</style>
 
       <header style={{ backgroundColor: "#0f616e" }} className="text-white">
         <div className="max-w-7xl mx-auto px-5 pt-6 pb-0 sm:px-6 md:pt-8">
@@ -420,13 +430,13 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── TREATMENT ── */}
-                <div id="treatment" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "4rem" }}>
+                <div id="treatment" data-toc-section style={{ marginBottom: "0.25rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     How Can Osteoarthritis Be Treated?
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginTop: "4rem", marginBottom: "2rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2rem" }}>
                     While osteoarthritis cannot be reversed completely, <span style={peachHighlight}>treatment can help reduce your pain and improve your quality of life.</span>
                   </p>
 
