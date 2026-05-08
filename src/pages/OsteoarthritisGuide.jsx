@@ -88,12 +88,29 @@ function OsteoarthritisGuide() {
       <Header />
       <style>{`
         .guide-article-content > [data-toc-section] ~ [data-toc-section] {
-          margin-top: 3rem !important;
+          margin-top: 3.5rem !important;
           padding-top: 0 !important;
         }
 
         .guide-article-content > [data-toc-section] > h2 {
-          margin-bottom: 2rem !important;
+          margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > [data-toc-section] h3 {
+          margin-top: 1.75rem !important;
+          margin-bottom: 1rem !important;
+          text-decoration: underline;
+          text-decoration-color: #1AA3B5;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
+        }
+
+        .guide-article-content > [data-toc-section] h2 + h3 {
+          margin-top: 0 !important;
+        }
+
+        .guide-article-content > .guide-final-section {
+          margin-top: 5rem !important;
         }
       `}</style>
 
@@ -267,8 +284,8 @@ function OsteoarthritisGuide() {
                     { title: "Strained spine", desc: "When you sit for long hours, your spine and neck bear the brunt. It often shows up as stiffness in the neck or lower back. Sometimes, it may even cause radiating discomfort if nearby nerves are irritated." },
                     { title: "Feet and ankles - the collapsed support system", desc: "Your feet and ankles quietly support your entire body, so when osteoarthritis affects them, standing or walking for long periods can become very painful. You might feel stiffness, tenderness, or discomfort with every step." },
                   ].map((type, i) => (
-                    <div key={i} style={{ marginBottom: i === 4 ? 0 : "1.25rem", paddingTop: i === 0 ? 0 : "1.25rem" }}>
-                      <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.5rem" }}>{type.title}</h3>
+                    <div key={i} style={{ marginBottom: i === 4 ? 0 : "0.75rem", paddingTop: i === 0 ? 0 : "0.75rem" }}>
+                      <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.5rem" }}>{i + 1}. {type.title}</h3>
                       <p className="text-[17px] leading-[1.8] text-navy-deep">{type.desc}</p>
                     </div>
                   ))}
@@ -504,7 +521,7 @@ function OsteoarthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO CONSULT ── */}
-                <div data-toc-section style={{ marginBottom: "4rem", paddingTop: "0" }}>
+                <div data-toc-section className="guide-final-section" style={{ marginBottom: "4rem", paddingTop: "0" }}>
                   <h2
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >

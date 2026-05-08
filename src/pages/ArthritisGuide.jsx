@@ -137,12 +137,29 @@ function ArthritisGuide() {
       <Header />
       <style>{`
         .guide-article-content > [data-toc-section] ~ [data-toc-section] {
-          margin-top: 3rem !important;
+          margin-top: 3.5rem !important;
           padding-top: 0 !important;
         }
 
         .guide-article-content > [data-toc-section] > h2 {
-          margin-bottom: 2rem !important;
+          margin-bottom: 2.25rem !important;
+        }
+
+        .guide-article-content > [data-toc-section] h3 {
+          margin-top: 1.75rem !important;
+          margin-bottom: 1rem !important;
+          text-decoration: underline;
+          text-decoration-color: #1AA3B5;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 6px;
+        }
+
+        .guide-article-content > [data-toc-section] h2 + h3 {
+          margin-top: 0 !important;
+        }
+
+        .guide-article-content > .guide-final-section {
+          margin-top: 5rem !important;
         }
       `}</style>
       <main>
@@ -529,17 +546,17 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── EARLY RESPONSE ── */}
-                <div style={{ marginBottom: "2rem", marginTop: "0" }}>
+                <div style={{ marginBottom: "3.25rem", marginTop: "0" }}>
                   <h3
                     className="text-navy-deep"
                     style={{ letterSpacing: "-0.2px", marginBottom: "2rem", textTransform: "uppercase", borderBottom: "2px solid #c8d0dc", paddingBottom: "0.75rem" }}
                   >
                     Early Response is the Key
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     When symptoms like joint stiffness on either side, generalised severe fatigue, and abnormal joint pain occur, it is always better to consult a rheumatologist.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     <span style={tealHighlight}>The initial three-month duration is the window during which the damage is processed.</span> If we take the initiative to treat early, we can make a difference for the rest of our lives.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginBottom: "0" }}>
@@ -548,7 +565,7 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── WHEN TO SEE A RHEUMATOLOGIST ── */}
-                <div id="when-to-see" data-toc-section style={{ marginBottom: "4rem", marginTop: "0", paddingTop: "0" }}>
+                <div id="when-to-see" data-toc-section className="guide-final-section" style={{ marginBottom: "4rem", marginTop: "5rem", paddingTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
