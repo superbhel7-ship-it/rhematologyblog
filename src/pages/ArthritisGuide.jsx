@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import Newsletter from "../components/Newsletter"
 import GoutNewsletter from "../components/GoutNewsletter"
 import BriefingFooter from "../components/BriefingFooter"
+import { ArrowRight } from "lucide-react"
 
 /* ─────────────────────────────────────────────
    DATA
@@ -559,7 +560,7 @@ function ArthritisGuide() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     <span style={tealHighlight}>The initial three-month duration is the window during which the damage is processed.</span> If we take the initiative to treat early, we can make a difference for the rest of our lives.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginTop: "3rem", marginBottom: "0" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginTop: "1rem", marginBottom: "0" }}>
                     If you are experiencing persistent joint pain, stiffness, or swelling, don&apos;t ignore it. Early evaluation by a rheumatologist can make a significant difference in preventing long-term damage.
                   </p>
                 </div>
@@ -654,9 +655,13 @@ function ArthritisGuide() {
                     </p>
                     <a
                       href="#"
-                      style={{ fontFamily: "var(--font-base)", display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 18px", borderRadius: "9999px", textDecoration: "none" }}
+                      className="group"
+                      style={{ fontFamily: "var(--font-base)", display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E86531", color: "#ffffff", fontSize: "13px", fontWeight: 700, padding: "11px 16px 11px 18px", borderRadius: "9999px", textDecoration: "none" }}
                     >
-                      Book Appointment →
+                      Book Appointment
+                      <span className="inline-flex h-5 w-5 items-center justify-center rounded-full transition-colors group-hover:bg-white/30" style={{ backgroundColor: "rgba(255,255,255,0.2)" }}>
+                        <ArrowRight size={14} />
+                      </span>
                     </a>
                   </div>
                 </div>
