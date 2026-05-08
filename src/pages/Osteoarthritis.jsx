@@ -261,7 +261,7 @@ function Osteoarthritis() {
         {/* <OsteoarthritisHero /> */}
 
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="relative max-w-7xl mx-auto px-5 pt-6 pb-0 sm:px-6 md:pt-8" style={{ minHeight: "280px" }}>
+          <div className="relative max-w-7xl mx-auto px-5 pt-6 pb-0 sm:px-6 md:pt-8" style={{ minHeight: "340px" }}>
             <div
               className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px]"
               style={{ color: "rgba(255,255,255,0.68)", marginBottom: "clamp(1.5rem, 6vw, 2rem)" }}
@@ -283,10 +283,10 @@ function Osteoarthritis() {
                     fontFamily: "var(--font-display)",
                     fontSize: "clamp(36px, 8vw, 64px)",
                     fontWeight: 400,
-                    lineHeight: "1.1",
+                    lineHeight: "0.98",
                     letterSpacing: "-0.5px",
                     color: "#ffffff",
-                    marginBottom: "1.15rem",
+                    marginBottom: "0",
                   }}
                 >
                   Osteoarthritis
@@ -294,22 +294,22 @@ function Osteoarthritis() {
                 <p
                   style={{
                     fontFamily: "var(--font-display)",
-                    fontSize: "clamp(16px, 2vw, 22px)",
-                    lineHeight: 1.2,
+                    fontSize: "clamp(32px, 5vw, 52px)",
+                    lineHeight: 1,
                     color: "rgba(255,255,255,0.92)",
                     maxWidth: "760px",
                     marginBottom: 0,
                   }}
                 >
-                  Symptoms and Causes: What Your Joints Are Trying to Tell You
+                  Symptoms and Causes
                 </p>
               </div>
 
-              <div className="hidden md:block" style={{ position: "absolute", top: 0, right: "24px", width: "420px", height: "280px", overflow: "hidden" }}>
+              <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "visible" }}>
                 <img
                   src="/OA.png"
                   alt="Osteoarthritis"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
+                  style={{ width: "84%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block", marginLeft: "auto" }}
                 />
               </div>
 
