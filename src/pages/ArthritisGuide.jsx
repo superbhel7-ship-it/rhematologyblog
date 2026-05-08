@@ -598,9 +598,13 @@ function ArthritisGuide() {
 
                     <a
                       href="#"
-                      style={{ display: "inline-block", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 26px", borderRadius: "9999px", textDecoration: "none" }}
+                      className="group"
+                      style={{ display: "inline-flex", alignItems: "center", gap: "8px", backgroundColor: "#E86531", color: "#ffffff", fontFamily: "var(--font-base)", fontWeight: 700, fontSize: "14px", padding: "12px 18px 12px 26px", borderRadius: "9999px", textDecoration: "none" }}
                     >
-                      Book a Specialist Visit →
+                      Book a Specialist Visit
+                      <span className="inline-flex h-5 w-5 items-center justify-center rounded-full transition-colors group-hover:bg-white/30" style={{ backgroundColor: "rgba(255,255,255,0.2)" }}>
+                        <ArrowRight size={14} />
+                      </span>
                     </a>
                   </div>
                 </div>
