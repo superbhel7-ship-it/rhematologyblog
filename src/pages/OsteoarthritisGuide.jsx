@@ -279,11 +279,11 @@ function OsteoarthritisGuide() {
                   </p>
 
                   {[
-                    { title: "Knees - the daily workhorses", desc: <><span style={tealHighlight}>This is the most commonly affected joint in India.</span> Simple things like climbing stairs, squatting, or getting up from the floor can feel like a task. That stubborn pain reminds you of every step you take.</> },
-                    { title: "Hips - the hidden troublemaker", desc: <>Instead of obvious joint pain, <span style={peachHighlight}>it shows up as a deep ache in the inner thigh.</span> You might notice stiffness while walking or difficulty sitting cross-legged. Most people don't connect these symptoms to the hip joint directly.</> },
-                    { title: "Hands - the silent sufferers", desc: <>When your hands become the victim, especially the fingers and the base of the thumb, everyday tasks become very tricky. <span style={tealHighlight}>Opening jars, buttoning clothes, or even holding a pen can feel uncomfortable.</span> The joints may look slightly swollen over time.</> },
-                    { title: "Strained spine", desc: <>When you sit for long hours, your spine and neck bear the brunt. It often shows up as stiffness in the neck or lower back. <span style={peachHighlight}>Sometimes, it may even cause radiating discomfort if nearby nerves are irritated.</span></> },
-                    { title: "Feet and ankles - the collapsed support system", desc: <>Your feet and ankles quietly support your entire body, so when osteoarthritis affects them, <span style={tealHighlight}>standing or walking for long periods can become very painful.</span> You might feel stiffness, tenderness, or discomfort with every step.</> },
+                    { title: "Knees - the daily workhorses", desc: "This is the most commonly affected joint in India. Simple things like climbing stairs, squatting, or getting up from the floor can feel like a task. That stubborn pain reminds you of every step you take." },
+                    { title: "Hips - the hidden troublemaker", desc: "Instead of obvious joint pain, it shows up as a deep ache in the inner thigh. You might notice stiffness while walking or difficulty sitting cross-legged. Most people don't connect these symptoms to the hip joint directly." },
+                    { title: "Hands - the silent sufferers", desc: "When your hands become the victim, especially the fingers and the base of the thumb, everyday tasks become very tricky. Opening jars, buttoning clothes, or even holding a pen can feel uncomfortable. The joints may look slightly swollen over time." },
+                    { title: "Strained spine", desc: "When you sit for long hours, your spine and neck bear the brunt. It often shows up as stiffness in the neck or lower back. Sometimes, it may even cause radiating discomfort if nearby nerves are irritated." },
+                    { title: "Feet and ankles - the collapsed support system", desc: "Your feet and ankles quietly support your entire body, so when osteoarthritis affects them, standing or walking for long periods can become very painful. You might feel stiffness, tenderness, or discomfort with every step." },
                   ].map((type, i) => (
                     <div key={i} style={{ marginBottom: i === 4 ? 0 : "0.75rem", paddingTop: i === 0 ? 0 : "0.75rem" }}>
                       <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.5rem" }}>{i + 1}. {type.title}</h3>
@@ -307,7 +307,7 @@ function OsteoarthritisGuide() {
                     Age and Wear Over Time
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    As we grow older, <span style={tealHighlight}>cartilage becomes less flexible and loses its capacity to repair or heal on its own.</span> However, aging alone does not contribute to the disease. If you have a poor lifestyle with a lack of exercise and unhealthy diet patterns, they add up to your ageing journey.
+                    As we grow older, cartilage becomes less flexible and loses its capacity to repair or heal on its own. However, aging alone does not contribute to the disease. If you have a poor lifestyle with a lack of exercise and unhealthy diet patterns, they add up to your ageing journey.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
@@ -317,22 +317,22 @@ function OsteoarthritisGuide() {
                     Lifestyle and physical factors play a big role in the disease:
                   </p>
                   <ul className="space-y-1 mb-6" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1"><span style={peachHighlight}>Excess body weight puts extra pressure on your joints,</span> making them wear in due course.</li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">If you are a salesperson or a teacher, the nature of the job strains joints over time. Likewise, <span style={tealHighlight}>if your workplace demands continuous standing or maintaining the same posture, you can become a victim of osteoarthritis over time.</span></li>
-                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Your healed injuries can sometimes become your silent villain, <span style={peachHighlight}>increasing the risk even years later.</span></li>
+                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Excess body weight puts extra pressure on your joints, making them wear in due course.</li>
+                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">If you are a salesperson or a teacher, the nature of the job strains joints over time. Likewise, if your workplace demands continuous standing or maintaining the same posture, you can become a victim of osteoarthritis over time.</li>
+                    <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Your healed injuries can sometimes become your silent villain, increasing the risk even years later.</li>
                   </ul>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Risk Factors Common in India
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Though we reside in a tropical region where abundant vitamin D is available from the sun, <span style={peachHighlight}>most of us suffer from Vitamin D deficiency.</span> This affects bone and joint health and influences bone integrity and strength.
+                    Though we reside in a tropical region where abundant vitamin D is available from the sun, most of us suffer from Vitamin D deficiency. This affects bone and joint health and influences bone integrity and strength.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Though frequent squatting and floor sitting help in deep knee flexion, <span style={tealHighlight}>as you age, they strain your joints slowly.</span>
+                    Though frequent squatting and floor sitting help in deep knee flexion, as you age, they strain your joints slowly.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    Among all forms, <span style={tealHighlight}>knee osteoarthritis stands out as particularly common - with a noticeably higher prevalence among older adults, especially women.</span> Hormonal changes, bone health, and longer life expectancy all contribute to this pattern. The number of new cases continues to rise, driven by a combination of ageing populations, rising obesity rates, and increasingly sedentary lifestyles.
+                    Among all forms, knee osteoarthritis stands out as particularly common - with a noticeably higher prevalence among older adults, especially women. Hormonal changes, bone health, and longer life expectancy all contribute to this pattern. The number of new cases continues to rise, driven by a combination of ageing populations, rising obesity rates, and increasingly sedentary lifestyles.
                   </p>
                 </div>
 
@@ -351,24 +351,24 @@ function OsteoarthritisGuide() {
                     The Early Signs
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    At first, you begin to feel tired. Slowly, small activities become great tasks. <span style={tealHighlight}>Your joints start becoming stiff. These symptoms often improve once you start moving.</span> Gradually, you may start hearing grinding and creaking sounds.
+                    At first, you begin to feel tired. Slowly, small activities become great tasks. Your joints start becoming stiff. These symptoms often improve once you start moving. Gradually, you may start hearing grinding and creaking sounds.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     As Your Condition Progresses
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    As your condition becomes worse, <span style={peachHighlight}>your pain refuses to disappear even after you rest.</span> Your joints become swollen and red. Your knees wouldn't let you climb stairs, and your fingers would need help opening a tight jar.
+                    As your condition becomes worse, your pain refuses to disappear even after you rest. Your joints become swollen and red. Your knees wouldn't let you climb stairs, and your fingers would need help opening a tight jar.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     When Should You See a Doctor?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    <span style={tealHighlight}>Early visits to specialists help you diagnose the condition as early as possible.</span> A rheumatologist is the specialist who can properly evaluate your joint problems and guide you through the treatment.
+                    Early visits to specialists help you diagnose the condition as early as possible. A rheumatologist is the specialist who can properly evaluate your joint problems and guide you through the treatment.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    When <span style={peachHighlight}>the pain starts disturbing your sleep and the stiffness hinders your daily activities,</span> you should definitely consider seeing a doctor.
+                    When the pain starts disturbing your sleep and the stiffness hinders your daily activities, you should definitely consider seeing a doctor.
                   </p>
                 </div>
 
