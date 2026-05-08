@@ -218,7 +218,12 @@ function Osteoarthritis() {
           margin-bottom: 2.25rem !important;
         }
 
+        .guide-article-content > [data-toc-section] > h1 {
+          color: #0f616e !important;
+        }
+
         .guide-article-content > [data-toc-section] h3 {
+          color: #0f616e !important;
           margin-top: 1.75rem !important;
           margin-bottom: 1rem !important;
           text-decoration: underline;
@@ -264,27 +269,11 @@ function Osteoarthritis() {
 
         {/* ═══════════ ARTICLE BODY + CTA SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
             <div className="lg:flex lg:gap-14">
 
               {/* ── Left: Article Content ── */}
               <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#5e5e5e" }}>
-
-                {/* Author line */}
-                <div className="flex items-center gap-3 mb-10">
-                  <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-10 h-10 rounded-full object-cover object-top bg-[#f0cfc4]" />
-                  <div>
-                    <p className="text-sm font-semibold text-navy-deep leading-tight">Dr. Raghavendra H</p>
-                    <p className="text-xs text-navy-muted">Rheumatologist &middot; Reviewed Apr 2026</p>
-                  </div>
-                  <div className="flex items-center gap-2 ml-auto">
-                    {["link", "mail", "share"].map((icon) => (
-                      <button key={icon} className="w-8 h-8 rounded-full bg-ghost flex items-center justify-center text-navy-muted hover:text-navy-deep hover:bg-sky-faint transition-colors">
-                        <span className="material-symbols-outlined text-[16px]">{icon}</span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
@@ -321,7 +310,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── WHAT IT FEELS LIKE ── */}
-                <div id="what-it-feels-like" data-toc-section style={{ marginBottom: "5rem", paddingTop: "3rem", marginTop: "2rem" }}>
+                <div id="what-it-feels-like" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -337,7 +326,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── CAUSES ── */}
-                <div id="causes" data-toc-section style={{ marginBottom: "5rem", paddingTop: "1.75rem", marginTop: "-1.25rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="causes" data-toc-section style={{ marginBottom: "1.25rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -353,7 +342,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── RISK FACTORS ── */}
-                <div id="risk-factors" data-toc-section style={{ marginBottom: "5rem", paddingTop: "1.75rem", marginTop: "-1.25rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="risk-factors" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -422,7 +411,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── EARLY SYMPTOMS ── */}
-                <div id="early-symptoms" data-toc-section style={{ marginBottom: "2.5rem", paddingTop: "1.75rem", marginTop: "-1.25rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="early-symptoms" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -447,7 +436,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── PROGRESSION ── */}
-                <div id="progression" data-toc-section style={{ marginBottom: "5rem", paddingTop: "0" }}>
+                <div id="progression" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -522,7 +511,7 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── DIFFERENTIAL DIAGNOSIS ── */}
-                <div id="differential" data-toc-section style={{ marginBottom: "5rem", paddingTop: "1.75rem", marginTop: "-1.25rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="differential" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "6rem", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
@@ -559,22 +548,22 @@ function Osteoarthritis() {
                 </div>
 
                 {/* ── WHEN TO SEE A DOCTOR ── */}
-                <div id="when-to-see" data-toc-section style={{ marginBottom: "5rem", paddingTop: "1.75rem", marginTop: "-1.25rem", borderTop: "1px solid #dadfe8" }}>
+                <div id="when-to-see" data-toc-section style={{ marginBottom: "1.5rem", paddingTop: "0", marginTop: "0", borderTop: 0 }}>
                   <h2
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     When Should You See a Doctor?
                   </h2>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep mb-6">
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
                     Consider seeing a doctor if you notice any of the following signs:
                   </p>
-                  <ul className="space-y-2 mb-8" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
+                  <ul className="space-y-1 mb-8" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {whenToSeeDoctor.map((item, i) => (
                       <li key={i} className="text-[17px] leading-[1.75] text-navy-deep pl-1">{item}</li>
                     ))}
                   </ul>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep">
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2.5rem" }}>
                     Early evaluation gives you more treatment options and better outcomes. A rheumatologist can confirm whether you have osteoarthritis, rule out other conditions, and help you build a plan suited to your lifestyle.
                   </p>
                 </div>
@@ -606,19 +595,25 @@ function Osteoarthritis() {
                   </p>
                   <a
                     href="#"
+                    className="group"
                     style={{
-                      display: "inline-block",
-                      backgroundColor: "#ffffff",
-                      color: "#0f616e",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      backgroundColor: "#E86531",
+                      color: "#ffffff",
                       fontWeight: 700,
                       fontSize: "15px",
-                      padding: "12px 28px",
+                      padding: "12px 18px 12px 26px",
                       borderRadius: "9999px",
                       textDecoration: "none",
                       transition: "opacity 0.2s",
                     }}
                   >
-                    Book Your First Visit
+                    Book a Specialist Visit
+                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-full transition-colors group-hover:bg-white/30" style={{ backgroundColor: "rgba(255,255,255,0.2)" }}>
+                      <ArrowRight size={14} />
+                    </span>
                   </a>
                 </div>
 

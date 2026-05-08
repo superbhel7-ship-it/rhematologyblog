@@ -94,7 +94,7 @@ function OsteoarthritisAdvanced() {
       <Header />
       <style>{`
         .guide-article-content > [data-toc-section] ~ [data-toc-section] {
-          margin-top: 3.5rem !important;
+          margin-top: 2.5rem !important;
           padding-top: 0 !important;
           border-top: 0 !important;
         }
@@ -141,27 +141,11 @@ function OsteoarthritisAdvanced() {
 
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
-          <div className="max-w-7xl mx-auto px-6 pb-10 pt-8 md:pb-14 md:pt-10">
+          <div className="max-w-7xl mx-auto px-6 py-1 md:pt-4 md:pb-16">
             <div className="lg:flex lg:gap-14">
 
               {/* ── Left: Article ── */}
               <div className="flex-1 min-w-0 guide-article-content" style={{ "--color-navy-deep": "#1a1a1a", "--color-navy-muted": "#1a1a1a" }}>
-
-                {/* Author line */}
-                <div className="flex items-center gap-3 mb-10">
-                  <img src="/raghav.png" alt="Dr. Raghavendra H" className="w-10 h-10 rounded-full object-cover object-top bg-[#f0cfc4]" />
-                  <div>
-                    <p className="text-sm font-semibold text-navy-deep leading-tight">Dr. Raghavendra H</p>
-                    <p className="text-xs text-navy-muted">Rheumatologist &middot; Reviewed May 2026</p>
-                  </div>
-                  <div className="flex items-center gap-2 ml-auto">
-                    {["link", "mail", "share"].map((icon) => (
-                      <button key={icon} className="w-8 h-8 rounded-full bg-ghost flex items-center justify-center text-navy-muted hover:text-navy-deep transition-colors">
-                        <span className="material-symbols-outlined text-[16px]">{icon}</span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
