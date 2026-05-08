@@ -546,26 +546,26 @@ function ArthritisGuide() {
                 </div>
 
                 {/* ── EARLY RESPONSE ── */}
-                <div style={{ marginBottom: "3.25rem", marginTop: "0" }}>
+                <div style={{ marginBottom: "5.5rem", marginTop: "4.5rem" }}>
                   <h3
                     className="text-navy-deep"
                     style={{ letterSpacing: "-0.2px", marginBottom: "2rem", textTransform: "uppercase", borderBottom: "2px solid #c8d0dc", paddingBottom: "0.75rem" }}
                   >
                     Early Response is the Key
                   </h3>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
                     When symptoms like joint stiffness on either side, generalised severe fatigue, and abnormal joint pain occur, it is always better to consult a rheumatologist.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
                     <span style={tealHighlight}>The initial three-month duration is the window during which the damage is processed.</span> If we take the initiative to treat early, we can make a difference for the rest of our lives.
                   </p>
-                  <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginBottom: "0" }}>
+                  <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginTop: "3rem", marginBottom: "0" }}>
                     If you are experiencing persistent joint pain, stiffness, or swelling, don&apos;t ignore it. Early evaluation by a rheumatologist can make a significant difference in preventing long-term damage.
                   </p>
                 </div>
 
                 {/* ── WHEN TO SEE A RHEUMATOLOGIST ── */}
-                <div id="when-to-see" data-toc-section className="guide-final-section" style={{ marginBottom: "4rem", marginTop: "5rem", paddingTop: "0" }}>
+                <div id="when-to-see" data-toc-section className="guide-final-section" style={{ marginBottom: "4rem", marginTop: "6rem", paddingTop: "0" }}>
                   <h2
                     className="text-navy-deep"
                     style={{ letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "2rem" }}
