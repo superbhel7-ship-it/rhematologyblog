@@ -99,8 +99,6 @@ const tocItems = [
   { id: "faq", label: "FAQs" },
 ]
 
-const tealHighlight = { backgroundColor: "#d1edf0", borderRadius: "3px", padding: "1px 4px", fontWeight: 600, textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "3px", textDecorationThickness: "2px" }
-const peachHighlight = { backgroundColor: "#fde1d5", borderRadius: "3px", padding: "1px 4px", fontWeight: 600, textDecoration: "underline", textDecorationColor: "#e86531", textUnderlineOffset: "3px", textDecorationThickness: "2px" }
 
 function ArthritisGuide() {
   const [activeSection, setActiveSection] = useState("what-is-ra")
@@ -272,10 +270,10 @@ function ArthritisGuide() {
                     Rheumatoid arthritis is a long-term health condition in which the body&apos;s immune system fights against itself. As a result, you often experience pain, swelling, and, when left untreated, long-lasting damage. The exact cause is unknown.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.75rem" }}>
-                    Rheumatoid arthritis is becoming increasingly common in India. <span style={tealHighlight}>It especially affects women between 40 and 60 years old.</span> Many people think of it as regular joint pain and avoid a rheumatologist consultation, which can lead to serious health issues.
+                    Rheumatoid arthritis is becoming increasingly common in India. It especially affects women between 40 and 60 years old. Many people think of it as regular joint pain and avoid a rheumatologist consultation, which can lead to serious health issues.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted">
-                    <span style={peachHighlight}>With early diagnosis and proper treatment, RA can be controlled effectively.</span> This guide will help you understand all about rheumatoid arthritis (RA), its various causes, how it presents, how doctors diagnose cases, and the available treatment options.
+                    With early diagnosis and proper treatment, RA can be controlled effectively. This guide will help you understand all about rheumatoid arthritis (RA), its various causes, how it presents, how doctors diagnose cases, and the available treatment options.
                   </p>
                 </div>
 
@@ -291,10 +289,10 @@ function ArthritisGuide() {
                     Joints are where two bones meet, such as your knuckles, knees, or wrists. Inside each joint is a thin lining called the synovium. The synovium produces fluid that helps your joints move smoothly and stay healthy.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    In rheumatoid arthritis (RA), <span style={tealHighlight}>your body becomes confused and starts attacking its own joints rather than protecting them.</span> This is called an autoimmune condition. It often affects joints on both sides of your body, like both hands or both feet at the same time. Rheumatoid arthritis can also affect other parts of your body, like your skin, eyes, lungs, heart, and blood vessels.
+                    In rheumatoid arthritis (RA), your body becomes confused and starts attacking its own joints rather than protecting them. This is called an autoimmune condition. It often affects joints on both sides of your body, like both hands or both feet at the same time. Rheumatoid arthritis can also affect other parts of your body, like your skin, eyes, lungs, heart, and blood vessels.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep">
-                    <span style={peachHighlight}>Rheumatoid arthritis is different from osteoarthritis</span>, which happens due to wear and tear as people age. Osteoarthritis often affects just one side of the body and does not cause tiredness like RA does.
+                    Rheumatoid arthritis is different from osteoarthritis, which happens due to wear and tear as people age. Osteoarthritis often affects just one side of the body and does not cause tiredness like RA does.
                   </p>
                 </div>
 
@@ -319,7 +317,7 @@ function ArthritisGuide() {
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-5">
                     Rheumatoid arthritis symptoms don&apos;t stay the same all the time &mdash; they can come and go. Periods when symptoms get worse are called{" "}
                     <strong className="font-bold">flares</strong>, while times when you feel better are known as{" "}
-                    <strong className="font-bold">remission</strong>. <span style={tealHighlight}>Early diagnosis plays an important role in preventing permanent joint damage.</span>
+                    <strong className="font-bold">remission</strong>. Early diagnosis plays an important role in preventing permanent joint damage.
                   </p>
                 </div>
 
@@ -376,10 +374,10 @@ function ArthritisGuide() {
                     What are the causes of Rheumatoid Arthritis?
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-5">
-                    <span style={peachHighlight}>The exact cause of rheumatoid arthritis is unknown.</span> Researchers think it is caused by a combination of genetics, hormones, and environmental factors.
+                    The exact cause of rheumatoid arthritis is unknown. Researchers think it is caused by a combination of genetics, hormones, and environmental factors.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-8">
-                    Your immune system normally protects your body from infections. In rheumatoid arthritis, it gets confused and starts attacking your own joints instead. <span style={tealHighlight}>Certain factors, like smoking or infections, may trigger this response.</span>
+                    Your immune system normally protects your body from infections. In rheumatoid arthritis, it gets confused and starts attacking your own joints instead. Certain factors, like smoking or infections, may trigger this response.
                   </p>
 
                   <h3
@@ -412,7 +410,7 @@ function ArthritisGuide() {
                     A detailed history about pain, swelling, the duration it will last, and any other medical history will be taken. The doctor will check your joint movement, colour changes, and for any palpable firm swellings.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2.5rem" }}>
-                    <span style={peachHighlight}>There is no single test that confirms rheumatoid arthritis.</span> Rheumatologists recommend blood and imaging tests to reach a final diagnosis.
+                    There is no single test that confirms rheumatoid arthritis. Rheumatologists recommend blood and imaging tests to reach a final diagnosis.
                   </p>
 
                   {/* Blood tests + Imaging -two columns */}
@@ -458,7 +456,7 @@ function ArthritisGuide() {
                   </h2>
 
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
-                    The main aim of treatment is to reduce the symptoms. <span style={tealHighlight}>Once treatment begins, you will be evaluated every 3-6 months to monitor the disease&apos;s progression.</span> If it does not improve, your doctor will increase the medication dosage or implement other methodologies.
+                    The main aim of treatment is to reduce the symptoms. Once treatment begins, you will be evaluated every 3-6 months to monitor the disease&apos;s progression. If it does not improve, your doctor will increase the medication dosage or implement other methodologies.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2.5rem" }}>
                     Rheumatologists usually begin the treatment with medications and other non-medicated options. If the disease progression is not improved, surgery would be the last option.
@@ -509,7 +507,7 @@ function ArthritisGuide() {
                     Managing Rheumatoid Arthritis on a Day-to-Day Basis
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep mb-10">
-                    <span style={peachHighlight}>With appropriate treatment and supportive therapy, many people are leading an active life</span> despite the disease having a lifelong predilection.
+                    With appropriate treatment and supportive therapy, many people are leading an active life despite the disease having a lifelong predilection.
                   </p>
 
                   {/* Diet */}
@@ -544,7 +542,7 @@ function ArthritisGuide() {
                     When symptoms like joint stiffness on either side, generalised severe fatigue, and abnormal joint pain occur, it is always better to consult a rheumatologist.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    <span style={tealHighlight}>The initial three-month duration is the window during which the damage is processed.</span> If we take the initiative to treat early, we can make a difference for the rest of our lives.
+                    The initial three-month duration is the window during which the damage is processed. If we take the initiative to treat early, we can make a difference for the rest of our lives.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep font-semibold" style={{ marginTop: "1rem", marginBottom: "0" }}>
                     If you are experiencing persistent joint pain, stiffness, or swelling, don&apos;t ignore it. Early evaluation by a rheumatologist can make a significant difference in preventing long-term damage.

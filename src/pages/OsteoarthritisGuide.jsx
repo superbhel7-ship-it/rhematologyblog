@@ -48,8 +48,6 @@ const tocSections = [
   { id: "faq", label: "FAQs" },
 ]
 
-const tealHighlight = { backgroundColor: "#d1edf0", borderRadius: "3px", padding: "1px 3px", fontWeight: 600, textDecoration: "underline", textDecorationColor: "#1AA3B5", textUnderlineOffset: "3px", textDecorationThickness: "2px" }
-const peachHighlight = { backgroundColor: "#fde1d5", borderRadius: "3px", padding: "1px 3px", fontWeight: 600, textDecoration: "underline", textDecorationColor: "#e86531", textUnderlineOffset: "3px", textDecorationThickness: "2px" }
 
 /* ─────────────────────────────────────────────
    COMPONENT
@@ -219,7 +217,7 @@ function OsteoarthritisGuide() {
                     While walking comfortably across your home or climbing the stairs, you feel exhausted and tired. People around you become concerned, but you shrug it off, saying, "I'm just getting older." The pain you suffer is not something to ignore. For many Indians, this can be a first sign of osteoarthritis.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. <span style={peachHighlight}>The good news is that disease progression can be managed if treatment begins early.</span> Osteoarthritis is no longer just a condition concerned with aging - <span style={tealHighlight}>it has quietly become a major global health concern.</span> In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
+                    Osteoarthritis is a condition that slowly affects the joints over time. If you don't manage it early, it disturbs your everyday activities. Walking, sitting, or even holding objects becomes a great task to achieve. There have been various treatment options, ranging from medications to complex surgical procedures. The good news is that disease progression can be managed if treatment begins early. Osteoarthritis is no longer just a condition concerned with aging - it has quietly become a major global health concern. In 2021, an estimated <strong className="font-semibold text-navy-deep">374.7 million people worldwide</strong> were living with Knee Osteoarthritis, an increase of 234.5% since 1990.
                   </p>
                   <p className="text-[16px] leading-[1.8] text-navy-muted" style={{ marginBottom: "0" }}>
                     This is a practical guide that will help you understand what osteoarthritis is, why it happens to you, how you can find out if you suffer from the condition, and what treatment options are available in India.
@@ -237,10 +235,10 @@ function OsteoarthritisGuide() {
                     We must first know how a joint works before understanding osteoarthritis.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    A joint is where two bones meet. The ends of these bones are covered with a soft and flexible tissue called cartilage. This cushion-like tissue allows you to move easily without friction. In osteoarthritis, <span style={tealHighlight}>this cartilage gradually wears down.</span> As the cushion becomes thin, the bones start to rub against each other. This causes pain, stiffness, swelling, and reduced movement.
+                    A joint is where two bones meet. The ends of these bones are covered with a soft and flexible tissue called cartilage. This cushion-like tissue allows you to move easily without friction. In osteoarthritis, this cartilage gradually wears down. As the cushion becomes thin, the bones start to rub against each other. This causes pain, stiffness, swelling, and reduced movement.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    One can imagine it as a door hinge that has lost its oil. It still works, but every movement feels very rough and uncomfortable. <span style={peachHighlight}>Osteoarthritis usually develops slowly, but with the right care, most people can manage their symptoms and continue to lead active lives.</span>
+                    One can imagine it as a door hinge that has lost its oil. It still works, but every movement feels very rough and uncomfortable. Osteoarthritis usually develops slowly, but with the right care, most people can manage their symptoms and continue to lead active lives.
                   </p>
 
                   <h3
@@ -249,10 +247,10 @@ function OsteoarthritisGuide() {
                     How Common Is Osteoarthritis in India?
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    Osteoarthritis has now become very common in India. <span style={tealHighlight}>Studies estimate that around 22% to 39% of adults over 40 are affected - roughly one in three to four adults.</span>
+                    Osteoarthritis has now become very common in India. Studies estimate that around 22% to 39% of adults over 40 are affected - roughly one in three to four adults.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    <span style={peachHighlight}>Knee osteoarthritis is the most common type, especially among women after menopause.</span> Daily habits like squatting and sitting for long periods on the floor for meals or during prayers can increase stress on the knees. This makes osteoarthritis one of the leading causes of mobility issues in the country.
+                    Knee osteoarthritis is the most common type, especially among women after menopause. Daily habits like squatting and sitting for long periods on the floor for meals or during prayers can increase stress on the knees. This makes osteoarthritis one of the leading causes of mobility issues in the country.
                   </p>
 
                   <h3
@@ -399,7 +397,7 @@ function OsteoarthritisGuide() {
                     ))}
                   </ul>
                   <p className="text-[16px] leading-[1.8] text-navy-muted">
-                    At RheumaInsights, our rheumatologists specialise in comprehensive osteoarthritis care. <span style={peachHighlight}>With evidence-based protocols, personalised treatment plans, and a patient-first approach, we help you manage symptoms effectively and protect your joints for the long term.</span>
+                    At RheumaInsights, our rheumatologists specialise in comprehensive osteoarthritis care. With evidence-based protocols, personalised treatment plans, and a patient-first approach, we help you manage symptoms effectively and protect your joints for the long term.
                   </p>
                 </div>
 
@@ -411,25 +409,25 @@ function OsteoarthritisGuide() {
                     How Is Osteoarthritis Diagnosed?
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Osteoarthritis is diagnosed by <span style={tealHighlight}>physical examination, imaging tests and blood tests.</span> Your doctor asks the duration of pain and discomfort, if you have suffered any injury to that same joint in the past, any of your family members suffer from this condition, and if the pain is relieved. This conversation helps the doctor to <span style={peachHighlight}>rule out some conditions like rheumatoid arthritis, gout that mimic osteoarthritis.</span>
+                    Osteoarthritis is diagnosed by physical examination, imaging tests and blood tests. Your doctor asks the duration of pain and discomfort, if you have suffered any injury to that same joint in the past, any of your family members suffer from this condition, and if the pain is relieved. This conversation helps the doctor to rule out some conditions like rheumatoid arthritis, gout that mimic osteoarthritis.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.75rem" }}>Physical Examination</h3>
                   <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    Initially, the doctor checks if you have any obvious swelling or redness in the affected site, and <span style={tealHighlight}>pain while the physician touches the joint, to what extent you were able to move your joint and see how flexible your joint is.</span>
+                    Initially, the doctor checks if you have any obvious swelling or redness in the affected site, and pain while the physician touches the joint, to what extent you were able to move your joint and see how flexible your joint is.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.75rem" }}>Imaging Tests</h3>
                   <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "0.5rem" }}>
-                    Once the doctor examines the affected site completely they proceed with the imaging tests, <span style={tealHighlight}>commonly used to look for cartilage loss and bone changes.</span>
+                    Once the doctor examines the affected site completely they proceed with the imaging tests, commonly used to look for cartilage loss and bone changes.
                   </p>
                   <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    <span style={peachHighlight}>MRI is not routine for osteoarthritis,</span> it is used when the situation needs a closer, more detailed picture beyond what an X-ray can show. MRI scans are needed only in early cases where symptoms don't match the site and prior surgeries.
+                    MRI is not routine for osteoarthritis, it is used when the situation needs a closer, more detailed picture beyond what an X-ray can show. MRI scans are needed only in early cases where symptoms don't match the site and prior surgeries.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "0.75rem" }}>Blood Tests</h3>
                   <p className="text-[16px] leading-[1.75] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
-                    <span style={peachHighlight}>There is no specific blood test for osteoarthritis.</span> Tests are mainly done to rule out other conditions like rheumatoid arthritis.
+                    There is no specific blood test for osteoarthritis. Tests are mainly done to rule out other conditions like rheumatoid arthritis.
                   </p>
                 </div>
 
@@ -441,7 +439,7 @@ function OsteoarthritisGuide() {
                     How Can Osteoarthritis Be Treated?
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "2rem" }}>
-                    While osteoarthritis cannot be reversed completely, <span style={peachHighlight}>treatment can help reduce your pain and improve your quality of life.</span>
+                    While osteoarthritis cannot be reversed completely, treatment can help reduce your pain and improve your quality of life.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
@@ -456,17 +454,17 @@ function OsteoarthritisGuide() {
                     <li className="text-[17px] leading-[1.75] text-navy-deep pl-1">Topical gels like Diclofenac or Volini for local pain relief</li>
                   </ul>
                   <p className="text-[16px] leading-[1.75] text-navy-muted italic" style={{ marginBottom: "1.75rem" }}>
-                    Affordable generic versions are available at government Jan Aushadhi stores. <span style={peachHighlight}>But medicines must be consumed only based on the doctor's prescription.</span>
+                    Affordable generic versions are available at government Jan Aushadhi stores. But medicines must be consumed only based on the doctor's prescription.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
                     Physiotherapy and Exercise
                   </h3>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1rem" }}>
-                    You will start to lose if you fail to move. <span style={tealHighlight}>Physiotherapy is one of the most effective yet underused treatments for osteoarthritis.</span>
+                    You will start to lose if you fail to move. Physiotherapy is one of the most effective yet underused treatments for osteoarthritis.
                   </p>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.75rem" }}>
-                    Exercises help strengthen muscles around the joint, reducing stress on it. Activities like walking, swimming, and yoga are especially helpful. <span style={tealHighlight}>Rest alone is not the solution - gentle, regular movement is always essential.</span>
+                    Exercises help strengthen muscles around the joint, reducing stress on it. Activities like walking, swimming, and yoga are especially helpful. Rest alone is not the solution - gentle, regular movement is always essential.
                   </p>
 
                   <h3 style={{ letterSpacing: "-0.2px", color: "#0f616e", marginBottom: "1rem" }}>
@@ -490,7 +488,7 @@ function OsteoarthritisGuide() {
                     Adapting to the New Normal
                   </h2>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.5rem" }}>
-                    <span style={peachHighlight}>Many people live active, fulfilling lives despite osteoarthritis.</span> Small lifestyle changes can make a big difference. Some of the tiny efforts that help you take a great leap are:
+                    Many people live active, fulfilling lives despite osteoarthritis. Small lifestyle changes can make a big difference. Some of the tiny efforts that help you take a great leap are:
                   </p>
                   <ul className="space-y-1 mb-2" style={{ listStyleType: "disc", paddingLeft: "1.5rem" }}>
                     {[
