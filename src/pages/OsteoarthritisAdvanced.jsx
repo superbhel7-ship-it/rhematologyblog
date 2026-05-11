@@ -165,7 +165,7 @@ function OsteoarthritisAdvanced() {
                 maxWidth: "600px",
               }}
             >
-              Osteoarthritis : <br />
+              Osteoarthritis :<br />
               <span style={{ fontSize: "0.72em", color: "rgba(255,255,255,0.9)" }}>Treatment & Procedures</span>
             </h1>
 
@@ -191,11 +191,11 @@ function OsteoarthritisAdvanced() {
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
-                  <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                  <h1
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.2rem, 4vw, 3.2rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Osteoarthritis: Specialised Treatment Procedures - Injections, Surgery and What to Expect
-                  </h2>
+                  </h1>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Meena, a 54-year-old woman, had a busy city life. Recently, she volunteered to retire from her tiring job. Her health condition did not allow her to continue. Neither could she board a bus nor walk across the crowded streets.
                   </p>

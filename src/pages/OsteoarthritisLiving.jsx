@@ -197,11 +197,11 @@ function OsteoarthritisLiving() {
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
-                  <h2
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
+                  <h1
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.2rem, 4vw, 3.2rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Living With Osteoarthritis: Daily Habits That Make a Real Difference
-                  </h2>
+                  </h1>
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Rita is a 56-year-old first-time nanny. The excitement of being a new granny and dreams of enjoying her retirement journey were shattered the moment she heard that she was being diagnosed with osteoarthritis. Being diagnosed with osteoarthritis can make you feel overwhelmed at first. But it doesn't mean your life has to shrink around pain.
                   </p>

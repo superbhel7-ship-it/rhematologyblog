@@ -316,7 +316,7 @@ function Osteoarthritis() {
                 <div id="overview" data-toc-section>
                   <h1
                     className="text-navy-deep"
-                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.4px", paddingBottom: "1rem", marginBottom: "1.5rem", borderBottom: "2px solid #dadfe8" }}
+                    style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.2rem, 4vw, 3.2rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.4px", paddingBottom: "1rem", marginBottom: "1.5rem", borderBottom: "2px solid #dadfe8" }}
                   >
                     Osteoarthritis, Symptoms and Causes: What Your Joints Are Trying to Tell You
                   </h1>
