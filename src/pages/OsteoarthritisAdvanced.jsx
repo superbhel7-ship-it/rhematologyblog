@@ -165,7 +165,7 @@ function OsteoarthritisAdvanced() {
                 maxWidth: "600px",
               }}
             >
-              Osteoarthritis<br />
+              Osteoarthritis : <br />
               <span style={{ fontSize: "0.72em", color: "rgba(255,255,255,0.9)" }}>Treatment & Procedures</span>
             </h1>
 
