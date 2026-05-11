@@ -261,10 +261,10 @@ function Osteoarthritis() {
         {/* <OsteoarthritisHero /> */}
 
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="relative max-w-7xl mx-auto px-5 pt-6 pb-0 sm:px-6 md:pt-8" style={{ minHeight: "340px" }}>
-            <div
-              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px]"
-              style={{ color: "rgba(255,255,255,0.68)", marginBottom: "clamp(1.5rem, 6vw, 2rem)" }}
+          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "340px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
+            {/* <div
+              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px] self-start"
+              style={{ color: "rgba(255,255,255,0.68)", marginBottom: "clamp(1rem, 4vw, 1.5rem)" }}
               aria-label="Breadcrumb"
             >
               <span className="whitespace-nowrap">Home</span>
@@ -272,48 +272,34 @@ function Osteoarthritis() {
               <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
               <span aria-hidden="true">›</span>
               <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Osteoarthritis</span>
+            </div> */}
+
+            <div
+              role="heading"
+              aria-level={2}
+              style={{
+                fontFamily: "var(--font-display)",
+                fontSize: "clamp(34px, 7vw, 58px)",
+                fontWeight: 400,
+                lineHeight: "1.08",
+                letterSpacing: "-0.5px",
+                color: "#ffffff",
+                marginBottom: "0",
+                textAlign: "center",
+              }}
+            >
+              Osteoarthritis :<br />
+              <span style={{ fontSize: "0.78em" }}>Symptoms and Causes.</span>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
-              <div className="flex-1 pb-7 text-left md:pb-0">
-                <div
-                  role="heading"
-                  aria-level={2}
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "clamp(36px, 8vw, 64px)",
-                    fontWeight: 400,
-                    lineHeight: "0.98",
-                    letterSpacing: "-0.5px",
-                    color: "#ffffff",
-                    marginBottom: "0",
-                  }}
-                >
-                  Osteoarthritis
-                </div>
-                <p
-                  style={{
-                    fontFamily: "var(--font-display)",
-                    fontSize: "clamp(32px, 5vw, 52px)",
-                    lineHeight: 1,
-                    color: "rgba(255,255,255,0.92)",
-                    maxWidth: "760px",
-                    marginBottom: 0,
-                  }}
-                >
-                  Symptoms and Causes
-                </p>
-              </div>
-
-              <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "visible" }}>
-                <img
-                  src="/OA.png"
-                  alt="Osteoarthritis"
-                  style={{ width: "84%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block", marginLeft: "auto" }}
-                />
-              </div>
-
+            <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "visible" }}>
+              <img
+                src="/OA.png"
+                alt="Osteoarthritis"
+                style={{ width: "84%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block", marginLeft: "auto" }}
+              />
             </div>
+
           </div>
 
           {/* <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
