@@ -258,13 +258,13 @@ function Osteoarthritis() {
       <main>
 
         {/* ═══════════ HERO ═══════════ */}
-        {/* <OsteoarthritisHero /> */}
-
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "340px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingTop: "1.5rem", paddingBottom: "1.5rem" }}>
-            {/* <div
-              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px] self-start"
-              style={{ color: "rgba(255,255,255,0.68)", marginBottom: "clamp(1rem, 4vw, 1.5rem)" }}
+          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "280px", display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
+
+            {/* Breadcrumb — absolute top */}
+            <div
+              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[13px]"
+              style={{ color: "rgba(255,255,255,0.68)", position: "absolute", top: "1.5rem", left: "1.25rem" }}
               aria-label="Breadcrumb"
             >
               <span className="whitespace-nowrap">Home</span>
@@ -272,60 +272,36 @@ function Osteoarthritis() {
               <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
               <span aria-hidden="true">›</span>
               <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Osteoarthritis</span>
-            </div> */}
+            </div>
 
-            <div
-              role="heading"
-              aria-level={2}
+            {/* Title — bottom left */}
+            <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(34px, 7vw, 58px)",
+                fontSize: "clamp(36px, 6vw, 58px)",
                 fontWeight: 400,
                 lineHeight: "1.08",
                 letterSpacing: "-0.5px",
                 color: "#ffffff",
                 marginBottom: "0",
-                textAlign: "center",
+                maxWidth: "600px",
               }}
             >
-              Osteoarthritis :<br />
-              <span style={{ fontSize: "0.78em" }}>Symptoms and Causes.</span>
-            </div>
+              Osteoarthritis<br />
+              <span style={{ fontSize: "0.72em", color: "rgba(255,255,255,0.9)" }}>Symptoms and Causes</span>
+            </h1>
 
-            <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "visible" }}>
+            {/* Image — absolute right, full height */}
+            <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "hidden" }}>
               <img
                 src="/OA.png"
-                alt="Osteoarthritis"
-                style={{ width: "84%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block", marginLeft: "auto" }}
+                alt="Osteoarthritis knee illustration"
+                style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
               />
             </div>
 
           </div>
 
-          {/* <div style={{ backgroundColor: "#0a4f5a", borderTop: "1px solid rgba(255,255,255,0.15)" }}>
-            <div className="max-w-7xl mx-auto grid grid-cols-3 gap-2 px-5 py-4 sm:flex sm:gap-3 sm:overflow-x-auto sm:px-6">
-              {[
-                { label: "Causes & Symptoms", id: "what-it-feels-like", ids: ["overview", "what-it-feels-like", "causes", "risk-factors", "early-symptoms"] },
-                { label: "Progression", id: "progression", ids: ["progression", "differential"] },
-                { label: "Doctor & FAQs", id: "when-to-see", ids: ["when-to-see", "faq"] },
-              ].map((tab) => {
-                const isActive = tab.ids.includes(activeSection)
-                return (
-                  <button
-                    key={tab.label}
-                    onClick={() => scrollToSection(tab.id)}
-                    className="min-w-0 rounded-full px-2 py-3 text-center text-[12px] font-medium leading-tight transition-colors sm:shrink-0 sm:px-6 sm:py-3.5 sm:text-[14px]"
-                    style={{
-                      backgroundColor: isActive ? "#ffffff" : "rgba(255,255,255,0.12)",
-                      color: isActive ? "#0f616e" : "#ffffff",
-                    }}
-                  >
-                    {tab.label}
-                  </button>
-                )
-              })}
-            </div>
-          </div> */}
         </header>
 
         {/* ═══════════ ARTICLE BODY + CTA SIDEBAR ═══════════ */}

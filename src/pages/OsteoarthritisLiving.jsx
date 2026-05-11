@@ -142,27 +142,50 @@ function OsteoarthritisLiving() {
         }
       `}</style>
       <main>
-        <section style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="max-w-7xl mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-12 flex flex-col items-start">
-            <div className="flex items-center gap-2" style={{ marginBottom: "24px" }}>
-              <span className="material-symbols-outlined text-[16px]" style={{ color: "#a0e2e4" }}>chevron_left</span>
-              <span style={{ fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.16em", color: "#a0e2e4" }}>Diseases &amp; Conditions</span>
+        <header style={{ backgroundColor: "#0f616e" }} className="text-white">
+          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "280px", display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
+
+            {/* Breadcrumb */}
+            <div
+              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[13px]"
+              style={{ color: "rgba(255,255,255,0.68)", position: "absolute", top: "1.5rem", left: "1.25rem" }}
+              aria-label="Breadcrumb"
+            >
+              <span className="whitespace-nowrap">Home</span>
+              <span aria-hidden="true">›</span>
+              <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
+              <span aria-hidden="true">›</span>
+              <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Osteoarthritis</span>
             </div>
+
+            {/* Title */}
             <h1
-              className="mb-4"
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(48px, 6vw, 64px)",
+                fontSize: "clamp(36px, 6vw, 58px)",
                 fontWeight: 400,
+                lineHeight: "1.08",
                 letterSpacing: "-0.5px",
                 color: "#ffffff",
-                maxWidth: "1120px",
+                marginBottom: "0",
+                maxWidth: "600px",
               }}
             >
-              Living With Osteoarthritis: Daily Habits That Make a Real Difference
+              Osteoarthritis<br />
+              <span style={{ fontSize: "0.72em", color: "rgba(255,255,255,0.9)" }}>Living Well</span>
             </h1>
+
+            {/* Image */}
+            <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "hidden" }}>
+              <img
+                src="/OA.png"
+                alt="Osteoarthritis knee illustration"
+                style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
+              />
+            </div>
+
           </div>
-        </section>
+        </header>
 
         {/* ═══════════ ARTICLE BODY + SIDEBAR ═══════════ */}
         <section className="bg-white">
