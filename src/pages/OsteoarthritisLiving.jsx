@@ -162,20 +162,16 @@ function OsteoarthritisLiving() {
             <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)",
                 fontWeight: 400,
-                lineHeight: "1.08",
+                lineHeight: "1.15",
                 letterSpacing: "-0.5px",
                 color: "#ffffff",
                 marginBottom: "0",
                 textAlign: "center",
               }}
             >
-              Osteoarthritis
-              <span style={{ lineHeight: "1.2", display: "block", marginTop: "0", fontFamily: "var(--font-display)" }}>
-                <span style={{ fontSize: "1em", color: "rgba(255,255,255,0.9)" }}>Living Well</span><br />
-                <span style={{ fontSize: "0.45em", color: "rgba(255,255,255,0.9)" }}>Daily Habits That Make a Real Difference</span>
-              </span>
+              <span style={{ display: "block", fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)" }}>Living With Osteoarthritis:</span>
+              <span style={{ display: "block", fontSize: "clamp(1.2rem, 2.5vw, 1.8rem)", color: "rgba(255,255,255,0.85)", marginTop: "0.6rem", fontWeight: 400 }}>Daily Habits That Make a Real Difference</span>
             </h1>
 
             {/* Image */}

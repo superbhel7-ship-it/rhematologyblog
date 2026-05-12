@@ -156,20 +156,16 @@ function OsteoarthritisAdvanced() {
             <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)",
                 fontWeight: 400,
-                lineHeight: "1.08",
+                lineHeight: "1.15",
                 letterSpacing: "-0.5px",
                 color: "#ffffff",
                 marginBottom: "0",
                 textAlign: "center",
               }}
             >
-              Osteoarthritis
-              <span style={{ lineHeight: "1.2", display: "block", marginTop: "0", fontFamily: "var(--font-display)" }}>
-                <span style={{ fontSize: "1em", color: "rgba(255,255,255,0.9)" }}>Treatment &amp; Procedures:</span><br />
-                <span style={{ fontSize: "0.45em", color: "rgba(255,255,255,0.9)" }}>Injections, Surgery and What to Expect</span>
-              </span>
+              <span style={{ display: "block", fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)" }}>Osteoarthritis: Treatment &amp; Procedures</span>
+              <span style={{ display: "block", fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "rgba(255,255,255,0.85)", marginTop: "0.6rem", fontWeight: 400 }}>Injections, Surgery and What to Expect</span>
             </h1>
 
             {/* Image */}

@@ -259,7 +259,7 @@ function Osteoarthritis() {
 
         {/* ═══════════ HERO ═══════════ */}
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "380px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
+          <div className="relative w-full px-5 sm:px-6" style={{ minHeight: "380px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
 
             {/* Breadcrumb — absolute top */}
             {/* <div
@@ -278,20 +278,16 @@ function Osteoarthritis() {
             <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)",
                 fontWeight: 400,
-                lineHeight: "1.08",
+                lineHeight: "1.15",
                 letterSpacing: "-0.5px",
                 color: "#ffffff",
                 marginBottom: "0",
                 textAlign: "center",
               }}
             >
-              Osteoarthritis
-              <span style={{ lineHeight: "1.2", display: "block", marginTop: "0", fontFamily: "var(--font-display)" }}>
-                <span style={{ fontSize: "1em", color: "rgba(255,255,255,0.9)" }}>Symptoms and Causes:</span><br />
-                <span style={{ fontSize: "0.45em", color: "rgba(255,255,255,0.9)" }}>What Your Joints Are Trying to Tell You</span>
-              </span>
+              <span style={{ display: "block", fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)" }}>Osteoarthritis: Symptoms and Causes</span>
+              <span style={{ display: "block", fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "rgba(255,255,255,0.85)", marginTop: "0.6rem", fontWeight: 400 }}>What Your Joints Are Trying to Tell You</span>
             </h1>
 
             {/* Image — absolute right, full height */}
