@@ -137,10 +137,10 @@ function OsteoarthritisAdvanced() {
       `}</style>
       <main>
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "280px", display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
+          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "380px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
 
             {/* Breadcrumb */}
-            <div
+            {/* <div
               className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[13px]"
               style={{ color: "rgba(255,255,255,0.68)", position: "absolute", top: "1.5rem", left: "1.25rem" }}
               aria-label="Breadcrumb"
@@ -150,33 +150,36 @@ function OsteoarthritisAdvanced() {
               <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
               <span aria-hidden="true">›</span>
               <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Osteoarthritis</span>
-            </div>
+            </div> */}
 
             {/* Title */}
             <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(36px, 6vw, 58px)",
+                fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)",
                 fontWeight: 400,
                 lineHeight: "1.08",
                 letterSpacing: "-0.5px",
                 color: "#ffffff",
                 marginBottom: "0",
-                maxWidth: "600px",
+                textAlign: "center",
               }}
             >
-              Osteoarthritis :<br />
-              <span style={{ fontSize: "0.72em", color: "rgba(255,255,255,0.9)" }}>Treatment & Procedures</span>
+              Osteoarthritis
+              <span style={{ lineHeight: "1.2", display: "block", marginTop: "0", fontFamily: "var(--font-display)" }}>
+                <span style={{ fontSize: "1em", color: "rgba(255,255,255,0.9)" }}>Treatment &amp; Procedures:</span><br />
+                <span style={{ fontSize: "0.45em", color: "rgba(255,255,255,0.9)" }}>Injections, Surgery and What to Expect</span>
+              </span>
             </h1>
 
             {/* Image */}
-            <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "hidden" }}>
+            {/* <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "hidden" }}>
               <img
                 src="/OA.png"
                 alt="Osteoarthritis knee illustration"
                 style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
               />
-            </div>
+            </div> */}
 
           </div>
         </header>
@@ -191,11 +194,11 @@ function OsteoarthritisAdvanced() {
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
-                  <h1
+                  {/* <h1
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.2rem, 4vw, 3.2rem)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.8px", color: "#0f616e", marginBottom: "1.5rem" }}
                   >
                     Osteoarthritis: Specialised Treatment Procedures - Injections, Surgery and What to Expect
-                  </h1>
+                  </h1> */}
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginBottom: "1.25rem" }}>
                     Meena, a 54-year-old woman, had a busy city life. Recently, she volunteered to retire from her tiring job. Her health condition did not allow her to continue. Neither could she board a bus nor walk across the crowded streets.
                   </p>

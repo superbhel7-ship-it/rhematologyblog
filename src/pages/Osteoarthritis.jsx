@@ -259,11 +259,11 @@ function Osteoarthritis() {
 
         {/* ═══════════ HERO ═══════════ */}
         <header style={{ backgroundColor: "#0f616e" }} className="text-white">
-          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "280px", display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
+          <div className="relative max-w-7xl mx-auto px-5 sm:px-6" style={{ minHeight: "380px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", paddingTop: "3rem", paddingBottom: "2rem" }}>
 
             {/* Breadcrumb — absolute top */}
-            <div
-              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[13px]"
+            {/* <div
+              className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12px] font-medium leading-snug sm:text-[14px]"
               style={{ color: "rgba(255,255,255,0.68)", position: "absolute", top: "1.5rem", left: "1.25rem" }}
               aria-label="Breadcrumb"
             >
@@ -272,33 +272,36 @@ function Osteoarthritis() {
               <span className="whitespace-nowrap">Diseases &amp; Conditions</span>
               <span aria-hidden="true">›</span>
               <span className="whitespace-nowrap" style={{ color: "#ffffff" }}>Osteoarthritis</span>
-            </div>
+            </div> */}
 
             {/* Title — bottom left */}
             <h1
               style={{
                 fontFamily: "var(--font-display)",
-                fontSize: "clamp(36px, 6vw, 58px)",
+                fontSize: "clamp(2.8rem, 5.5vw, 4.2rem)",
                 fontWeight: 400,
                 lineHeight: "1.08",
                 letterSpacing: "-0.5px",
                 color: "#ffffff",
                 marginBottom: "0",
-                maxWidth: "600px",
+                textAlign: "center",
               }}
             >
-              Osteoarthritis : <br />
-              <span style={{ fontSize: "0.72em", color: "rgba(255,255,255,0.9)" }}>Symptoms and Causes</span>
+              Osteoarthritis
+              <span style={{ lineHeight: "1.2", display: "block", marginTop: "0", fontFamily: "var(--font-display)" }}>
+                <span style={{ fontSize: "1em", color: "rgba(255,255,255,0.9)" }}>Symptoms and Causes:</span><br />
+                <span style={{ fontSize: "0.45em", color: "rgba(255,255,255,0.9)" }}>What Your Joints Are Trying to Tell You</span>
+              </span>
             </h1>
 
             {/* Image — absolute right, full height */}
-            <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "hidden" }}>
+            {/* <div className="hidden md:block" style={{ position: "absolute", top: 0, bottom: 0, right: "24px", width: "420px", overflow: "hidden" }}>
               <img
                 src="/OA.png"
                 alt="Osteoarthritis knee illustration"
                 style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", display: "block" }}
               />
-            </div>
+            </div> */}
 
           </div>
 
@@ -314,12 +317,12 @@ function Osteoarthritis() {
 
                 {/* ── OVERVIEW ── */}
                 <div id="overview" data-toc-section>
-                  <h1
+                  {/* <h1
                     className="text-navy-deep"
                     style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.2rem, 4vw, 3.2rem)", fontWeight: 400, lineHeight: 1.15, letterSpacing: "-0.4px", paddingBottom: "1rem", marginBottom: "1.5rem", borderBottom: "2px solid #dadfe8" }}
                   >
                     Osteoarthritis, Symptoms and Causes: What Your Joints Are Trying to Tell You
-                  </h1>
+                  </h1> */}
 
                   <p className="text-[17px] leading-[1.8] text-navy-deep" style={{ marginTop: "0.5rem", marginBottom: "0.85rem" }}>
                     Deepa, a 45-year-old mom of two, leads a busy city life. Her mild joint discomfort gradually worsened. She was exhausted — tired of following health hacks, hitting the gym, and people's never-ending advice.
